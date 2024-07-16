@@ -62,6 +62,18 @@ components:
       properties: {text: ''}
       type: TextBox
       layout_properties: {grid_position: 'LBSOFC,YPFAWX'}
+    - name: label_7
+      properties: {text: Give us a selfie!, align: right}
+      type: Label
+      layout_properties: {grid_position: 'XMUYGH,ZUVIZU'}
+    - name: file_loader_1
+      properties: {}
+      type: FileLoader
+      layout_properties: {grid_position: 'XMUYGH,HTBXGH'}
+    - name: submit_new_player_button
+      properties: {text: Submit new player}
+      type: Button
+      layout_properties: {grid_position: 'ITCLDQ,RASZMC'}
 - name: title_lbl
   properties: {text: 40th EE Games, visible: true, align: left, bold: true}
   type: Label

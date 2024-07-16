@@ -1,5 +1,6 @@
 from ._anvil_designer import StartPageTemplate
 from anvil import *
+import anvil.users
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
@@ -25,6 +26,7 @@ class StartPage(StartPageTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.state = "Start"
+    self.start_state = 
 
     # Any code you write here will run when the form opens.
 
@@ -32,4 +34,21 @@ class StartPage(StartPageTemplate):
     pass
 
   def new_player_button_click(self, **event_args):
+    self.start_card.visible = False
     self.new_player_card.visible = True
+    self.generate_new_player_card()
+
+  def generate_new_player_card(self):
+    self.given_name = self.given_name_text_box
+    self.middle_name = self.middle_name_text_box
+    self.family_name = self.family_name_text_box
+    self.picture = self.picture_uploader
+    print("yay")
+
+  def change_state(self, new_state):
+    self.state = new_state
+    match self.state:
+      case "Start":
+        self.start_state_label.background.default
+      case "":
+        pass

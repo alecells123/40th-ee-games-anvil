@@ -1,6 +1,6 @@
-container:
-  type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html', visible: true}
+is_package: true
+slots: {}
+custom_component: true
 components:
 - type: ColumnPanel
   properties: {col_widths: '{}'}
@@ -66,12 +66,16 @@ components:
       properties: {text: Give us a selfie!, align: right}
       type: Label
       layout_properties: {grid_position: 'XMUYGH,ZUVIZU'}
-    - name: file_loader_1
-      properties: {}
+    - name: picture_uploader
+      properties: {align: left}
       type: FileLoader
       layout_properties: {grid_position: 'XMUYGH,HTBXGH'}
+    - name: back_new_player_button
+      properties: {text: Back, align: left, role: raised}
+      type: Button
+      layout_properties: {grid_position: 'ITCLDQ,EUWHNM'}
     - name: submit_new_player_button
-      properties: {text: Submit new player}
+      properties: {text: Submit new player, role: primary-color, align: left}
       type: Button
       layout_properties: {grid_position: 'ITCLDQ,RASZMC'}
 - name: title_lbl
@@ -88,10 +92,11 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'ADWIXB,FKXDEM'}
     components:
-    - name: label_2
-      properties: {text: Start, align: center}
+    - name: start_state_label
+      properties: {text: Start, align: center, role: null, background: ''}
       type: Label
       layout_properties: {grid_position: 'YXGWZR,SKYWPM'}
+      data_bindings: []
   - name: spacer_1
     properties: {height: 8.102569580078125}
     type: Spacer
@@ -101,7 +106,7 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'KQSULP,FAATLE'}
     components:
-    - name: label_3
+    - name: create_player_state_label
       properties: {align: center, text: Create Player}
       type: Label
       layout_properties: {grid_position: 'JGHJQY,MGVTDP'}
@@ -144,5 +149,7 @@ components:
       properties: {align: center, text: Starting Agenda}
       type: Label
       layout_properties: {grid_position: 'FJNGCX,BJMWWM'}
-is_package: true
-slots: {}
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html', visible: true}
+custom_component_container: false

@@ -1,0 +1,140 @@
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html', visible: true}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}', col_spacing: medium}
+    name: start_card
+    layout_properties: {grid_position: 'OGJZJD,CMXRPA', full_width_row: false}
+    components:
+    - type: Label
+      properties: {role: headline, bold: true, align: center, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: Welcome to the 40th Quadrennial EE Games}
+      name: label_1
+      layout_properties: {grid_position: 'IEVAXK,QCCFZP'}
+    - name: label_5
+      properties: {align: center, text: 'The year is finally 2666, and it is time for freedom'}
+      type: Label
+      layout_properties: {grid_position: 'RHXQGX,DJDVOC'}
+    - name: button_1
+      properties: {text: New Player, bold: false, background: 'theme:Primary 500', foreground: 'theme:White', role: primary-color}
+      type: Button
+      layout_properties: {grid_position: 'UXWQCK,VDYZIS', full_width_row: false, row_background: ''}
+      event_bindings: {click: button_1_click}
+    - name: button_2
+      properties: {text: existing player, role: secondary-color}
+      type: Button
+      layout_properties: {grid_position: 'UXWQCK,TSJBZH'}
+  - name: spacer_2
+    properties: {height: 51.10101318359375}
+    type: Spacer
+    layout_properties: {grid_position: 'FCGSUR,UKGWWQ'}
+  - name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'UKBVUV,NXPVBU'}
+    components:
+    - name: label_6
+      properties: {text: Player's Given Name *, align: right}
+      type: Label
+      layout_properties: {grid_position: 'RIDKKW,BDCXTF'}
+    - name: linear_panel_1
+      properties: {}
+      type: LinearPanel
+      layout_properties: {grid_position: 'RIDKKW,NQCCGO'}
+      components:
+      - name: given_name_text_box
+        properties: {text: ''}
+        type: TextBox
+    - name: label_6_copy_copy
+      properties: {text: Player's Made Up Middle Name *, align: right, italic: false, bold: true, underline: false}
+      type: Label
+      layout_properties: {grid_position: 'DHEALT,SFNSHF LLZPWP,JXZWHH'}
+    - name: label_6_copy
+      properties: {text: Player's Given Name, align: right}
+      type: Label
+      layout_properties: {grid_position: 'DHEALT,SFNSHF UYHYEO,PKPGND'}
+    - name: middle_name_text_box
+      properties: {text: ''}
+      type: TextBox
+      layout_properties: {grid_position: 'DHEALT,DISAYV HBSJLJ,PCMQWF'}
+    - name: family_name_text_box
+      properties: {text: ''}
+      type: TextBox
+      layout_properties: {grid_position: 'DHEALT,DISAYV NZAMLW,MQMUOP'}
+- name: title_lbl
+  properties: {text: 40th EE Games, visible: true, align: left, bold: true}
+  type: Label
+  layout_properties: {slot: title}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: column_panel_4
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ADWIXB,FKXDEM'}
+    components:
+    - name: label_2
+      properties: {text: Start, align: center}
+      type: Label
+      layout_properties: {grid_position: 'YXGWZR,SKYWPM'}
+  - name: spacer_1
+    properties: {height: 8.102569580078125}
+    type: Spacer
+    layout_properties: {grid_position: 'VXQVHW,ZFBIAL'}
+  - name: column_panel_2
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'KQSULP,FAATLE'}
+    components:
+    - name: label_3
+      properties: {align: center, text: Create Player}
+      type: Label
+      layout_properties: {grid_position: 'JGHJQY,MGVTDP'}
+  - name: spacer_1_copy_2
+    properties: {height: 8.102569580078125}
+    type: Spacer
+    layout_properties: {grid_position: 'ILDWXM,VPVWMZ'}
+  - name: column_panel_3
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'AOGXGE,PNOPZS'}
+    components:
+    - name: label_4
+      properties: {align: center, text: Starting Character}
+      type: Label
+      layout_properties: {grid_position: 'GVEAPV,QDUOCD'}
+  - name: spacer_1_copy
+    properties: {height: 8.102569580078125}
+    type: Spacer
+    layout_properties: {grid_position: 'QCIVZV,BUDITI'}
+  - name: column_panel_3_copy
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'LIKHBD,CRPAUY'}
+    components:
+    - name: label_4_copy
+      properties: {align: center, text: Debrief}
+      type: Label
+      layout_properties: {grid_position: 'FJNGCX,BJMWWM'}
+  - name: spacer_1_copy_copy
+    properties: {height: 8.102569580078125}
+    type: Spacer
+    layout_properties: {grid_position: 'HERTFM,MLQYSY'}
+  - name: column_panel_3_copy_copy
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'FHLQEV,IGMNTT'}
+    components:
+    - name: label_4_copy_copy
+      properties: {align: center, text: Starting Agenda}
+      type: Label
+      layout_properties: {grid_position: 'FJNGCX,BJMWWM'}
+is_package: true
+slots: {}

@@ -1,4 +1,4 @@
-from ._anvil_designer import HomeFormTemplate
+from ._anvil_designer import StartPageTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
@@ -20,7 +20,7 @@ from anvil.tables import app_tables
 #
 
 
-class HomeForm(HomeFormTemplate):
+class StartPage(StartPageTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -50,5 +50,4 @@ class HomeForm(HomeFormTemplate):
     self.feedback_box.text = ""
 
   def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    pass
+    self.start_card.visible = False

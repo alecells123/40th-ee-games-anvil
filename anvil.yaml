@@ -42,7 +42,7 @@ exported_table_schema:
       admin_ui: {order: 1, width: 200}
   id: 1264
 name: 40th EE Games
-startup_form: HomeForm
+startup_form: null
 correct_dependency_ids: {}
 renamed: true
 cta: {preset: feedback_form_welcome}
@@ -62,3 +62,4 @@ services:
   client_config: {}
   server_config: {}
 native_deps: null
+startup: {type: form, module: StartPage}

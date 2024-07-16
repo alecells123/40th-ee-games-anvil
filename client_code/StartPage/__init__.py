@@ -26,7 +26,9 @@ class StartPage(StartPageTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.state = "Start"
-    self.start_state = 
+    self.start_state = self.start_state_label
+    self.create_player_state = self.create_player_state_label
+    self.starting_character = self.start
 
     # Any code you write here will run when the form opens.
 

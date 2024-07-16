@@ -49,5 +49,5 @@ class StartPage(StartPageTemplate):
     self.email_box.text = ""
     self.feedback_box.text = ""
 
-  def button_1_click(self, **event_args):
-    self.start_card.visible = False
+  def new_player_button_click(self, **event_args):
+    self.new_player_card.visible = True

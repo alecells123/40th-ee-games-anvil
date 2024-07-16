@@ -20,52 +20,48 @@ components:
       properties: {align: center, text: 'The year is finally 2666, and it is time for freedom'}
       type: Label
       layout_properties: {grid_position: 'RHXQGX,DJDVOC'}
-    - name: button_1
+    - name: new_player_button
       properties: {text: New Player, bold: false, background: 'theme:Primary 500', foreground: 'theme:White', role: primary-color}
       type: Button
       layout_properties: {grid_position: 'UXWQCK,VDYZIS', full_width_row: false, row_background: ''}
-      event_bindings: {click: button_1_click}
-    - name: button_2
+      event_bindings: {click: new_player_button_click}
+    - name: existing_player_button
       properties: {text: existing player, role: secondary-color}
       type: Button
       layout_properties: {grid_position: 'UXWQCK,TSJBZH'}
   - name: spacer_2
-    properties: {height: 51.10101318359375}
+    properties: {height: 15.15570068359375}
     type: Spacer
     layout_properties: {grid_position: 'FCGSUR,UKGWWQ'}
-  - name: card_1
-    properties: {role: card}
+  - name: new_player_card
+    properties: {role: card, visible: false}
     type: ColumnPanel
     layout_properties: {grid_position: 'UKBVUV,NXPVBU'}
     components:
     - name: label_6
       properties: {text: Player's Given Name *, align: right}
       type: Label
-      layout_properties: {grid_position: 'RIDKKW,BDCXTF'}
-    - name: linear_panel_1
-      properties: {}
-      type: LinearPanel
-      layout_properties: {grid_position: 'RIDKKW,NQCCGO'}
-      components:
-      - name: given_name_text_box
-        properties: {text: ''}
-        type: TextBox
+      layout_properties: {grid_position: 'PISHHD,XIJXNO'}
+    - name: given_name_text_box
+      properties: {text: ''}
+      type: TextBox
+      layout_properties: {grid_position: 'PISHHD,BWGGCB'}
     - name: label_6_copy_copy
-      properties: {text: Player's Made Up Middle Name *, align: right, italic: false, bold: true, underline: false}
+      properties: {text: Player's Made Up and Secret Middle Name *, align: right, italic: false, bold: true, underline: false}
       type: Label
-      layout_properties: {grid_position: 'DHEALT,SFNSHF LLZPWP,JXZWHH'}
-    - name: label_6_copy
-      properties: {text: Player's Given Name, align: right}
-      type: Label
-      layout_properties: {grid_position: 'DHEALT,SFNSHF UYHYEO,PKPGND'}
+      layout_properties: {grid_position: 'ESIYAY,FKMIKS'}
     - name: middle_name_text_box
       properties: {text: ''}
       type: TextBox
-      layout_properties: {grid_position: 'DHEALT,DISAYV HBSJLJ,PCMQWF'}
+      layout_properties: {grid_position: 'ESIYAY,JWIHIH'}
+    - name: label_6_copy
+      properties: {text: Player's Given Name, align: right}
+      type: Label
+      layout_properties: {grid_position: 'LBSOFC,BBSVWU'}
     - name: family_name_text_box
       properties: {text: ''}
       type: TextBox
-      layout_properties: {grid_position: 'DHEALT,DISAYV NZAMLW,MQMUOP'}
+      layout_properties: {grid_position: 'LBSOFC,YPFAWX'}
 - name: title_lbl
   properties: {text: 40th EE Games, visible: true, align: left, bold: true}
   type: Label

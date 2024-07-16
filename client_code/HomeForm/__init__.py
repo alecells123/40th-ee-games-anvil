@@ -48,3 +48,7 @@ class HomeForm(HomeFormTemplate):
     self.name_box.text = ""
     self.email_box.text = ""
     self.feedback_box.text = ""
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass

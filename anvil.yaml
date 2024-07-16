@@ -1,23 +1,23 @@
 allow_embedding: false
-package_name: Feedback_Form_1
+package_name: _40th_EE_Games
 db_schema:
-  feedback:
+  players:
     client: none
     server: full
     columns:
-    - name: name
-      admin_ui: {width: 200, order: 0}
+    - name: given name
+      admin_ui: {order: 0, width: 200}
       type: string
-    - name: email
-      admin_ui: {width: 200, order: 1}
+    - name: middle name
+      admin_ui: {order: 1, width: 200}
       type: string
-    - name: feedback
-      admin_ui: {width: 200, order: 2}
+    - name: family name
+      admin_ui: {order: 2, width: 200}
       type: string
     - name: created
       admin_ui: {width: 200, order: 3}
       type: datetime
-    title: Feedback
+    title: Players
 exported_table_schema:
 - python_name: feedback
   client: none
@@ -41,18 +41,19 @@ exported_table_schema:
       type: string
       admin_ui: {order: 1, width: 200}
   id: 1264
-name: Feedback Form 1
+name: 40th EE Games
 startup_form: HomeForm
 correct_dependency_ids: {}
 renamed: true
 cta: {preset: feedback_form_welcome}
 runtime_options:
-  version: 2
+  version: 3
   server_version: python3-sandbox
   client_version: '3'
   server_spec: {base: python310-standard}
+  legacy_features: {class_names: true, bootstrap3: true, __dict__: true, root_container: true}
 dependencies: []
-metadata: {}
+metadata: {title: 40th EE Games}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
@@ -60,3 +61,4 @@ services:
 - source: /runtime/services/anvil/email.yml
   client_config: {}
   server_config: {}
+native_deps: null

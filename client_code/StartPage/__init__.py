@@ -32,7 +32,6 @@ class StartPage(StartPageTemplate):
   def new_player_button_click(self, **event_args):
     self.start_card.visible = False
     self.new_player_card.visible = True
-    self.generate_new_player_card() 
 
   def existing_player_button_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -47,6 +46,11 @@ class StartPage(StartPageTemplate):
     """This method is called when the button is clicked"""
     self.new_player_card.visible = False
     self.character_card.visible = True
+    self.current_team_spread_plot.data = go.Bar(
+      x = ["Experience Everything Body Rentals", "Alpha Computing and Data", "In The Feels Designer Drugs", "For Reals Nature Synthetics", "Trax's Terraforming"],
+      y = [3, 1, 6, 2, 4],
+      name = 'Bar Chart Example'
+    )
     
 
   def back_new_player_button_click(self, **event_args):
@@ -98,3 +102,4 @@ class StartPage(StartPageTemplate):
     else:
       self.trax_description.visible = True
       self.trax_info_button.text = "close"
+

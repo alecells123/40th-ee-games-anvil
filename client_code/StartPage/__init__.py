@@ -1,5 +1,6 @@
 from ._anvil_designer import StartPageTemplate
 from anvil import *
+import plotly.graph_objects as go
 import anvil.users
 import anvil.server
 import anvil.tables as tables
@@ -32,11 +33,49 @@ class StartPage(StartPageTemplate):
   def new_player_button_click(self, **event_args):
     self.start_card.visible = False
     self.new_player_card.visible = True
-    self.generate_new_player_card()
+    self.generate_new_player_card() 
 
-  def generate_new_player_card(self):
-    self.given_name = self.given_name_text_box
-    self.middle_name = self.middle_name_text_box
-    self.family_name = self.family_name_text_box
-    self.picture = self.picture_uploader
-    print("yay")
+  def existing_player_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass #TODO
+
+  def picture_uploader_change(self, file, **event_args):
+    """This method is called when a new file is loaded into this FileLoader"""
+    if file.name.endswith(".jpg") or file.name.endswith(".jpeg") or file.name.endswith(".png"):
+      self.pic_uploaded = True
+
+  def submit_new_player_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.new_player_card.visible = False
+    self.character_card.visible = True
+    
+
+  def back_new_player_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.new_player_card.visible = False
+    self.start_card.visible = True
+
+  def ee_info_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    if self.ee_description.visible:
+      self.ee_description.visible = False
+      self.ee_info_button.text = "info"
+    else:
+      self.ee_description.visible = True
+      self.ee_info_button.text = "close"
+
+  def alpha_info_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
+  def itf_info_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
+  def fr_info_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
+
+  def trax_info_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass

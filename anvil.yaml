@@ -68,7 +68,7 @@ name: 40th EE Games
 startup_form: null
 correct_dependency_ids: {}
 renamed: true
-cta: {preset: feedback_form_welcome}
+cta: null
 runtime_options:
   version: 3
   server_version: python3-sandbox

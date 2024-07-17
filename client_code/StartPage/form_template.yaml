@@ -29,15 +29,16 @@ components:
       properties: {text: existing player, role: secondary-color}
       type: Button
       layout_properties: {grid_position: 'UXWQCK,TSJBZH'}
-  - name: spacer_2
-    properties: {height: 15.15570068359375}
-    type: Spacer
-    layout_properties: {grid_position: 'FCGSUR,UKGWWQ'}
+      event_bindings: {click: existing_player_button_click}
   - name: new_player_card
     properties: {role: card, visible: false}
     type: ColumnPanel
     layout_properties: {grid_position: 'UKBVUV,NXPVBU'}
     components:
+    - name: headline_1
+      properties: {role: headline, text: New Player}
+      type: Label
+      layout_properties: {grid_position: 'FJPSXQ,QYRLHW'}
     - name: label_6
       properties: {text: Player's Given Name *, align: right}
       type: Label
@@ -70,14 +71,106 @@ components:
       properties: {align: left}
       type: FileLoader
       layout_properties: {grid_position: 'XMUYGH,HTBXGH'}
+      event_bindings: {change: picture_uploader_change}
     - name: back_new_player_button
       properties: {text: Back, align: left, role: raised}
       type: Button
       layout_properties: {grid_position: 'ITCLDQ,EUWHNM'}
+      event_bindings: {click: back_new_player_button_click}
     - name: submit_new_player_button
       properties: {text: Submit new player, role: primary-color, align: left}
       type: Button
       layout_properties: {grid_position: 'ITCLDQ,RASZMC'}
+      event_bindings: {click: submit_new_player_button_click}
+  - name: character_card
+    properties: {role: card, visible: false}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'GFOBUR,NNKUXG'}
+    components:
+    - name: headline_2
+      properties: {role: headline, text: Corpo Affiliation}
+      type: Label
+      layout_properties: {grid_position: 'WYBGVS,QAJLIG'}
+    - name: label_2
+      properties: {text: 'What is your corporate affiliation?'}
+      type: Label
+      layout_properties: {grid_position: 'BCKHLO,ECJRDD LEXFAZ,LBHJSP'}
+    - name: current_team_spread_plot
+      properties: {height: 410.45361328125}
+      type: Plot
+      layout_properties: {grid_position: 'BCKHLO,ECJRDD RWUPNC,LBNRMC'}
+      data_bindings: []
+    - name: radio_button_1
+      properties: {text: Experience Everything Body Rentals}
+      type: RadioButton
+      layout_properties: {grid_position: 'BCKHLO,FECKVB LDLPXZ,XCCWTZ'}
+    - name: ee_info_button
+      properties: {text: info, align: center, role: raised}
+      type: Button
+      layout_properties: {grid_position: 'BCKHLO,FECKVB LDLPXZ,IMUGIA', full_width_row: false}
+      event_bindings: {click: ee_info_button_click}
+    - name: ee_description
+      properties:
+        text: |-
+          "Ontario is and always will be ours. No one can take it."
+
+          EE Body Rentals is not only the host of the Games, they're also the biggest body rental corporation in the world. Under city citizens who can't afford to live every hour of their life rents out their consciousness to EE clients so they can have a great time and the citizen can afford to eat. Everyone wins!
+        visible: false
+      type: Label
+      layout_properties: {grid_position: 'BCKHLO,FECKVB TAOHUQ,ZQFFZZ'}
+    - name: radio_button_1_copy
+      properties: {text: Alpha Computing and Data}
+      type: RadioButton
+      layout_properties: {grid_position: 'BCKHLO,FECKVB TVMHOG,RGOUCP'}
+    - name: alpha_info_button
+      properties: {text: info, role: raised}
+      type: Button
+      layout_properties: {grid_position: 'BCKHLO,FECKVB TVMHOG,GVJIPG'}
+      event_bindings: {click: alpha_info_button_click}
+    - name: alpha_description
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'BCKHLO,FECKVB HXCMFI,RJJXVO'}
+    - name: radio_button_1_copy_2
+      properties: {text: In The Feels Designer Drugs}
+      type: RadioButton
+      layout_properties: {grid_position: 'BCKHLO,FECKVB VNVZOZ,TFWDSU'}
+    - name: itf_info_button
+      properties: {text: info, role: raised}
+      type: Button
+      layout_properties: {grid_position: 'BCKHLO,FECKVB VNVZOZ,DCZOXA'}
+      event_bindings: {click: itf_info_button_click}
+    - name: itf_description
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'BCKHLO,FECKVB YDMWPK,LHMFBG'}
+    - name: radio_button_1_copy_3
+      properties: {text: For Reals Nature Synthetics}
+      type: RadioButton
+      layout_properties: {grid_position: 'BCKHLO,FECKVB OSCTER,BBABQL'}
+    - name: fr_info_button
+      properties: {text: info, role: raised}
+      type: Button
+      layout_properties: {grid_position: 'BCKHLO,FECKVB OSCTER,UTDAMX'}
+      event_bindings: {click: fr_info_button_click}
+    - name: fr_description
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'BCKHLO,FECKVB VRXTXQ,VXZNUK'}
+    - name: radio_button_1_copy_4
+      properties: {text: Trax's Terraforming}
+      type: RadioButton
+      layout_properties: {grid_position: 'BCKHLO,FECKVB NPXMZH,PQLXWZ'}
+    - name: trax_info_button
+      properties: {text: info, role: raised}
+      type: Button
+      layout_properties: {grid_position: 'BCKHLO,FECKVB NPXMZH,BNORQE'}
+      event_bindings: {click: trax_info_button_click}
+    - name: trax_description
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'BCKHLO,FECKVB QTWTOH,HUKDCP'}
+  event_bindings: {show: content_panel_show}
 - name: title_lbl
   properties: {text: 40th EE Games, visible: true, align: left, bold: true}
   type: Label

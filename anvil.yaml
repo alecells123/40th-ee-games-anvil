@@ -15,32 +15,51 @@ db_schema:
       admin_ui: {order: 2, width: 200}
       type: string
     - name: created
-      admin_ui: {width: 200, order: 3}
+      admin_ui: {order: 5, width: 200}
       type: datetime
+    - name: picture
+      admin_ui: {order: 2.5, width: 200}
+      type: media
+    - name: character
+      admin_ui: {width: 200, order: 4}
+      type: link_single
+      target: characters
     title: Players
-  users:
+  characters:
     client: none
     server: full
     columns:
-    - name: email
-      admin_ui: {order: 0, width: 200}
+    - name: character name
+      admin_ui: {width: 200, order: 0}
       type: string
-    - name: enabled
-      admin_ui: {order: 1, width: 200}
-      type: bool
-    - name: last_login
-      admin_ui: {order: 2, width: 200}
-      type: datetime
-    - name: password_hash
-      admin_ui: {order: 3, width: 200}
+    - name: affiliate
+      admin_ui: {width: 200, order: 1}
       type: string
-    - name: n_password_failures
-      admin_ui: {order: 4, width: 200}
-      type: number
-    - name: confirmed_email
-      admin_ui: {order: 5, width: 200}
-      type: bool
-    title: Users
+    - name: agendas
+      admin_ui: {width: 200, order: 2}
+      type: link_multiple
+      target: agendas
+    title: Characters
+  agendas:
+    client: none
+    server: full
+    columns:
+    - name: agenda name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: flavor text
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: description
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: reward
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: affiiliate
+      admin_ui: {width: 200, order: 0.5}
+      type: string
+    title: Agendas
 exported_table_schema:
 - python_name: feedback
   client: none
@@ -83,3 +102,4 @@ services:
   server_config: {}
 native_deps: null
 startup: {type: form, module: StartPage}
+scheduled_tasks: []

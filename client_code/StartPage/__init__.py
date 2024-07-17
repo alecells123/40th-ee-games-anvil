@@ -65,16 +65,36 @@ class StartPage(StartPageTemplate):
 
   def alpha_info_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    if self.alpha_description.visible:
+      self.alpha_description.visible = False
+      self.alpha_info_button.text = "info"
+    else:
+      self.alpha_description.visible = True
+      self.alpha_info_button.text = "close"
 
   def itf_info_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    if self.itf_description.visible:
+      self.itf_description.visible = False
+      self.itf_info_button.text = "info"
+    else:
+      self.itf_description.visible = True
+      self.itf_info_button.text = "close"
 
   def fr_info_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    if self.fr_description.visible:
+      self.fr_description.visible = False
+      self.fr_info_button.text = "info"
+    else:
+      self.fr_description.visible = True
+      self.fr_info_button.text = "close"
 
   def trax_info_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    if self.trax_description.visible:
+      self.trax_description.visible = False
+      self.trax_info_button.text = "info"
+    else:
+      self.trax_description.visible = True
+      self.trax_info_button.text = "close"

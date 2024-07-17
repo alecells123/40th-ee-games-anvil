@@ -128,7 +128,7 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB TVMHOG,GVJIPG'}
       event_bindings: {click: alpha_info_button_click}
     - name: alpha_description
-      properties: {}
+      properties: {text: test}
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB HXCMFI,RJJXVO'}
     - name: radio_button_1_copy_2
@@ -141,7 +141,7 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB VNVZOZ,DCZOXA'}
       event_bindings: {click: itf_info_button_click}
     - name: itf_description
-      properties: {}
+      properties: {text: test}
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB YDMWPK,LHMFBG'}
     - name: radio_button_1_copy_3
@@ -154,7 +154,7 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB OSCTER,UTDAMX'}
       event_bindings: {click: fr_info_button_click}
     - name: fr_description
-      properties: {}
+      properties: {text: test}
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB VRXTXQ,VXZNUK'}
     - name: radio_button_1_copy_4
@@ -167,7 +167,7 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB NPXMZH,BNORQE'}
       event_bindings: {click: trax_info_button_click}
     - name: trax_description
-      properties: {}
+      properties: {text: test}
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB QTWTOH,HUKDCP'}
   event_bindings: {show: content_panel_show}

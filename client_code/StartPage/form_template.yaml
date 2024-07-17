@@ -21,12 +21,12 @@ components:
       type: Label
       layout_properties: {grid_position: 'RHXQGX,DJDVOC'}
     - name: new_player_button
-      properties: {text: New Player, bold: false, background: 'theme:Primary 500', foreground: 'theme:White', role: primary-color}
+      properties: {text: New Player, bold: false, background: 'theme:Primary 500', foreground: 'theme:White', role: primary-color, align: center}
       type: Button
       layout_properties: {grid_position: 'UXWQCK,VDYZIS', full_width_row: false, row_background: ''}
       event_bindings: {click: new_player_button_click}
     - name: existing_player_button
-      properties: {text: existing player, role: secondary-color}
+      properties: {text: existing player, role: secondary-color, align: center}
       type: Button
       layout_properties: {grid_position: 'UXWQCK,TSJBZH'}
       event_bindings: {click: existing_player_button_click}
@@ -40,45 +40,49 @@ components:
       type: Label
       layout_properties: {grid_position: 'FJPSXQ,QYRLHW'}
     - name: label_6
-      properties: {text: Player's Given Name *, align: right}
+      properties: {text: Your First Name *, align: center}
       type: Label
       layout_properties: {grid_position: 'PISHHD,XIJXNO'}
     - name: given_name_text_box
-      properties: {text: ''}
+      properties: {text: '', align: center}
       type: TextBox
       layout_properties: {grid_position: 'PISHHD,BWGGCB'}
     - name: label_6_copy_copy
-      properties: {text: Player's Made Up and Secret Middle Name *, align: right, italic: false, bold: true, underline: false}
+      properties: {text: Make up a middle name and keep it secret*, align: center, italic: false, bold: true, underline: false}
       type: Label
       layout_properties: {grid_position: 'ESIYAY,FKMIKS'}
     - name: middle_name_text_box
-      properties: {text: ''}
+      properties: {text: '', align: center}
       type: TextBox
       layout_properties: {grid_position: 'ESIYAY,JWIHIH'}
     - name: label_6_copy
-      properties: {text: Player's Family Name, align: right}
+      properties: {text: Your Last Name*, align: center}
       type: Label
       layout_properties: {grid_position: 'LBSOFC,BBSVWU'}
     - name: family_name_text_box
-      properties: {text: ''}
+      properties: {text: '', align: center}
       type: TextBox
       layout_properties: {grid_position: 'LBSOFC,YPFAWX'}
     - name: label_7
-      properties: {text: Give us a selfie!, align: right}
+      properties: {text: Give us a selfie!, align: center}
       type: Label
       layout_properties: {grid_position: 'XMUYGH,ZUVIZU'}
     - name: picture_uploader
-      properties: {align: left}
+      properties: {align: center}
       type: FileLoader
       layout_properties: {grid_position: 'XMUYGH,HTBXGH'}
       event_bindings: {change: picture_uploader_change}
+    - name: spacer_1
+      properties: {height: 20.763671875}
+      type: Spacer
+      layout_properties: {grid_position: 'RMQZCL,KDVQHM'}
     - name: back_new_player_button
-      properties: {text: Back, align: left, role: raised}
+      properties: {text: Back, align: center, role: raised}
       type: Button
       layout_properties: {grid_position: 'ITCLDQ,EUWHNM'}
       event_bindings: {click: back_new_player_button_click}
     - name: submit_new_player_button
-      properties: {text: Submit new player, role: primary-color, align: left}
+      properties: {text: Submit new player, role: primary-color, align: center}
       type: Button
       layout_properties: {grid_position: 'ITCLDQ,RASZMC'}
       event_bindings: {click: submit_new_player_button_click}
@@ -101,7 +105,7 @@ components:
       layout_properties: {grid_position: 'BCKHLO,ECJRDD RWUPNC,LBNRMC'}
       data_bindings: []
     - name: radio_button_1
-      properties: {text: Experience Everything Body Rentals}
+      properties: {text: Experience Everything Body Rentals, align: center, selected: false}
       type: RadioButton
       layout_properties: {grid_position: 'BCKHLO,FECKVB LDLPXZ,XCCWTZ'}
     - name: ee_info_button
@@ -118,8 +122,12 @@ components:
         visible: false
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB TAOHUQ,ZQFFZZ'}
+    - name: spacer_2
+      properties: {height: 4.6671142578125}
+      type: Spacer
+      layout_properties: {grid_position: 'BCKHLO,FECKVB TMMGAC,FGJKSK'}
     - name: radio_button_1_copy
-      properties: {text: Alpha Computing and Data}
+      properties: {text: Alpha Computing and Data, align: center}
       type: RadioButton
       layout_properties: {grid_position: 'BCKHLO,FECKVB TVMHOG,RGOUCP'}
     - name: alpha_info_button
@@ -131,8 +139,12 @@ components:
       properties: {text: test, visible: false}
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB HXCMFI,RJJXVO'}
+    - name: spacer_2_copy
+      properties: {height: 4.6671142578125}
+      type: Spacer
+      layout_properties: {grid_position: 'BCKHLO,FECKVB GBSDNG,PBUFMT'}
     - name: radio_button_1_copy_2
-      properties: {text: In The Feels Designer Drugs}
+      properties: {text: In The Feels Designer Drugs, align: center}
       type: RadioButton
       layout_properties: {grid_position: 'BCKHLO,FECKVB VNVZOZ,TFWDSU'}
     - name: itf_info_button
@@ -144,8 +156,12 @@ components:
       properties: {text: test, visible: false}
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB YDMWPK,LHMFBG'}
+    - name: spacer_4
+      properties: {height: 5.218017578125}
+      type: Spacer
+      layout_properties: {grid_position: 'BCKHLO,FECKVB GRNMAK,KGTYPL'}
     - name: radio_button_1_copy_3
-      properties: {text: For Reals Nature Synthetics}
+      properties: {text: For Reals Nature Synthetics, align: center}
       type: RadioButton
       layout_properties: {grid_position: 'BCKHLO,FECKVB OSCTER,BBABQL'}
     - name: fr_info_button
@@ -157,8 +173,12 @@ components:
       properties: {text: test, visible: false}
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB VRXTXQ,VXZNUK'}
+    - name: spacer_5
+      properties: {height: 6.8778076171875}
+      type: Spacer
+      layout_properties: {grid_position: 'BCKHLO,FECKVB TFMXDK,EJSZPK'}
     - name: radio_button_1_copy_4
-      properties: {text: Trax's Terraforming}
+      properties: {text: Trax's Terraforming, align: center}
       type: RadioButton
       layout_properties: {grid_position: 'BCKHLO,FECKVB NPXMZH,PQLXWZ'}
     - name: trax_info_button

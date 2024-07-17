@@ -46,13 +46,15 @@ class StartPage(StartPageTemplate):
     """This method is called when the button is clicked"""
     self.new_player_card.visible = False
     self.character_card.visible = True
-    self.current_team_spread_plot.data = go.Bar(
-      x = ["Experience Everything Body Rentals", "Alpha Computing and Data", "In The Feels Designer Drugs", "For Reals Nature Synthetics", "Trax's Terraforming"],
-      y = [3, 1, 6, 2, 4],
-      name = 'Bar Chart Example'
-    )
-    
+    self.displayAffiliatePlot()
 
+  def displayAffiliatePlot(self):
+    self.current_team_spread_plot.data = go.Bar(
+      x = anvil.server.call('get_player_count_data')[0],
+      y = anvil.server.call('get_player_count_data')[1],
+      name = anvil.server.call('get_player_count_data')[2]
+    )
+  
   def back_new_player_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.new_player_card.visible = False

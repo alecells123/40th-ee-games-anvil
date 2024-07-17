@@ -4,7 +4,7 @@ unique_ids:
     StartPage.ItemTemplate1: '1721150693082437177745525.3549'
   modules: {}
   server_modules:
-    ServerModule1: '1721236766013862777065487.689'
+    StartPageBE: '1721236766013862777065487.689'
   assets:
     code-button.png: '1695342618749193575253721.17725'
     run-button.png: '1695343459366326673384303.53296'

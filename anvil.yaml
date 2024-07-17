@@ -5,61 +5,86 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: given name
-      admin_ui: {order: 0, width: 200}
+    - name: given_name
+      admin_ui: {order: 0, width: 147}
       type: string
-    - name: middle name
-      admin_ui: {order: 1, width: 200}
+    - name: middle_name
+      admin_ui: {order: 1, width: 133}
       type: string
-    - name: family name
-      admin_ui: {order: 2, width: 200}
+    - name: family_name
+      admin_ui: {order: 2, width: 131}
       type: string
-    - name: created
-      admin_ui: {order: 5, width: 200}
-      type: datetime
     - name: picture
-      admin_ui: {order: 2.5, width: 200}
+      admin_ui: {order: 2.5, width: 249}
       type: media
     - name: character
-      admin_ui: {width: 200, order: 4}
+      admin_ui: {order: 4, width: 191}
       type: link_single
       target: characters
+    - name: affiliate
+      admin_ui: {order: 4.5, width: 215}
+      type: link_single
+      target: affiliates
     title: Players
   characters:
     client: none
     server: full
     columns:
-    - name: character name
-      admin_ui: {width: 200, order: 0}
-      type: string
-    - name: affiliate
-      admin_ui: {width: 200, order: 1}
+    - name: character_name
+      admin_ui: {order: 0, width: 200}
       type: string
     - name: agendas
       admin_ui: {width: 200, order: 2}
       type: link_multiple
       target: agendas
+    - name: has_player
+      admin_ui: {order: 1.5, width: 145}
+      type: bool
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.75}
+      type: link_single
+      target: affiliates
     title: Characters
   agendas:
     client: none
     server: full
     columns:
-    - name: agenda name
-      admin_ui: {width: 200, order: 0}
+    - name: agenda_name
+      admin_ui: {order: 0, width: 200}
       type: string
-    - name: flavor text
-      admin_ui: {width: 200, order: 1}
+    - name: flavor_text
+      admin_ui: {order: 1, width: 392}
       type: string
     - name: description
-      admin_ui: {width: 200, order: 2}
+      admin_ui: {order: 2, width: 443}
       type: string
     - name: reward
       admin_ui: {width: 200, order: 3}
       type: string
-    - name: affiiliate
-      admin_ui: {width: 200, order: 0.5}
-      type: string
+    - name: active_players
+      admin_ui: {order: 4, width: 200}
+      type: link_multiple
+      target: players
+    - name: affiliate
+      admin_ui: {order: 0.5, width: 255}
+      type: link_single
+      target: affiliates
     title: Agendas
+  affiliates:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 284}
+      type: string
+    - name: agendas
+      admin_ui: {order: 1, width: 556}
+      type: link_multiple
+      target: agendas
+    - name: player_count
+      admin_ui: {order: 0.5, width: 119}
+      type: number
+    title: Affiliates
 exported_table_schema:
 - python_name: feedback
   client: none

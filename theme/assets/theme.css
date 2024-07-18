@@ -552,6 +552,11 @@ body>div[data-notify="container"].alert-warning>span[data-notify="title"]{
   color: %color:Primary 500%;
 }
 
+.anvil-role-tab-button {
+  text-align: left;
+  max-width;
+}
+
 .btn[disabled] { color: rgba(0, 0, 0, .25); }
 .anvil-role-raised > .btn[disabled], .anvil-role-primary-color > .btn[disabled], .anvil-role-secondary-color > .btn[disabled] {
   background-color: rgba(0,0,0,0.12) !important;

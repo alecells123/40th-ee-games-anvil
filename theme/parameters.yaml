@@ -31,6 +31,10 @@ roles:
   components: [Link]
 - name: sample-app-info
   components: [RichText]
+- name: tab-button
+  components: [Button]
+  display_in_toolbox: true
+  title: Tab Button
 color_scheme:
   preset_groups:
   - name: Primary Colour

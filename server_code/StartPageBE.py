@@ -36,3 +36,9 @@ def get_player_count_data():
   trax_count = trax_row['player_count']
   
   return [["EE", "Alpha", "ITF", "FR", "Trax"], [ee_count, alpha_count, itf_count, fr_count, trax_count], 'Bar Chart Example']
+
+@anvil.server.callable
+def submit(first, middle, family, picture, affiliate): 
+  affiliate_row = app_tables.affiliates.get(name=affiliate)
+  app_tables.players.add_row(given_name=first, middle_name=middle, family_name=family, picture=picture, affiliate=affiliate_row)
+  print(app_tables.players.get(middle_name=middle))

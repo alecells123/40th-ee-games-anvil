@@ -46,7 +46,11 @@ components:
     - name: given_name_text_box
       properties: {text: '', align: center}
       type: TextBox
-      layout_properties: {grid_position: 'PISHHD,BWGGCB'}
+      layout_properties: {grid_position: 'PISHHD,BWGGCB WPXXIL,FSQZGN'}
+    - name: given_blank_message
+      properties: {text: need this ^, visible: false}
+      type: Label
+      layout_properties: {grid_position: 'PISHHD,BWGGCB ICEEDB,GGVKMI'}
     - name: label_6_copy_copy
       properties: {text: 'Make up a middle name and keep it secret, keep it safe*', align: center, italic: false, bold: true, underline: false}
       type: Label
@@ -54,7 +58,11 @@ components:
     - name: middle_name_text_box
       properties: {text: '', align: center}
       type: TextBox
-      layout_properties: {grid_position: 'ESIYAY,JWIHIH'}
+      layout_properties: {grid_position: 'ESIYAY,JWIHIH KUNDDC,KJQCFZ'}
+    - name: middle_blank_message
+      properties: {text: yeah actually need this one too, visible: false}
+      type: Label
+      layout_properties: {grid_position: 'ESIYAY,JWIHIH CNRKPQ,QPGNIJ'}
     - name: label_6_copy
       properties: {text: Your Last Name, align: center}
       type: Label
@@ -70,8 +78,12 @@ components:
     - name: picture_uploader
       properties: {align: center}
       type: FileLoader
-      layout_properties: {grid_position: 'XMUYGH,HTBXGH'}
+      layout_properties: {grid_position: 'XMUYGH,HTBXGH ENIZNQ,EOTKIT'}
       event_bindings: {change: picture_uploader_change}
+    - name: picture_blank_message
+      properties: {text: just a quick one no need to be fancy, visible: false}
+      type: Label
+      layout_properties: {grid_position: 'XMUYGH,HTBXGH NRTXPS,COUAPP'}
     - name: spacer_1
       properties: {height: 20.763671875}
       type: Spacer
@@ -109,7 +121,7 @@ components:
       type: Button
       layout_properties: {grid_position: 'CWBIOP,CPXJZD'}
       event_bindings: {click: refresh_plot_click}
-    - name: radio_button_1
+    - name: ee_radio
       properties: {text: Experience Everything Body Rentals, align: left, selected: false}
       type: RadioButton
       layout_properties: {grid_position: 'LDLPXZ,XCCWTZ'}
@@ -131,7 +143,7 @@ components:
       properties: {height: 4.6671142578125}
       type: Spacer
       layout_properties: {grid_position: 'TMMGAC,FGJKSK'}
-    - name: radio_button_1_copy
+    - name: alpha_radio
       properties: {text: Alpha Computing and Data, align: left}
       type: RadioButton
       layout_properties: {grid_position: 'TVMHOG,RGOUCP'}
@@ -150,7 +162,7 @@ components:
       properties: {height: 4.6671142578125}
       type: Spacer
       layout_properties: {grid_position: 'GBSDNG,PBUFMT'}
-    - name: radio_button_1_copy_2
+    - name: itf_radio
       properties: {text: In The Feels Designer Drugs, align: left}
       type: RadioButton
       layout_properties: {grid_position: 'VNVZOZ,TFWDSU'}
@@ -169,7 +181,7 @@ components:
       properties: {height: 5.218017578125}
       type: Spacer
       layout_properties: {grid_position: 'GRNMAK,KGTYPL'}
-    - name: radio_button_1_copy_3
+    - name: fr_radio
       properties: {text: For Reals Nature Synthetics, align: left}
       type: RadioButton
       layout_properties: {grid_position: 'OSCTER,BBABQL'}
@@ -188,7 +200,7 @@ components:
       properties: {height: 6.8778076171875}
       type: Spacer
       layout_properties: {grid_position: 'TFMXDK,EJSZPK'}
-    - name: radio_button_1_copy_4
+    - name: trax_radio
       properties: {text: Trax's Terraforming, align: left}
       type: RadioButton
       layout_properties: {grid_position: 'NPXMZH,PQLXWZ'}
@@ -203,7 +215,7 @@ components:
         visible: false
       type: Label
       layout_properties: {grid_position: 'QTWTOH,HUKDCP'}
-    - name: submit_affiliate_button
+    - name: submit_button
       properties: {text: agree to terms, role: primary-color}
       type: Button
       layout_properties: {grid_position: 'DCUTIG,MUAVLF'}

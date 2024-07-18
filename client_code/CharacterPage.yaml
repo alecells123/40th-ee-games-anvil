@@ -54,15 +54,24 @@ components:
   layout_properties: {slot: left-nav}
   components:
   - name: character_tab
-    properties: {text: Character, role: tab-button}
+    properties:
+      text: Character
+      role: [tab-button, raised]
+      align: full
     type: Button
     layout_properties: {grid_position: 'VMHWTX,PJCZWW'}
   - name: agendas_tab
-    properties: {text: agendas, role: tab-button}
+    properties:
+      text: agendas
+      role: [raised, tab-button]
+      align: full
     type: Button
     layout_properties: {grid_position: 'ZEYAGD,YVSAHM'}
   - name: sponsor_menu_tab
-    properties: {text: sponsor menu, role: tab-button}
+    properties:
+      text: sponsor menu
+      role: [tab-button, raised]
+      align: full
     type: Button
     layout_properties: {grid_position: 'OSKXEH,YKNNKK'}
 custom_component: true

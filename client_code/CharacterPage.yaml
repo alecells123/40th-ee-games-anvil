@@ -1,0 +1,59 @@
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ZLVBZQ,LZWIDU'}
+    components:
+    - name: character_intro_panel
+      properties: {}
+      type: LinearPanel
+      layout_properties: {grid_position: 'YXPINV,NALOOZ'}
+      components:
+      - name: welcome_label
+        properties: {align: center, text: ''}
+        type: Label
+        data_bindings:
+        - {property: text, code: 'self.item['''']', writeback: false}
+      - name: label_2
+        properties: {text: 'You are playing as:', align: center}
+        type: Label
+      - name: character_name_label
+        properties: {role: headline, align: center}
+        type: Label
+      - name: label_3
+        properties: {align: center, text: 'You are affiliated with:'}
+        type: Label
+      - name: affiliate_name_label
+        properties: {role: headline, align: center}
+        type: Label
+    - name: collapse_button
+      properties: {text: collapse, role: raised}
+      type: Button
+      layout_properties: {grid_position: 'JTFMGR,QMYWNZ'}
+      event_bindings: {click: collapse_button_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - name: menu_tab
+    properties: {text: '', role: secondary-color, icon_align: right, icon: 'fa:gift'}
+    type: Button
+    data_bindings: []
+    layout_properties: {}
+  - name: character_tab
+    properties: {text: '', role: secondary-color, spacing_above: small, icon: 'fa:calendar-check-o', icon_align: right}
+    type: Button
+    layout_properties: {}
+- name: label_1
+  properties: {text: 40th EE Games}
+  type: Label
+  layout_properties: {slot: title}

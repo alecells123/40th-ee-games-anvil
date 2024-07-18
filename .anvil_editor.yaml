@@ -1,7 +1,7 @@
 unique_ids:
   forms:
+    HomePage: '1721269420038429004890814.23785'
     StartPage: RXKECMZN34MQAHDRK6EPIICDWR6S3KGX
-    StartPage.ItemTemplate1: '1721150693082437177745525.3549'
   modules: {}
   server_modules:
     StartPageBE: '1721236766013862777065487.689'

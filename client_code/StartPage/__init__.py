@@ -29,20 +29,24 @@ class StartPage(StartPageTemplate):
   def clear_inputs(self):
     pass
 
+
+  self.validator = validation.Validator()
+  self.validator.require_text_field(self.my_text_field, self.label_to_display_if_invalid)
+
   def new_player_button_click(self, **event_args):
     self.start_card.visible = False
     self.new_player_card.visible = True
 
   def existing_player_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass #TODO
+    open_form('HomePage')
 
   def picture_uploader_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
     if file.name.endswith(".jpg") or file.name.endswith(".jpeg") or file.name.endswith(".png"):
       self.pic_uploaded = True
 
-  def submit_new_player_button_click(self, **event_args):
+  def new_player_continue_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.new_player_card.visible = False
     self.character_card.visible = True
@@ -108,4 +112,8 @@ class StartPage(StartPageTemplate):
   def refresh_plot_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.displayAffiliatePlot()
+
+  def submit_affiliate_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
 

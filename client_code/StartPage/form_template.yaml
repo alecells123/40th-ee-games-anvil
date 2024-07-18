@@ -48,7 +48,7 @@ components:
       type: TextBox
       layout_properties: {grid_position: 'PISHHD,BWGGCB'}
     - name: label_6_copy_copy
-      properties: {text: Make up a middle name and keep it secret*, align: center, italic: false, bold: true, underline: false}
+      properties: {text: 'Make up a middle name and keep it secret, keep it safe*', align: center, italic: false, bold: true, underline: false}
       type: Label
       layout_properties: {grid_position: 'ESIYAY,FKMIKS'}
     - name: middle_name_text_box
@@ -56,7 +56,7 @@ components:
       type: TextBox
       layout_properties: {grid_position: 'ESIYAY,JWIHIH'}
     - name: label_6_copy
-      properties: {text: Your Last Name*, align: center}
+      properties: {text: Your Last Name, align: center}
       type: Label
       layout_properties: {grid_position: 'LBSOFC,BBSVWU'}
     - name: family_name_text_box
@@ -64,7 +64,7 @@ components:
       type: TextBox
       layout_properties: {grid_position: 'LBSOFC,YPFAWX'}
     - name: label_7
-      properties: {text: Give us a selfie!, align: center}
+      properties: {text: Upload a selfie!*, align: center}
       type: Label
       layout_properties: {grid_position: 'XMUYGH,ZUVIZU'}
     - name: picture_uploader
@@ -81,11 +81,11 @@ components:
       type: Button
       layout_properties: {grid_position: 'ITCLDQ,EUWHNM'}
       event_bindings: {click: back_new_player_button_click}
-    - name: submit_new_player_button
-      properties: {text: Submit new player, role: primary-color, align: center}
+    - name: new_player_continue_button
+      properties: {text: continue, role: primary-color, align: center}
       type: Button
       layout_properties: {grid_position: 'ITCLDQ,RASZMC'}
-      event_bindings: {click: submit_new_player_button_click}
+      event_bindings: {click: new_player_continue_button_click}
   - name: character_card
     properties: {role: card, visible: false}
     type: ColumnPanel
@@ -98,116 +98,126 @@ components:
     - name: label_2
       properties: {text: 'What is your corporate affiliation?'}
       type: Label
-      layout_properties: {grid_position: 'BCKHLO,ECJRDD LEXFAZ,LBHJSP'}
+      layout_properties: {grid_position: 'HWETKP,POXOBC'}
     - name: current_team_spread_plot
       properties: {height: 410.45361328125}
       type: Plot
-      layout_properties: {grid_position: 'BCKHLO,ECJRDD RWUPNC,LBNRMC'}
+      layout_properties: {grid_position: 'AVNUIR,IBHBWN'}
       data_bindings: []
     - name: refresh_plot
-      properties: {text: refresh}
+      properties: {text: refresh, align: right}
       type: Button
-      layout_properties: {grid_position: 'BCKHLO,ECJRDD RWUPNC,UPEPVG'}
+      layout_properties: {grid_position: 'CWBIOP,CPXJZD'}
       event_bindings: {click: refresh_plot_click}
     - name: radio_button_1
-      properties: {text: Experience Everything Body Rentals, align: center, selected: false}
+      properties: {text: Experience Everything Body Rentals, align: left, selected: false}
       type: RadioButton
-      layout_properties: {grid_position: 'BCKHLO,FECKVB LDLPXZ,XCCWTZ'}
+      layout_properties: {grid_position: 'LDLPXZ,XCCWTZ'}
     - name: ee_info_button
-      properties: {text: info, align: center, role: raised}
+      properties: {text: info, align: left, role: raised}
       type: Button
-      layout_properties: {grid_position: 'BCKHLO,FECKVB LDLPXZ,IMUGIA', full_width_row: false}
+      layout_properties: {grid_position: 'LDLPXZ,IMUGIA', full_width_row: false}
       event_bindings: {click: ee_info_button_click}
     - name: ee_description
       properties:
         text: |-
           "They may think you can do better than human but you simply cannot."
 
-          EE Body Rentals is not only the host of the Games, they're also the biggest body rental corporation in the world. Under city citizens who can't afford to live every hour of their life rents out their consciousness to EE clients so they can have a great time and the citizen can afford to eat. Everyone wins!
+          EE Body Rentals is not only the host of the Games, they're also the biggest body rental corporation in the world. Undercity citizens who can't afford to live every hour of their life rents out their consciousness to EE clients so they can have a great time and the citizen can afford to eat. Everyone wins!
         visible: false
       type: Label
-      layout_properties: {grid_position: 'BCKHLO,FECKVB TAOHUQ,ZQFFZZ'}
+      layout_properties: {grid_position: 'TAOHUQ,ZQFFZZ'}
     - name: spacer_2
       properties: {height: 4.6671142578125}
       type: Spacer
-      layout_properties: {grid_position: 'BCKHLO,FECKVB TMMGAC,FGJKSK'}
+      layout_properties: {grid_position: 'TMMGAC,FGJKSK'}
     - name: radio_button_1_copy
-      properties: {text: Alpha Computing and Data, align: center}
+      properties: {text: Alpha Computing and Data, align: left}
       type: RadioButton
-      layout_properties: {grid_position: 'BCKHLO,FECKVB TVMHOG,RGOUCP'}
+      layout_properties: {grid_position: 'TVMHOG,RGOUCP'}
     - name: alpha_info_button
-      properties: {text: info, role: raised}
+      properties: {text: info, role: raised, align: left}
       type: Button
-      layout_properties: {grid_position: 'BCKHLO,FECKVB TVMHOG,GVJIPG'}
+      layout_properties: {grid_position: 'TVMHOG,GVJIPG'}
       event_bindings: {click: alpha_info_button_click}
     - name: alpha_description
       properties:
         text: "\"Progress should not be prohibited by advocates for what works.\"\n\nLeading technology corporation in data processing, which nowadays is primarily managing and transferring human consciousness. "
         visible: false
       type: Label
-      layout_properties: {grid_position: 'BCKHLO,FECKVB HXCMFI,RJJXVO'}
+      layout_properties: {grid_position: 'HXCMFI,RJJXVO'}
     - name: spacer_2_copy
       properties: {height: 4.6671142578125}
       type: Spacer
-      layout_properties: {grid_position: 'BCKHLO,FECKVB GBSDNG,PBUFMT'}
+      layout_properties: {grid_position: 'GBSDNG,PBUFMT'}
     - name: radio_button_1_copy_2
-      properties: {text: In The Feels Designer Drugs, align: center}
+      properties: {text: In The Feels Designer Drugs, align: left}
       type: RadioButton
-      layout_properties: {grid_position: 'BCKHLO,FECKVB VNVZOZ,TFWDSU'}
+      layout_properties: {grid_position: 'VNVZOZ,TFWDSU'}
     - name: itf_info_button
-      properties: {text: info, role: raised}
+      properties: {text: info, role: raised, align: left}
       type: Button
-      layout_properties: {grid_position: 'BCKHLO,FECKVB VNVZOZ,DCZOXA'}
+      layout_properties: {grid_position: 'VNVZOZ,DCZOXA'}
       event_bindings: {click: itf_info_button_click}
     - name: itf_description
       properties:
         text: "\"The flesh is weak without progress\"\n\nIn The Feels Designer Drugs believes that while the mind and body are weak, using chemicals can cause the soul to leak into your being, making you truly whole. They are revolutionary scientists and the leading producer of the Primaries, the drugs referred to as Red, Green, and Blue. "
         visible: false
       type: Label
-      layout_properties: {grid_position: 'BCKHLO,FECKVB YDMWPK,LHMFBG'}
+      layout_properties: {grid_position: 'YDMWPK,LHMFBG'}
     - name: spacer_4
       properties: {height: 5.218017578125}
       type: Spacer
-      layout_properties: {grid_position: 'BCKHLO,FECKVB GRNMAK,KGTYPL'}
+      layout_properties: {grid_position: 'GRNMAK,KGTYPL'}
     - name: radio_button_1_copy_3
-      properties: {text: For Reals Nature Synthetics, align: center}
+      properties: {text: For Reals Nature Synthetics, align: left}
       type: RadioButton
-      layout_properties: {grid_position: 'BCKHLO,FECKVB OSCTER,BBABQL'}
+      layout_properties: {grid_position: 'OSCTER,BBABQL'}
     - name: fr_info_button
-      properties: {text: info, role: raised}
+      properties: {text: info, role: raised, align: left}
       type: Button
-      layout_properties: {grid_position: 'BCKHLO,FECKVB OSCTER,UTDAMX'}
+      layout_properties: {grid_position: 'OSCTER,UTDAMX'}
       event_bindings: {click: fr_info_button_click}
     - name: fr_description
       properties:
         text: "\"Why stop at life? We seek to transcend what we were once inspired by, straight into godhood.\"\n\nFor Reals Nature Synthetics are the leading technology in natural synthetics, creating everything that once existed and no longer does, from trees to cheetahs. "
         visible: false
       type: Label
-      layout_properties: {grid_position: 'BCKHLO,FECKVB VRXTXQ,VXZNUK'}
+      layout_properties: {grid_position: 'VRXTXQ,VXZNUK'}
     - name: spacer_5
       properties: {height: 6.8778076171875}
       type: Spacer
-      layout_properties: {grid_position: 'BCKHLO,FECKVB TFMXDK,EJSZPK'}
+      layout_properties: {grid_position: 'TFMXDK,EJSZPK'}
     - name: radio_button_1_copy_4
-      properties: {text: Trax's Terraforming, align: center}
+      properties: {text: Trax's Terraforming, align: left}
       type: RadioButton
-      layout_properties: {grid_position: 'BCKHLO,FECKVB NPXMZH,PQLXWZ'}
+      layout_properties: {grid_position: 'NPXMZH,PQLXWZ'}
     - name: trax_info_button
-      properties: {text: info, role: raised}
+      properties: {text: info, role: raised, align: left}
       type: Button
-      layout_properties: {grid_position: 'BCKHLO,FECKVB NPXMZH,BNORQE'}
+      layout_properties: {grid_position: 'NPXMZH,BNORQE'}
       event_bindings: {click: trax_info_button_click}
     - name: trax_description
       properties:
         text: "\"Dirt go brr\"\n\nTrax and her newer company Trax's Terraforming specializes in creating landforms en masse, readying land for moss dunes and water containment, allowing us to begin a new era of earth colonization. "
         visible: false
       type: Label
-      layout_properties: {grid_position: 'BCKHLO,FECKVB QTWTOH,HUKDCP'}
+      layout_properties: {grid_position: 'QTWTOH,HUKDCP'}
+    - name: submit_affiliate_button
+      properties: {text: agree to terms, role: primary-color}
+      type: Button
+      layout_properties: {grid_position: 'DCUTIG,MUAVLF'}
+      data_bindings: []
+      event_bindings: {click: submit_affiliate_button_click}
   event_bindings: {show: content_panel_show}
 - name: title_lbl
   properties: {text: 40th EE Games, visible: true, align: left, bold: true}
   type: Label
   layout_properties: {slot: title}
+- name: flow_panel_1
+  properties: {}
+  type: FlowPanel
+  layout_properties: {slot: nav-right}
 container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html', visible: true}

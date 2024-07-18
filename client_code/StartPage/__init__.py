@@ -25,6 +25,7 @@ class StartPage(StartPageTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.picture = Media()
 
   def clear_inputs(self):
     pass
@@ -46,8 +47,14 @@ class StartPage(StartPageTemplate):
   def new_player_continue_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     if self.given_name_text_box.text == "":
-      
+      self.given_blank_message.visible = True
+    else: 
+      self.given_blank_message.visible = False
 
+    if self.middle_name_text_box.text == "":
+      self.middle_blank_message.visible = True
+    else: 
+      self.middle_blank_message.visible = False
     
     self.new_player_card.visible = False
     self.character_card.visible = True

@@ -29,10 +29,6 @@ class StartPage(StartPageTemplate):
   def clear_inputs(self):
     pass
 
-
-  self.validator = validation.Validator()
-  self.validator.require_text_field(self.my_text_field, self.label_to_display_if_invalid)
-
   def new_player_button_click(self, **event_args):
     self.start_card.visible = False
     self.new_player_card.visible = True
@@ -117,3 +113,8 @@ class StartPage(StartPageTemplate):
     """This method is called when the button is clicked"""
     pass
 
+  def submit_button_click(self, **event_args):
+    given_name = self.given_name_text_box
+    middle_name = self.middle_name_text_box
+    family_name = self.family_name_text_box
+    

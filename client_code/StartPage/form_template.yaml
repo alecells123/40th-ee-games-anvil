@@ -104,6 +104,11 @@ components:
       type: Plot
       layout_properties: {grid_position: 'BCKHLO,ECJRDD RWUPNC,LBNRMC'}
       data_bindings: []
+    - name: refresh_plot
+      properties: {text: refresh}
+      type: Button
+      layout_properties: {grid_position: 'BCKHLO,ECJRDD RWUPNC,UPEPVG'}
+      event_bindings: {click: refresh_plot_click}
     - name: radio_button_1
       properties: {text: Experience Everything Body Rentals, align: center, selected: false}
       type: RadioButton
@@ -116,7 +121,7 @@ components:
     - name: ee_description
       properties:
         text: |-
-          "Ontario is and always will be ours. No one can take it."
+          "They may think you can do better than human but you simply cannot."
 
           EE Body Rentals is not only the host of the Games, they're also the biggest body rental corporation in the world. Under city citizens who can't afford to live every hour of their life rents out their consciousness to EE clients so they can have a great time and the citizen can afford to eat. Everyone wins!
         visible: false
@@ -136,7 +141,9 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB TVMHOG,GVJIPG'}
       event_bindings: {click: alpha_info_button_click}
     - name: alpha_description
-      properties: {text: test, visible: false}
+      properties:
+        text: "\"Progress should not be prohibited by advocates for what works.\"\n\nLeading technology corporation in data processing, which nowadays is primarily managing and transferring human consciousness. "
+        visible: false
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB HXCMFI,RJJXVO'}
     - name: spacer_2_copy
@@ -153,7 +160,9 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB VNVZOZ,DCZOXA'}
       event_bindings: {click: itf_info_button_click}
     - name: itf_description
-      properties: {text: test, visible: false}
+      properties:
+        text: "\"The flesh is weak without progress\"\n\nIn The Feels Designer Drugs believes that while the mind and body are weak, using chemicals can cause the soul to leak into your being, making you truly whole. They are revolutionary scientists and the leading producer of the Primaries, the drugs referred to as Red, Green, and Blue. "
+        visible: false
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB YDMWPK,LHMFBG'}
     - name: spacer_4
@@ -170,7 +179,9 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB OSCTER,UTDAMX'}
       event_bindings: {click: fr_info_button_click}
     - name: fr_description
-      properties: {text: test, visible: false}
+      properties:
+        text: "\"Why stop at life? We seek to transcend what we were once inspired by, straight into godhood.\"\n\nFor Reals Nature Synthetics are the leading technology in natural synthetics, creating everything that once existed and no longer does, from trees to cheetahs. "
+        visible: false
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB VRXTXQ,VXZNUK'}
     - name: spacer_5
@@ -187,7 +198,9 @@ components:
       layout_properties: {grid_position: 'BCKHLO,FECKVB NPXMZH,BNORQE'}
       event_bindings: {click: trax_info_button_click}
     - name: trax_description
-      properties: {text: test, visible: false}
+      properties:
+        text: "\"Dirt go brr\"\n\nTrax and her newer company Trax's Terraforming specializes in creating landforms en masse, readying land for moss dunes and water containment, allowing us to begin a new era of earth colonization. "
+        visible: false
       type: Label
       layout_properties: {grid_position: 'BCKHLO,FECKVB QTWTOH,HUKDCP'}
   event_bindings: {show: content_panel_show}

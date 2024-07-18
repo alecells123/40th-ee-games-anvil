@@ -105,3 +105,7 @@ class StartPage(StartPageTemplate):
       self.trax_description.visible = True
       self.trax_info_button.text = "close"
 
+  def refresh_plot_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.displayAffiliatePlot()
+

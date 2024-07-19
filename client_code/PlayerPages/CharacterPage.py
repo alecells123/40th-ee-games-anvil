@@ -11,8 +11,18 @@ class CharacterPage(CharacterPageTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
+    player_info = anvil.server.call('get_player_info')
+    self.given_name = player_info['given_name']
+    self.middle_name = player_info['middle_name']
+    self.family_name = player_info['family_name']
+    self.picture = player_info['picture']
+    self.affiliate = player_info['affiliate']
+    self.character = player_info['character']
+    print(self.character['name'])
+
     # Any code you write here will run when the form opens.
-    #self.column_panel_1.col_spacing = None
+    self.item['welcome_label'].text = "Welcome!"
+    #self.item['welcome_label'].text = str("Welcome, "+self.given_name+" "+self.middle_name+" "+self.family_name+"!")
 
   def collapse_button_click(self, **event_args):
     """This method is called when the button is clicked"""

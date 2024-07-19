@@ -40,11 +40,11 @@ components:
       type: Label
       layout_properties: {grid_position: 'FJPSXQ,QYRLHW'}
     - name: label_6
-      properties: {text: Your First Name *, align: center}
+      properties: {text: Your First Name *, align: left}
       type: Label
       layout_properties: {grid_position: 'PISHHD,XIJXNO'}
     - name: given_name_text_box
-      properties: {text: '', align: center}
+      properties: {text: '', align: left}
       type: TextBox
       layout_properties: {grid_position: 'PISHHD,BWGGCB WPXXIL,FSQZGN'}
     - name: given_blank_message
@@ -53,11 +53,11 @@ components:
       layout_properties: {grid_position: 'PISHHD,BWGGCB ICEEDB,GGVKMI'}
       data_bindings: []
     - name: label_6_copy_copy
-      properties: {text: 'Make up a middle name and keep it secret, keep it safe*', align: center, italic: false, bold: true, underline: false}
+      properties: {text: 'Make up a middle name and keep it secret, keep it safe*', align: left, italic: false, bold: true, underline: false}
       type: Label
       layout_properties: {grid_position: 'ESIYAY,FKMIKS'}
     - name: middle_name_text_box
-      properties: {text: '', align: center}
+      properties: {text: '', align: left}
       type: TextBox
       layout_properties: {grid_position: 'ESIYAY,JWIHIH KUNDDC,KJQCFZ'}
     - name: middle_blank_message
@@ -65,26 +65,32 @@ components:
       type: Label
       layout_properties: {grid_position: 'ESIYAY,JWIHIH CNRKPQ,QPGNIJ'}
     - name: label_6_copy
-      properties: {text: Your Last Name, align: center}
+      properties: {text: Your Last Name, align: left}
       type: Label
       layout_properties: {grid_position: 'LBSOFC,BBSVWU'}
     - name: family_name_text_box
-      properties: {text: '', align: center}
+      properties: {text: '', align: left}
       type: TextBox
       layout_properties: {grid_position: 'LBSOFC,YPFAWX'}
     - name: label_7
-      properties: {text: Upload a selfie!*, align: center}
+      properties: {text: Upload a selfie!*, align: left}
       type: Label
       layout_properties: {grid_position: 'XMUYGH,ZUVIZU'}
     - name: picture_uploader
-      properties: {align: center}
+      properties: {align: center, file_types: image, icon: 'fa:upload', text: upload yee face, icon_align: left}
       type: FileLoader
       layout_properties: {grid_position: 'XMUYGH,HTBXGH ENIZNQ,EOTKIT'}
       event_bindings: {change: picture_uploader_change}
+      data_bindings: []
     - name: picture_blank_message
       properties: {text: just a quick one no need to be fancy, visible: false, background: 'theme:Secondary 700'}
       type: Label
       layout_properties: {grid_position: 'XMUYGH,HTBXGH NRTXPS,COUAPP'}
+    - name: uploaded_picture_display
+      properties: {visible: false}
+      type: Image
+      layout_properties: {grid_position: 'XMUYGH,HTBXGH LFQTMO,IGQPGZ'}
+      data_bindings: []
     - name: spacer_1
       properties: {height: 20.763671875}
       type: Spacer

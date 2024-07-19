@@ -40,5 +40,11 @@ def get_player_count_data():
 @anvil.server.callable
 def submit(first, middle, family, picture, affiliate): 
   affiliate_row = app_tables.affiliates.get(name=affiliate)
-  app_tables.players.add_row(given_name=first, middle_name=middle, family_name=family, picture=picture, affiliate=affiliate_row)
-  print(app_tables.players.get(middle_name=middle))
+  character_row = app_tables.characters.get(q.any_of(affiliate=affiliate_row, has_player=False))
+  character_row['has_player'] = True
+  # Add the data row and add it to the session
+  anvil.server.session["player_info"] = app_tables.players.add_row(given_name=first, middle_name=middle, family_name=family, picture=picture, affiliate=affiliate_row, character=character_row)
+
+@anvil.server.callable
+def get_player_info():
+  return anvil.server.session["player_info"]

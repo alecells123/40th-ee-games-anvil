@@ -37,13 +37,12 @@ class StartPage(StartPageTemplate):
 
   def existing_player_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('CharacterPage')
+    open_form('ReturningPage')
 
   def picture_uploader_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
-    if file.name.endswith(".jpg") or file.name.endswith(".jpeg") or file.name.endswith(".png"):
-      self.pic_uploaded = True
-      self.picture = file
+    self.uploaded_picture_display.source = self.picture_uploader.file
+    self.uploaded_picture_display.visible = True
 
   def new_player_continue_button_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -61,7 +60,7 @@ class StartPage(StartPageTemplate):
       self.middle_blank_message.visible = False
       self.continue_flow = True
 
-    if self.picture is None:
+    if self.picture_uploader.file is None:
       self.picture_blank_message.visible = True
       self.continue_flow = False
     else: 
@@ -137,20 +136,23 @@ class StartPage(StartPageTemplate):
 
   def submit_affiliate_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    given_name = str(self.given_name_text_box)
-    middle_name = str(self.middle_name_text_box)
-    family_name = str(self.family_name_text_box)
-    picture = self.picture
-
+    given_name = str(self.given_name_text_box.text)
+    middle_name = str(self.middle_name_text_box.text)
+    family_name = str(self.family_name_text_box.text)
+    picture = self.picture_uploader.file
+    
+    affiliate = ""
     if self.ee_radio.selected:
-      affilliate = "Experience Everything Body Rentals"
+      affiliate = "Experience Everything Body Rentals"
     elif self.alpha_radio.selected:
-      affilliate = "Alpha Computing and Data"
+      affiliate = "Alpha Computing and Data"
     elif self.itf_radio.selected:
-      affilliate = "In The Feels Designer Drugs"
+      affiliate = "In The Feels Designer Drugs"
     elif self.fr_radio.selected:
-      affilliate = "For Reals Nature Synthetics"
+      affiliate = "For Reals Nature Synthetics"
     elif self.trax_radio.selected:
-      affilliate = "Trax's Terraforming"
+      affiliate = "Trax's Terraforming"
+    
+    anvil.server.call('submit', given_name, middle_name, family_name, picture, affiliate)
 
-    anvil.server.call('submit', given_name, middle_name, family_name, picture, affilliate)
+    open_form('PlayerPages.CharacterPage')

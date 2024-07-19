@@ -26,6 +26,7 @@ class StartPage(StartPageTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.picture = Media()
+    self.continue_flow = True
 
   def clear_inputs(self):
     pass
@@ -48,23 +49,36 @@ class StartPage(StartPageTemplate):
     """This method is called when the button is clicked"""
     if self.given_name_text_box.text == "":
       self.given_blank_message.visible = True
+      self.continue_flow = False
     else: 
       self.given_blank_message.visible = False
+      self.continue_flow = True
 
     if self.middle_name_text_box.text == "":
       self.middle_blank_message.visible = True
+      self.continue_flow = False
     else: 
       self.middle_blank_message.visible = False
-    
-    self.new_player_card.visible = False
-    self.character_card.visible = True
-    self.displayAffiliatePlot()
+      self.continue_flow = True
+
+    if self.picture is None:
+      self.picture_blank_message.visible = True
+      self.continue_flow = False
+    else: 
+      self.picture_blank_message.visible = False
+      self.continue_flow = True
+
+    if self.continue_flow:
+      self.new_player_card.visible = False
+      self.character_card.visible = True
+      self.displayAffiliatePlot()
 
   def displayAffiliatePlot(self):
+    args = anvil.server.call(('get_player_count_data'))
     self.current_team_spread_plot.data = go.Bar(
-      x = anvil.server.call('get_player_count_data')[0],
-      y = anvil.server.call('get_player_count_data')[1],
-      name = anvil.server.call('get_player_count_data')[2]
+      x = args[0],
+      y = args[1],
+      name = args[2]
     )
   
   def back_new_player_button_click(self, **event_args):

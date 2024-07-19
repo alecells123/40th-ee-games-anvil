@@ -48,9 +48,10 @@ components:
       type: TextBox
       layout_properties: {grid_position: 'PISHHD,BWGGCB WPXXIL,FSQZGN'}
     - name: given_blank_message
-      properties: {text: need this ^, visible: false}
+      properties: {text: need this ^, visible: false, role: null, background: 'theme:Secondary 700'}
       type: Label
       layout_properties: {grid_position: 'PISHHD,BWGGCB ICEEDB,GGVKMI'}
+      data_bindings: []
     - name: label_6_copy_copy
       properties: {text: 'Make up a middle name and keep it secret, keep it safe*', align: center, italic: false, bold: true, underline: false}
       type: Label
@@ -60,7 +61,7 @@ components:
       type: TextBox
       layout_properties: {grid_position: 'ESIYAY,JWIHIH KUNDDC,KJQCFZ'}
     - name: middle_blank_message
-      properties: {text: yeah actually need this one too, visible: false}
+      properties: {text: yeah actually need this one too, visible: false, background: 'theme:Secondary 700'}
       type: Label
       layout_properties: {grid_position: 'ESIYAY,JWIHIH CNRKPQ,QPGNIJ'}
     - name: label_6_copy
@@ -81,7 +82,7 @@ components:
       layout_properties: {grid_position: 'XMUYGH,HTBXGH ENIZNQ,EOTKIT'}
       event_bindings: {change: picture_uploader_change}
     - name: picture_blank_message
-      properties: {text: just a quick one no need to be fancy, visible: false}
+      properties: {text: just a quick one no need to be fancy, visible: false, background: 'theme:Secondary 700'}
       type: Label
       layout_properties: {grid_position: 'XMUYGH,HTBXGH NRTXPS,COUAPP'}
     - name: spacer_1

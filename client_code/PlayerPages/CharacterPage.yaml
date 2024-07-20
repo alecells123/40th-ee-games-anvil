@@ -53,7 +53,7 @@ components:
   layout_properties: {slot: nav-right}
   components: []
 - name: label_1
-  properties: {text: 40th EE Games}
+  properties: {text: 40th EE Games, role: headline}
   type: Label
   layout_properties: {slot: title}
 - name: column_panel_1
@@ -63,7 +63,7 @@ components:
   components:
   - name: character_tab
     properties:
-      text: Character
+      text: my Character
       role: [raised, tab-button]
       align: full
       icon: fa:male
@@ -77,7 +77,32 @@ components:
       align: full
       icon: fa:calendar-check-o
     type: Button
-    layout_properties: {grid_position: 'ZEYAGD,YVSAHM'}
+    layout_properties: {grid_position: 'VKJVSX,PHQZPA'}
+  - name: corporations_tab
+    properties:
+      text: corporations
+      role: [tab-button, raised]
+      align: full
+      icon: fa:building
+      bold: false
+    type: Button
+    layout_properties: {grid_position: 'HUYYYJ,LOUVFJ'}
+  - name: players_tab
+    properties:
+      text: players
+      role: [tab-button, raised]
+      align: full
+      icon: fa:address-card
+    type: Button
+    layout_properties: {grid_position: 'JEOXGF,CUCAOX'}
+  - name: contestants_tab
+    properties:
+      text: contestants
+      role: [tab-button, raised]
+      align: full
+      icon: fa:arrows-alt
+    type: Button
+    layout_properties: {grid_position: 'DAYVMJ,IPWQUX'}
   - name: sponsor_menu_tab
     properties:
       text: sponsor menu
@@ -85,5 +110,5 @@ components:
       align: full
       icon: fa:gift
     type: Button
-    layout_properties: {grid_position: 'OSKXEH,YKNNKK'}
+    layout_properties: {grid_position: 'ARAJWE,ADPMRC'}
 custom_component: true

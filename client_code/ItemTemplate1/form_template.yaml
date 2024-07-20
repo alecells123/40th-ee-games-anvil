@@ -1,0 +1,5 @@
+is_package: true
+container:
+  type: ColumnPanel
+  properties: {visible: true}
+components: []

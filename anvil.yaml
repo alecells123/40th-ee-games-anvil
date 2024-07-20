@@ -25,6 +25,10 @@ db_schema:
       admin_ui: {order: 4.5, width: 215}
       type: link_single
       target: affiliates
+    - name: agendas
+      admin_ui: {width: 200, order: 5.5}
+      type: link_multiple
+      target: agendas
     title: Players
   characters:
     client: none
@@ -229,10 +233,10 @@ runtime_options:
   server_spec: {base: python310-standard}
   legacy_features: {class_names: true, bootstrap3: true, __dict__: true, root_container: true}
 dependencies: []
-metadata: {title: 40th EE Games}
+metadata: {title: 40th EE Games, logo_img: 'asset:Photo July 18 Portrait (1).jpg'}
 services:
 - source: /runtime/services/tables.yml
-  client_config: {}
+  client_config: {enable_v2: true}
   server_config: {}
 native_deps: null
 startup: {type: form, module: PlayerPages.StartPage}

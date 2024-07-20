@@ -48,3 +48,9 @@ def submit(first, middle, family, picture, affiliate):
 @anvil.server.callable
 def get_player_info():
   return anvil.server.session["player_info"]
+
+@anvil.server.callable
+def get_agendas():
+  player_info = get_player_info()
+  
+  return 

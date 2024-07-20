@@ -180,11 +180,20 @@ db_schema:
       admin_ui: {order: 24.5, width: 80}
       type: number
     title: Contestants
-  table_6:
+  files:
     client: none
     server: full
-    columns: []
-    title: Table 6
+    columns:
+    - name: path
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: file
+      admin_ui: {order: 1, width: 200}
+      type: media
+    - name: file_version
+      admin_ui: {order: 2, width: 200}
+      type: string
+    title: Files
 exported_table_schema:
 - python_name: feedback
   client: none

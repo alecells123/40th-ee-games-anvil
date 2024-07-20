@@ -12,3 +12,6 @@ class AgendaRepeat(AgendaRepeatTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    self.agendas = anvil.server.call('get_agendas')
+    for everyAgenda in self.agendas:
+      pass

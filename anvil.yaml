@@ -49,10 +49,10 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: agenda_name
+    - name: name
       admin_ui: {order: 0, width: 200}
       type: string
-    - name: flavor_text
+    - name: flavor
       admin_ui: {order: 1, width: 392}
       type: string
     - name: description
@@ -61,7 +61,7 @@ db_schema:
     - name: reward
       admin_ui: {width: 200, order: 3}
       type: string
-    - name: active_players
+    - name: players
       admin_ui: {order: 4, width: 200}
       type: link_multiple
       target: players

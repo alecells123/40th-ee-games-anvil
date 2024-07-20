@@ -53,7 +53,7 @@ components:
   layout_properties: {slot: nav-right}
   components: []
 - name: label_1
-  properties: {text: 40th EE Games, role: headline}
+  properties: {text: '40th EE Games: My Character', role: headline, underline: true}
   type: Label
   layout_properties: {slot: title}
 - name: column_panel_1

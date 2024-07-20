@@ -17,6 +17,7 @@ import anvil.server
 #   return 42
 #
 
+
 @anvil.server.callable
 def get_player_count_data():
   # Get player counts for every table
@@ -40,8 +41,15 @@ def get_player_count_data():
 @anvil.server.callable
 def submit(first, middle, family, picture, affiliate): 
   affiliate_row = app_tables.affiliates.get(name=affiliate)
-  character_row = app_tables.characters.get(q.any_of(affiliate=affiliate_row, has_player=False))
+  character_results = app_tables.characters.search(q.all_of(affiliate=affiliate_row, has_player=False))
+  character_row = character_results[0]
   character_row['has_player'] = True
+
+  # Strip all the things
+  first = first.strip(" ,./!@#$%^&*()-_=+{}[];")
+  middle = middle.strip(" ,./!@#$%^&*()-_=+{}[];")
+  family = family.strip(" ,./!@#$%^&*()-_=+{}[];")
+  
   # Add the data row and add it to the session
   anvil.server.session["player_info"] = app_tables.players.add_row(given_name=first, middle_name=middle, family_name=family, picture=picture, affiliate=affiliate_row, character=character_row)
 
@@ -52,5 +60,17 @@ def get_player_info():
 @anvil.server.callable
 def get_agendas():
   player_info = get_player_info()
-  
-  return 
+  return
+
+@anvil.server.callable
+def get_players():
+  return app_tables.players.search()
+
+@anvil.server.callable
+def attempt_login(first, middle, last):
+  player_row = app_tables.players.get(q.all_of(given_name=first, middle_name=middle, family_name=last))
+  if player_row is not None:
+    anvil.server.session['player_info'] = player_row
+    return True
+  else:
+    return False

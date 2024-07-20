@@ -10,3 +10,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: headline_1
+  properties: {role: headline, text: '40th EE Games: Contestants'}
+  type: Label
+  layout_properties: {slot: title}

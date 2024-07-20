@@ -6,7 +6,17 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: players_repeating_panel
+    properties: {item_template: PlayerRepeat}
+    type: RepeatingPanel
+    layout_properties: {grid_position: 'NOKYOJ,OXSMCH'}
+    data_bindings: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: headline_1
+  properties: {role: headline, text: '40th EE Games: Players'}
+  type: Label
+  layout_properties: {slot: title}

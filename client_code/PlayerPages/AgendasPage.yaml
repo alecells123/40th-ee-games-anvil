@@ -31,7 +31,7 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
 - name: label_1
-  properties: {text: 40th EE Games, role: headline}
+  properties: {text: '40th EE Games: My Agendas', role: headline}
   type: Label
   layout_properties: {slot: title}
 - name: column_panel_1

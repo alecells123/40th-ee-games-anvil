@@ -37,7 +37,7 @@ class StartPage(StartPageTemplate):
 
   def existing_player_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('ReturningPage')
+    open_form('PlayerPages.ReturningPage')
 
   def picture_uploader_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""

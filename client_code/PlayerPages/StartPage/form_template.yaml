@@ -46,7 +46,7 @@ components:
     - name: given_name_text_box
       properties: {text: '', align: left}
       type: TextBox
-      layout_properties: {grid_position: 'PISHHD,BWGGCB WPXXIL,FSQZGN'}
+      layout_properties: {grid_position: 'PISHHD,BWGGCB QMATRF,RGKDWU'}
     - name: given_blank_message
       properties: {text: need this ^, visible: false, role: null, background: 'theme:Secondary 700'}
       type: Label
@@ -230,7 +230,7 @@ components:
       event_bindings: {click: submit_affiliate_button_click}
   event_bindings: {show: content_panel_show}
 - name: title_lbl
-  properties: {text: 40th EE Games, visible: true, align: left, bold: true, role: headline}
+  properties: {text: '40th EE Games: Create Character', visible: true, align: left, bold: true, role: headline}
   type: Label
   layout_properties: {slot: title}
 - name: flow_panel_1

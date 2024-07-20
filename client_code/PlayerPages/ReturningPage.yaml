@@ -6,11 +6,71 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'RHGQLI,MAYJOO'}
+    components:
+    - name: linear_panel_1
+      properties: {}
+      type: LinearPanel
+      layout_properties: {grid_position: 'WEKIGZ,EXWUSN'}
+      components:
+      - name: label_1
+        properties: {text: 'First name:'}
+        type: Label
+    - name: given_name
+      properties: {}
+      type: TextBox
+      layout_properties: {grid_position: 'WEKIGZ,RNDDPT'}
+    - name: linear_panel_2
+      properties: {}
+      type: LinearPanel
+      layout_properties: {grid_position: 'BBYNRC,CSWLHL'}
+      components:
+      - name: label_2
+        properties: {text: 'Made up middle name:'}
+        type: Label
+    - name: middle_name
+      properties: {text: ''}
+      type: TextBox
+      layout_properties: {grid_position: 'BBYNRC,XJORLQ'}
+    - name: linear_panel_3
+      properties: {}
+      type: LinearPanel
+      layout_properties: {grid_position: 'VLZNQS,LPUUUJ'}
+      components:
+      - name: label_3
+        properties: {text: 'Last name:'}
+        type: Label
+    - name: last_name
+      properties: {border: ''}
+      type: TextBox
+      layout_properties: {grid_position: 'VLZNQS,MVTBCB'}
+    - name: linear_panel_4
+      properties: {}
+      type: LinearPanel
+      layout_properties: {grid_position: 'ELVFIV,JHSTMN'}
+      components:
+      - name: back_button
+        properties: {text: back, role: raised}
+        type: Button
+        event_bindings: {click: back_button_click}
+    - name: join_button
+      properties: {text: Re-join, role: primary-color}
+      type: Button
+      layout_properties: {grid_position: 'ELVFIV,PFQWMD LBTQEK,KDTVAC'}
+      event_bindings: {click: join_button_click}
+    - name: error_message
+      properties: {text: 'Yeah, I''m not finding that, sorry. Ask Alec if there''s any persisting problems.', visible: false, background: 'theme:Secondary 700', align: center}
+      type: Label
+      layout_properties: {grid_position: 'ELVFIV,PFQWMD BEJWKL,KTNDDN'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
 - name: headline_1
-  properties: {role: headline, text: 40th EE Games}
+  properties: {role: headline, text: '40th EE Games: Returning Players'}
   type: Label
   layout_properties: {slot: title}

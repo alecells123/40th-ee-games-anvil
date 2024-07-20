@@ -90,7 +90,7 @@ db_schema:
     server: full
     columns:
     - name: name
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {order: 0, width: 172}
       type: string
     - name: relationships
       admin_ui: {width: 200, order: 1}
@@ -116,9 +116,66 @@ db_schema:
     - name: convince
       admin_ui: {width: 200, order: 8}
       type: number
-    - name: convince_subskills
-      admin_ui: {width: 200, order: 9}
+    - name: engineer
+      admin_ui: {width: 200, order: 10}
+      type: number
+    - name: know
+      admin_ui: {width: 200, order: 11}
+      type: number
+    - name: perceive
+      admin_ui: {width: 200, order: 12}
+      type: number
+    - name: utilize
+      admin_ui: {width: 200, order: 13}
+      type: number
+    - name: brawl
+      admin_ui: {width: 200, order: 14}
+      type: number
+    - name: shoot
+      admin_ui: {width: 200, order: 15}
+      type: number
+    - name: strike
+      admin_ui: {width: 200, order: 16}
+      type: number
+    - name: throw
+      admin_ui: {width: 200, order: 17}
+      type: number
+    - name: primary_drug
+      admin_ui: {width: 200, order: 18}
       type: string
+    - name: ability_1
+      admin_ui: {width: 200, order: 19}
+      type: string
+    - name: ability_2
+      admin_ui: {width: 200, order: 20}
+      type: string
+    - name: max_injuries
+      admin_ui: {width: 200, order: 21}
+      type: number
+    - name: current_injuries
+      admin_ui: {width: 200, order: 22}
+      type: number
+    - name: wellbeing
+      admin_ui: {width: 200, order: 23}
+      type: number
+    - name: sanity
+      admin_ui: {width: 200, order: 24}
+      type: number
+    - name: energy
+      admin_ui: {width: 200, order: 25}
+      type: number
+    - name: initiative
+      admin_ui: {width: 200, order: 26}
+      type: number
+    - name: conditions
+      admin_ui: {width: 200, order: 27}
+      type: string
+    - name: inventory
+      admin_ui: {width: 200, order: 28}
+      type: string
+    - name: ID
+      admin_ui: {order: -1, width: 122}
+      type: number
     title: Contestants
 exported_table_schema:
 - python_name: feedback

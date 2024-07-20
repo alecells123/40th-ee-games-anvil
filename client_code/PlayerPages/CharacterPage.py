@@ -18,12 +18,14 @@ class CharacterPage(CharacterPageTemplate):
     self.picture = player_info['picture']
     self.affiliate = player_info['affiliate']
     self.character = player_info['character']
-    print(self.character['name'])
 
     # Any code you write here will run when the form opens.
-    self.item['welcome_label'].text = "Welcome!"
-    #self.item['welcome_label'].text = str("Welcome, "+self.given_name+" "+self.middle_name+" "+self.family_name+"!")
-
+    self.welcome_label.text = str("Welcome, "+self.given_name+" "+self.middle_name+" "+self.family_name+"!")
+    self.character_name_label.text = str(self.character['name'])
+    self.affiliate_name_label.text = str(self.affiliate['name'])
+    self.profile_pic.source = self.picture
+    
+    
   def collapse_button_click(self, **event_args):
     """This method is called when the button is clicked"""
     if self.character_intro_panel.visible:

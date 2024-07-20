@@ -18,24 +18,32 @@ components:
       layout_properties: {grid_position: 'YXPINV,NALOOZ'}
       components:
       - name: welcome_label
-        properties: {align: center, text: ''}
+        properties: {align: center, text: '', role: headline}
         type: Label
         data_bindings:
         - {property: text, code: 'self.item[''welcome_label'']', writeback: false}
+        layout_properties: {}
       - name: label_2
         properties: {text: 'You are playing as:', align: center}
         type: Label
       - name: character_name_label
-        properties: {role: headline, align: center}
+        properties: {role: subheading, align: center}
         type: Label
+        layout_properties: {}
       - name: label_3
-        properties: {align: center, text: 'You are affiliated with:'}
+        properties: {align: center, text: 'You represent the corporation:'}
         type: Label
+        layout_properties: {}
       - name: affiliate_name_label
-        properties: {role: headline, align: center}
+        properties: {role: subheading, align: center}
         type: Label
+        layout_properties: {}
+    - name: profile_pic
+      properties: {}
+      type: Image
+      layout_properties: {grid_position: 'YXPINV,VRGIMS'}
     - name: collapse_button
-      properties: {text: collapse, role: raised}
+      properties: {text: collapse, role: raised, visible: false}
       type: Button
       layout_properties: {grid_position: 'JTFMGR,QMYWNZ'}
       event_bindings: {click: collapse_button_click}
@@ -56,7 +64,7 @@ components:
   - name: character_tab
     properties:
       text: Character
-      role: [tab-button, raised]
+      role: [raised, tab-button]
       align: full
       icon: fa:male
       icon_align: left
@@ -64,8 +72,8 @@ components:
     layout_properties: {grid_position: 'VMHWTX,PJCZWW'}
   - name: agendas_tab
     properties:
-      text: agendas
-      role: [raised, tab-button]
+      text: my agendas
+      role: [tab-button, raised]
       align: full
       icon: fa:calendar-check-o
     type: Button

@@ -93,70 +93,67 @@ db_schema:
       admin_ui: {order: 0, width: 172}
       type: string
     - name: relationships
-      admin_ui: {width: 200, order: 1}
+      admin_ui: {order: 1, width: 165}
       type: string
     - name: behaviours
-      admin_ui: {width: 200, order: 2}
+      admin_ui: {order: 2, width: 161}
       type: string
     - name: goals
-      admin_ui: {width: 200, order: 3}
+      admin_ui: {order: 3, width: 169}
       type: string
     - name: strength
-      admin_ui: {width: 200, order: 4}
+      admin_ui: {order: 4, width: 71}
       type: number
     - name: coordination
-      admin_ui: {width: 200, order: 5}
+      admin_ui: {order: 5, width: 99}
       type: number
     - name: intellect
-      admin_ui: {width: 200, order: 6}
+      admin_ui: {order: 6, width: 71}
       type: number
     - name: social
-      admin_ui: {width: 200, order: 7}
+      admin_ui: {order: 7, width: 56}
       type: number
     - name: convince
-      admin_ui: {width: 200, order: 8}
+      admin_ui: {order: 8, width: 74}
       type: number
     - name: engineer
-      admin_ui: {width: 200, order: 10}
+      admin_ui: {order: 10, width: 75}
       type: number
     - name: know
-      admin_ui: {width: 200, order: 11}
+      admin_ui: {order: 11, width: 59}
       type: number
     - name: perceive
-      admin_ui: {width: 200, order: 12}
+      admin_ui: {order: 12, width: 78}
       type: number
     - name: utilize
-      admin_ui: {width: 200, order: 13}
+      admin_ui: {order: 13, width: 61}
       type: number
     - name: brawl
-      admin_ui: {width: 200, order: 14}
+      admin_ui: {order: 14, width: 60}
       type: number
     - name: shoot
-      admin_ui: {width: 200, order: 15}
+      admin_ui: {order: 15, width: 58}
       type: number
     - name: strike
-      admin_ui: {width: 200, order: 16}
+      admin_ui: {order: 16, width: 58}
       type: number
     - name: throw
-      admin_ui: {width: 200, order: 17}
+      admin_ui: {order: 17, width: 59}
       type: number
     - name: primary_drug
-      admin_ui: {width: 200, order: 18}
+      admin_ui: {order: 18, width: 120}
       type: string
-    - name: ability_1
-      admin_ui: {width: 200, order: 19}
-      type: string
-    - name: ability_2
-      admin_ui: {width: 200, order: 20}
+    - name: ability
+      admin_ui: {order: 19, width: 205}
       type: string
     - name: max_injuries
       admin_ui: {width: 200, order: 21}
       type: number
     - name: current_injuries
-      admin_ui: {width: 200, order: 22}
+      admin_ui: {order: 22, width: 131}
       type: number
     - name: wellbeing
-      admin_ui: {width: 200, order: 23}
+      admin_ui: {order: 23, width: 87}
       type: number
     - name: sanity
       admin_ui: {width: 200, order: 24}
@@ -168,13 +165,19 @@ db_schema:
       admin_ui: {width: 200, order: 26}
       type: number
     - name: conditions
-      admin_ui: {width: 200, order: 27}
+      admin_ui: {order: 27, width: 170}
       type: string
     - name: inventory
       admin_ui: {width: 200, order: 28}
       type: string
     - name: ID
       admin_ui: {order: -1, width: 122}
+      type: number
+    - name: subskills
+      admin_ui: {order: 13.5, width: 200}
+      type: string
+    - name: defense
+      admin_ui: {order: 24.5, width: 80}
       type: number
     title: Contestants
 exported_table_schema:

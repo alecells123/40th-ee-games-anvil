@@ -56,3 +56,11 @@ components:
     type: Button
     layout_properties: {grid_position: 'UFRQFT,UWXMTW'}
 is_package: true
+custom_component: true
+properties:
+- name: tab
+  type: enum
+  important: true
+  default_binding_prop: true
+  options: [CHARACTER, AGENDAS, CORPOS, PLAYERS, CONESTANTS, MENU]
+  default_value: CHARACTER

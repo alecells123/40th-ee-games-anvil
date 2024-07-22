@@ -1,12 +1,6 @@
-properties:
-- name: curr_page
-  type: enum
-  important: true
-  default_binding_prop: true
-  options: [CHARACTER, AGENDAS, CORPOS, PLAYERS, CONTESTANTS, MENU]
-  default_value: CHARACTER
+properties: []
 slots: {}
-custom_component: true
+custom_component: false
 components:
 - type: ColumnPanel
   properties: {}
@@ -17,7 +11,7 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-- name: nav_menu_1
+- name: nav_menu
   properties: {}
   type: form:_components.NavMenu
   layout_properties: {slot: left-nav}

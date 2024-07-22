@@ -14,6 +14,7 @@ class NavMenu(NavMenuTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    print(properties)
     self.character_tab.tag.form_to_open = Character()
 
   def character_tab_click(self, **event_args):

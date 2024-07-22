@@ -12,7 +12,7 @@ class MainPage(MainPageTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run when the form opens.
-    print(properties)
+    
     self.player_info = anvil.server.call('get_player_info')
 
     #if (properties['curr_page'] == 'CHARACTER'):

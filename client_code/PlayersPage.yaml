@@ -20,3 +20,17 @@ components:
   properties: {role: headline, text: '40th EE Games: Players'}
   type: Label
   layout_properties: {slot: title}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: character_tab
+    properties:
+      text: my Character
+      role: [raised, tab-button]
+      align: full
+      icon: fa:male
+      icon_align: left
+    type: Button
+    layout_properties: {grid_position: 'TLALQE,ZJBJVO'}

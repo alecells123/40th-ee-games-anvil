@@ -1,0 +1,32 @@
+properties:
+- name: curr_page
+  type: enum
+  important: true
+  default_binding_prop: true
+  options: [CHARACTER, AGENDAS, CORPOS, PLAYERS, CONTESTANTS, MENU]
+  default_value: CHARACTER
+slots: {}
+custom_component: true
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  components: []
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- name: nav_menu_1
+  properties: {}
+  type: form:_components.NavMenu
+  layout_properties: {slot: left-nav}
+- name: headline_1
+  properties: {role: headline, text: 40th EE Games}
+  type: Label
+  layout_properties: {slot: title}
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+layout_metadata: {title: Main Page Layout}
+custom_component_container: false

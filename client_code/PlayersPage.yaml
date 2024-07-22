@@ -8,7 +8,7 @@ components:
   layout_properties: {slot: default}
   components:
   - name: players_repeating_panel
-    properties: {item_template: PlayerRepeat}
+    properties: {item_template: _components.PlayerRepeat}
     type: RepeatingPanel
     layout_properties: {grid_position: 'NOKYOJ,OXSMCH'}
     data_bindings: []
@@ -33,4 +33,44 @@ components:
       icon: fa:male
       icon_align: left
     type: Button
-    layout_properties: {grid_position: 'TLALQE,ZJBJVO'}
+    layout_properties: {grid_position: 'OPNGXH,XSUQIZ'}
+  - name: agendas_tab
+    properties:
+      text: my agendas
+      role: [tab-button, raised]
+      align: full
+      icon: fa:calendar-check-o
+    type: Button
+    layout_properties: {grid_position: 'RPFCVI,ROPLZR'}
+  - name: corporations_tab
+    properties:
+      text: corporations
+      role: [tab-button, raised]
+      align: full
+      icon: fa:building
+    type: Button
+    layout_properties: {grid_position: 'SURZQM,FKUEJG'}
+  - name: players_tab
+    properties:
+      text: players
+      role: [tab-button, raised]
+      align: full
+      icon: fa:address-card
+    type: Button
+    layout_properties: {grid_position: 'XXPYRG,CCRNWV'}
+  - name: contestants_tab
+    properties:
+      text: contestants
+      role: [tab-button, raised]
+      align: full
+      icon: fa:arrows-alt
+    type: Button
+    layout_properties: {grid_position: 'QLUVWE,ICYUTQ'}
+  - name: sponsor_menu_tab
+    properties:
+      text: sponsor menu
+      role: [tab-button, raised]
+      align: full
+      icon: fa:gift
+    type: Button
+    layout_properties: {grid_position: 'UFRQFT,UWXMTW'}

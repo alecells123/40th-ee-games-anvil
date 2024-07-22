@@ -239,5 +239,5 @@ services:
   client_config: {enable_v2: true}
   server_config: {}
 native_deps: null
-startup: {type: form, module: PlayerPages.StartPage}
+startup: {type: form, module: StartPage}
 scheduled_tasks: []

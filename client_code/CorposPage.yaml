@@ -6,32 +6,12 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
-  components:
-  - name: card_1
-    properties: {role: card}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'RBBVPF,RSJSTQ'}
-    components:
-    - name: agendas_label
-      properties: {text: 'Agendas:', role: headline}
-      type: Label
-      layout_properties: {grid_position: 'MMJSDQ,YWGKWF'}
-    - name: label_2
-      properties:
-        text: "Below are your agendas. They are automatically added to your phone and are an absolute SECRET outside of others in your affiliated corporation. There might even be agendas that are secret from them, but those will specify in the description.\n\nAgendas are how we tell the story and how you interact with the game so we recommend you try your best to accomplish them! You will get more throughout the night. Have fun! \n"
-      type: Label
-      layout_properties: {grid_position: 'MCVCRI,TSINUI'}
-  - name: repeating_panel_1
-    properties: {item_template: PlayerPages.AgendaRepeat}
-    type: RepeatingPanel
-    layout_properties: {grid_position: 'NFIWHU,UXJRID'}
-    data_bindings: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-- name: label_1
-  properties: {text: '40th EE Games: My Agendas', role: headline}
+- name: headline_1
+  properties: {role: headline, text: '40th EE Games: Corporations and Affiliations'}
   type: Label
   layout_properties: {slot: title}
 - name: column_panel_1

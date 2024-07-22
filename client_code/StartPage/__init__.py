@@ -37,7 +37,7 @@ class StartPage(StartPageTemplate):
 
   def existing_player_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('PlayerPages.ReturningPage')
+    open_form('ReturningPage')
 
   def picture_uploader_change(self, file, **event_args):
     """This method is called when a new file is loaded into this FileLoader"""
@@ -155,4 +155,4 @@ class StartPage(StartPageTemplate):
     
     anvil.server.call('submit', given_name, middle_name, family_name, picture, affiliate)
 
-    open_form('PlayerPages.CharacterPage')
+    open_form('CharacterPage')

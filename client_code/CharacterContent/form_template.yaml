@@ -1,0 +1,15 @@
+container: {type: ColumnPanel}
+components:
+- name: character_headline_label
+  properties: {role: headline}
+  type: Label
+  layout_properties: {grid_position: 'QVMMBD,IAGSVP'}
+- name: label_1
+  properties: {text: 'You are playing as:'}
+  type: Label
+  layout_properties: {grid_position: 'IBCYMG,NUNEBU'}
+- name: character_name_label
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'IBCYMG,PUGGJL'}
+is_package: true

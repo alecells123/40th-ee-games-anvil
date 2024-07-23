@@ -12,4 +12,6 @@ class CharacterContent(CharacterContentTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    
+    self.player_info = anvil.server.call('get_player_info')
+    self.character_headline_label.text = "Welcome, "+self.player_info['family_name']+"!"
+    self.character_name_label = self.player_info['character']['name']

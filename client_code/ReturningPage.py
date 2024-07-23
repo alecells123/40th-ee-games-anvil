@@ -20,7 +20,7 @@ class ReturningPage(ReturningPageTemplate):
     middle = self.middle_name.text
     last = self.last_name.text
     if anvil.server.call('attempt_login', first, middle, last):
-      open_form(('MainPage'))
+      open_form(('CharacterPage'))
     else: 
       self.error_message.visible = True
       

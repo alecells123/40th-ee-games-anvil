@@ -1,0 +1,24 @@
+is_package: true
+container: {type: ColumnPanel}
+components:
+- name: card_1
+  properties: {role: card}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'BYWJLO,CLJOLP'}
+  components:
+  - name: player_name_label
+    properties: {role: headline}
+    type: Label
+    layout_properties: {grid_position: 'DJEKKA,UMHDMB WADZQW,DVCDTE'}
+  - name: label_1
+    properties: {text: 'is playing:'}
+    type: Label
+    layout_properties: {grid_position: 'DJEKKA,UMHDMB WVXUCY,DYROIT'}
+  - name: character_name_label
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'DJEKKA,UMHDMB TYFUCH,FJBQJO'}
+  - name: profile_picture
+    properties: {}
+    type: Image
+    layout_properties: {grid_position: 'DJEKKA,PHDKHW'}

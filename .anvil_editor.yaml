@@ -13,6 +13,7 @@ unique_ids:
   modules: {}
   server_modules:
     ContestantManager: '1721419926195546063336681.9547'
+    CorporationManager: '1721768020093855485467846.411'
     PlayerManager: '1721236766013862777065487.689'
     SponsorMenuManager: '1721419932513193855779388.0782'
   assets:

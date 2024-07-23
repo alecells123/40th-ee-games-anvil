@@ -12,3 +12,7 @@ class PlayersRepeatable(PlayersRepeatableTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    self.player_name_label.text = self.item['given_name'] + " " + self.item['family_name']
+    self.character_name_label2.text = self.item['character']['name']
+    self.corpo_label.text = self.item['character']['affiliate']['name']
+    self.profile_picture.source = self.item['picture']

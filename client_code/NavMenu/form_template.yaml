@@ -32,6 +32,7 @@ components:
       icon: fa:calendar-check-o
     type: Button
     layout_properties: {grid_position: 'RPFCVI,ROPLZR'}
+    event_bindings: {click: agendas_tab_click}
   - name: corporations_tab
     properties:
       text: corporations
@@ -40,6 +41,7 @@ components:
       icon: fa:building
     type: Button
     layout_properties: {grid_position: 'SURZQM,FKUEJG'}
+    event_bindings: {click: corporations_tab_click}
   - name: players_tab
     properties:
       text: players
@@ -57,6 +59,7 @@ components:
       icon: fa:arrows-alt
     type: Button
     layout_properties: {grid_position: 'QLUVWE,ICYUTQ'}
+    event_bindings: {click: contestants_tab_click}
   - name: sponsor_menu_tab
     properties:
       text: sponsor menu
@@ -65,4 +68,5 @@ components:
       icon: fa:gift
     type: Button
     layout_properties: {grid_position: 'UFRQFT,UWXMTW'}
+    event_bindings: {click: sponsor_menu_tab_click}
 container: {type: ColumnPanel}

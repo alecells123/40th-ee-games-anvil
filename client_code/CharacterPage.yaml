@@ -22,11 +22,11 @@ components:
         type: Label
         layout_properties: {grid_position: 'JBQBIP,FFPUFW'}
       - name: label_1
-        properties: {text: 'You are playing as:', align: right}
+        properties: {text: 'You are playing as:', align: left}
         type: Label
         layout_properties: {grid_position: 'GUWKGQ,BCCAOT'}
-      - name: character_name_label
-        properties: {}
+      - name: character_name_label1
+        properties: {align: left, bold: true}
         type: Label
         layout_properties: {grid_position: 'GUWKGQ,LPBNDK'}
 - type: FlowPanel

@@ -14,3 +14,227 @@ components:
   properties: {}
   type: form:NavMenu
   layout_properties: {slot: left-nav}
+- name: linear_panel_1
+  properties: {}
+  type: LinearPanel
+  layout_properties: {slot: top-left-btn}
+- name: linear_panel_2
+  properties: {}
+  type: LinearPanel
+  layout_properties: {slot: default}
+  components:
+  - name: grid_panel_1
+    properties: {visible: true}
+    type: GridPanel
+    components:
+    - name: button_1
+      properties: {text: '1', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 0}
+    - name: button_1_copy_24
+      properties: {text: '2', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 0}
+    - name: button_1_copy_23
+      properties: {text: '3', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 2}
+    - name: button_1_copy_22
+      properties: {text: '4', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 3}
+    - name: button_1_copy_21
+      properties: {text: '5', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 4}
+    - name: button_1_copy_20
+      properties: {text: '6', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 5}
+    - name: button_1_copy_19
+      properties: {text: '7', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 6}
+    - name: button_1_copy_18
+      properties: {text: '8', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 7}
+    - name: button_1_copy_17
+      properties: {text: '9', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 8}
+    - name: button_1_copy_16
+      properties: {text: '10', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 9}
+    - name: button_1_copy_15
+      properties: {text: '11', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 10}
+    - name: button_1_copy_14
+      properties: {text: '12', role: secondary-color}
+      type: Button
+      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 11}
+    - name: button_1_copy_13
+      properties: {text: '13', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 0}
+    - name: button_1_copy_12
+      properties: {text: '14', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 1}
+    - name: button_1_copy_11
+      properties: {text: '15', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 2}
+    - name: button_1_copy_10
+      properties: {text: '16', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 3}
+    - name: button_1_copy_9
+      properties: {text: '17', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 4}
+    - name: button_1_copy_8
+      properties: {text: '18', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 5}
+    - name: button_1_copy_7
+      properties: {text: '19', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 6}
+    - name: button_1_copy_6
+      properties: {text: '20', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 7}
+    - name: button_1_copy_5
+      properties: {text: '21', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 8}
+    - name: button_1_copy_4
+      properties: {text: '22', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 9}
+    - name: button_1_copy_3
+      properties: {text: '23', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 10}
+    - name: button_1_copy_2
+      properties: {text: '24', role: secondary-color}
+      type: Button
+      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 11}
+    layout_properties: {}
+  - name: spacer_1
+    properties: {height: 11.15521240234375}
+    type: Spacer
+    layout_properties: {}
+  - name: linear_panel_4
+    properties: {}
+    type: LinearPanel
+    components:
+    - name: character_bio_card
+      properties: {role: card}
+      type: ColumnPanel
+      components:
+      - name: contestant_name_label1
+        properties: {role: headline}
+        type: Label
+        layout_properties: {grid_position: 'XHVYBN,SSXKWY'}
+      - name: relationships_label
+        properties: {}
+        type: Label
+        layout_properties: {grid_position: 'LPGBDG,BUPOJH'}
+      - name: image_1
+        properties: {}
+        type: Image
+        layout_properties: {grid_position: 'AMEDPR,PKEAIC'}
+    - name: spacer_2
+      properties: {height: 13.48553466796875}
+      type: Spacer
+      layout_properties: {}
+    - name: attributes_card_label
+      properties: {role: card}
+      type: ColumnPanel
+      components:
+      - name: headline_2
+        properties: {role: headline, text: 'Attributes:'}
+        type: Label
+        layout_properties: {grid_position: 'JJCRSG,SPBNRK'}
+      - name: label_1
+        properties: {text: 'Every entity within these games will have attributes and skills. The higher they are the more of that attribute you have. These are often compared against other''s values to see who would win in various points of direct conflict where these attributes matter. They also determine many other important stats later on. '}
+        type: Label
+        layout_properties: {grid_position: 'OPFIRY,LTGHRW'}
+      - name: plot_1
+        properties: {}
+        type: Plot
+        layout_properties: {grid_position: 'AMZXKW,PWGRAT'}
+    - name: spacer_3
+      properties: {height: 16.249267578125}
+      type: Spacer
+      layout_properties: {}
+    - name: card_1
+      properties: {role: card}
+      type: ColumnPanel
+      components:
+      - name: headline_2_copy
+        properties: {role: headline, text: 'Basic Skills:'}
+        type: Label
+        layout_properties: {grid_position: 'XUYRJN,JGKMVH'}
+      - name: label_1_copy
+        properties: {text: 'These are values used in addition to attributes that are compared against others'' accumulated values to determine results of conflicts. Skills are usually more specific but higher values are more commonly found in them. '}
+        type: Label
+        layout_properties: {grid_position: 'EOBHBM,VADXMF'}
+      - name: plot_1_copy
+        properties: {}
+        type: Plot
+        layout_properties: {grid_position: 'PTZSLF,QQYXLK'}
+      - name: headline_2_copy_copy_2
+        properties: {role: headline, text: 'Basic Subskills:'}
+        type: Label
+        layout_properties: {grid_position: 'CXKYTP,DNUZZN'}
+      - name: label_1_copy_copy_2
+        properties: {text: 'These are even more specific skills that are much more specific in usage but higher values are much more common. '}
+        type: Label
+        layout_properties: {grid_position: 'TVPPMP,XKYNOB'}
+    - name: spacer_3_copy
+      properties: {height: 16.249267578125}
+      type: Spacer
+    - name: card_2
+      properties: {role: card}
+      type: ColumnPanel
+      components:
+      - name: headline_2_copy_copy
+        properties: {role: headline, text: 'Combat Skills:'}
+        type: Label
+        layout_properties: {grid_position: 'LMDWPQ,EUDIFX'}
+      - name: label_1_copy_copy
+        properties: {text: 'These function the same as basic skills but they are more committed to preventing other people''s lives than just existing. '}
+        type: Label
+        layout_properties: {grid_position: 'BGHMOJ,RJHZJU'}
+      - name: plot_1_copy_copy
+        properties: {}
+        type: Plot
+        layout_properties: {grid_position: 'XVYUOA,XVOJWY'}
+      - name: headline_2_copy_copy_copy
+        properties: {role: headline, text: 'Combat Subskills:'}
+        type: Label
+        layout_properties: {grid_position: 'JQBYSQ,WWZXFY'}
+      - name: label_1_copy_copy_copy
+        properties: {text: 'Usually these are weapon specializations and other ways for contestants to have a leg up in their training against their opponents. '}
+        type: Label
+        layout_properties: {grid_position: ''}
+  - name: spacer_3_copy_copy
+    properties: {height: 16.249267578125}
+    type: Spacer
+  - name: card_3
+    properties: {role: card}
+    type: ColumnPanel
+    components:
+    - name: label_2
+      properties: {text: 'Primary Drug:'}
+      type: Label
+      layout_properties: {grid_position: 'IUFQRS,GXDYYT'}
+    - name: label_3
+      properties: {}
+      type: Label
+      layout_properties: {grid_position: 'IUFQRS,KKQTMX'}

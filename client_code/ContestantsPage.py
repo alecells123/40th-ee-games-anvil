@@ -1,5 +1,6 @@
 from ._anvil_designer import ContestantsPageTemplate
 from anvil import *
+import plotly.graph_objects as go
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q

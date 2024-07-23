@@ -13,10 +13,24 @@ class NavMenu(NavMenuTemplate):
 
   def character_tab_click(self, **event_args):
     """This method is called when the button is clicked"""
-    if properties['tab'] != 'CHARACTER':
-      open_form('CharacterPage')
+    open_form('CharacterPage')
 
   def players_tab_click(self, **event_args):
     """This method is called when the button is clicked"""
-    if properties['tab'] != 'PLAYERS':
-      open_form('PlayersPage')
+    open_form('PlayersPage')
+
+  def agendas_tab_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('AgendasPage')
+
+  def corporations_tab_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('CorposPage')
+
+  def contestants_tab_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('ContestantsPage')
+
+  def sponsor_menu_tab_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('SponsorMenuPage')

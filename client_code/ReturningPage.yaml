@@ -1,6 +1,6 @@
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+  properties: {html: '@theme:standard-page.html', background: '', foreground: ''}
 components:
 - type: ColumnPanel
   properties: {}
@@ -45,7 +45,7 @@ components:
         properties: {text: 'Last name:'}
         type: Label
     - name: last_name
-      properties: {border: ''}
+      properties: {border: '', role: null}
       type: TextBox
       layout_properties: {grid_position: 'VLZNQS,MVTBCB'}
     - name: linear_panel_4

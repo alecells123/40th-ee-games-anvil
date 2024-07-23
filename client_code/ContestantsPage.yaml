@@ -2,10 +2,6 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -16,5 +12,5 @@ components:
   layout_properties: {slot: title}
 - name: nav_menu_1
   properties: {}
-  type: form:_components.NavMenu
+  type: form:NavMenu
   layout_properties: {slot: left-nav}

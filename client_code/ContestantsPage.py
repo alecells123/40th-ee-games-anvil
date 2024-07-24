@@ -27,10 +27,15 @@ class ContestantsPage(ContestantsPageTemplate):
     self.load_attributes_graph()
 
   def load_attributes_graph(self):
-    self.attributes_plot.data = go.Barpolar()(
-      #name = "Attributes Plot",
+    self.attributes_plot.data = go.Barpolar(
+      name = "Attributes Plot",
       theta = ["Strength", "Coordination", "Intellect", "Social"],
-      r = [1, 2, 3, 4]
+      r = [1, 2, 3, 4],
+      
+      marker_color = ['#FF2222','#22FF22','#2222FF','#FFFF22'],
+      marker_line_color = "#000000",
+      marker_line_width = 1,
+      opacity = 0.8
     )
 
   def load_basic_skills_graph(self):

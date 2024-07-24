@@ -221,18 +221,6 @@ components:
         properties: {}
         type: Plot
         layout_properties: {grid_position: 'XVYUOA,XVOJWY'}
-      - name: headline_2_copy_copy_copy
-        properties: {role: headline, text: 'Combat Subskills:'}
-        type: Label
-        layout_properties: {grid_position: 'JQBYSQ,WWZXFY'}
-      - name: label_1_copy_copy_copy
-        properties: {text: 'Usually these are weapon specializations and other ways for contestants to have a leg up in their training against their opponents. '}
-        type: Label
-        layout_properties: {grid_position: ''}
-      - name: list_combat_subskills_label
-        properties: {}
-        type: Label
-        layout_properties: {grid_position: 'VWODCG,FCRSGI'}
   - name: spacer_3_copy_copy
     properties: {height: 16.249267578125}
     type: Spacer

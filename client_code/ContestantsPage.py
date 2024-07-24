@@ -24,14 +24,28 @@ class ContestantsPage(ContestantsPageTemplate):
     self.contestant_name_label1.text = self.contestant['name']
     self.relationships_label.text = self.contestant.get('relationships')
     self.contestant_pic.source = self.contestant['picture']
+    
     self.load_attributes_graph()
+    
+    self.load_basic_skills_graph()
+    self.list_basic_subskills_label.text = self.contestant['subskills']
+    
+    self.load_combat_skills_graph()
+    
+    self.primary_drug_label.text = ""
 
   def load_attributes_graph(self):
+    r_set = [
+            self.contestant['strength'], 
+            self.contestant['coordination'], 
+            self.contestant['intellect'],
+            self.contestant['social']
+            ]
+    
     self.attributes_plot.data = go.Barpolar(
       name = "Attributes Plot",
       theta = ["Strength", "Coordination", "Intellect", "Social"],
-      r = [1, 2, 3, 4],
-      
+      r = r_set,
       marker_color = ['#FF2222','#22FF22','#2222FF','#FFFF22'],
       marker_line_color = "#000000",
       marker_line_width = 1,
@@ -39,10 +53,26 @@ class ContestantsPage(ContestantsPageTemplate):
     )
 
   def load_basic_skills_graph(self):
-    pass
+    self.basic_skills_plot.data = go.Barpolar(
+      name = "Attributes Plot",
+      theta = ["Strength", "Coordination", "Intellect", "Social"],
+      r = [1, 2, 3, 4],
+      marker_color = ['#FF2222','#22FF22','#2222FF','#FFFF22'],
+      marker_line_color = "#000000",
+      marker_line_width = 1,
+      opacity = 0.8
+    )
 
   def load_combat_skills_graph(self):
-    pass
+    self.combat_skills_plot.data = go.Barpolar(
+      name = "Attributes Plot",
+      theta = ["Strength", "Coordination", "Intellect", "Social"],
+      r = [1, 2, 3, 4],
+      marker_color = ['#FF2222','#22FF22','#2222FF','#FFFF22'],
+      marker_line_color = "#000000",
+      marker_line_width = 1,
+      opacity = 0.8
+    )
   
   def ctab1_click(self, **event_args):
     """This method is called when the button is clicked"""

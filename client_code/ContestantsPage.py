@@ -24,14 +24,19 @@ class ContestantsPage(ContestantsPageTemplate):
     self.contestant_name_label1.text = self.contestant['name']
     self.relationships_label.text = self.contestant.get('relationships')
     self.contestant_pic.source = self.contestant['picture']
+    self.load_attributes_graph()
 
-  def get_attributes_graph():
+  def load_attributes_graph(self):
+    self.attributes_plot.data = go.Barpolar()(
+      #name = "Attributes Plot",
+      theta = ["Strength", "Coordination", "Intellect", "Social"],
+      r = [1, 2, 3, 4]
+    )
+
+  def load_basic_skills_graph(self):
     pass
 
-  def get_basic_skills_graph():
-    pass
-
-  def get_combat_skills_graph():
+  def load_combat_skills_graph(self):
     pass
   
   def ctab1_click(self, **event_args):

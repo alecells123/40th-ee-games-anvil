@@ -30,101 +30,101 @@ components:
     - name: ctab1
       properties: {text: '1', role: secondary-color, spacing_above: small}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 0}
+      layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 0}
       event_bindings: {click: ctab1_click}
     - name: ctab2
       properties: {text: '2', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 0}
+      layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 2}
       event_bindings: {click: ctab2_click}
     - name: ctab3
       properties: {text: '3', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 2}
+      layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 4}
     - name: ctab4
       properties: {text: '4', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 3}
+      layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 6}
     - name: ctab5
       properties: {text: '5', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 4}
+      layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 8}
     - name: ctab6
       properties: {text: '6', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 5}
+      layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 10}
     - name: ctab7
       properties: {text: '7', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 6}
+      layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 0}
     - name: ctab8
       properties: {text: '8', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 7}
+      layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 2}
     - name: ctab9
       properties: {text: '9', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 8}
+      layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 4}
     - name: ctab10
       properties: {text: '10', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 9}
+      layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 6}
     - name: ctab11
       properties: {text: '11', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 10}
+      layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 8}
     - name: ctab12
       properties: {text: '12', role: secondary-color}
       type: Button
-      layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 11}
+      layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 10}
     - name: ctab13
       properties: {text: '13', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 0}
+      layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 0}
     - name: ctab14
       properties: {text: '14', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 1}
+      layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 2}
     - name: ctab15
       properties: {text: '15', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 2}
+      layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 4}
     - name: ctab16
       properties: {text: '16', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 3}
+      layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 6}
     - name: ctab17
       properties: {text: '17', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 4}
+      layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 8}
     - name: ctab18
       properties: {text: '18', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 5}
+      layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 10}
     - name: ctab19
       properties: {text: '19', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 6}
+      layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 0}
     - name: ctab20
       properties: {text: '20', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 7}
+      layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 2}
     - name: ctab21
       properties: {text: '21', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 8}
+      layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 4}
     - name: ctab22
       properties: {text: '22', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 9}
+      layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 6}
     - name: ctab23
       properties: {text: '23', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 10}
+      layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 8}
     - name: ctab24
       properties: {text: '24', role: secondary-color}
       type: Button
-      layout_properties: {row: GRKHDG, width_xs: 1, col_xs: 11}
+      layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 10}
     layout_properties: {}
   - name: spacer_1
     properties: {height: 11.15521240234375}
@@ -166,7 +166,7 @@ components:
         properties: {text: 'Every entity within these games will have attributes and skills. The higher they are the more of that attribute you have. These are often compared against other''s values to see who would win in various points of direct conflict where these attributes matter. They also determine many other important stats later on. '}
         type: Label
         layout_properties: {grid_position: 'OPFIRY,LTGHRW'}
-      - name: plot_1
+      - name: attributes_plot
         properties: {}
         type: Plot
         layout_properties: {grid_position: 'AMZXKW,PWGRAT'}
@@ -186,7 +186,7 @@ components:
         properties: {text: 'These are values used in addition to attributes that are compared against others'' accumulated values to determine results of conflicts. Skills are usually more specific but higher values are more commonly found in them. '}
         type: Label
         layout_properties: {grid_position: 'EOBHBM,VADXMF'}
-      - name: plot_1_copy
+      - name: basic_skills_plot
         properties: {}
         type: Plot
         layout_properties: {grid_position: 'PTZSLF,QQYXLK'}
@@ -217,7 +217,7 @@ components:
         properties: {text: 'These function the same as basic skills but they are more committed to preventing other people''s lives than just existing. '}
         type: Label
         layout_properties: {grid_position: 'BGHMOJ,RJHZJU'}
-      - name: plot_1_copy_copy
+      - name: combat_skills_plot
         properties: {}
         type: Plot
         layout_properties: {grid_position: 'XVYUOA,XVOJWY'}

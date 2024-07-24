@@ -28,7 +28,7 @@ components:
     type: GridPanel
     components:
     - name: ctab1
-      properties: {text: '1', role: secondary-color}
+      properties: {text: '1', role: secondary-color, spacing_above: small}
       type: Button
       layout_properties: {row: GFKLAH, width_xs: 1, col_xs: 0}
       event_bindings: {click: ctab1_click}
@@ -146,7 +146,7 @@ components:
         properties: {}
         type: Label
         layout_properties: {grid_position: 'LPGBDG,BUPOJH'}
-      - name: image_1
+      - name: contestant_pic
         properties: {}
         type: Image
         layout_properties: {grid_position: 'AMEDPR,PKEAIC'}

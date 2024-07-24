@@ -15,12 +15,14 @@ import anvil.server
 #   print("Hello, " + name + "!")
 #   return 42
 #
-
-def get_contestant(contestant: int):
-  if anvil.server.session[str(contestant)] is None:
+@anvil.server.callable
+def get_contestant(contestant: int):  
+  if anvil.server.session.get(str(contestant)) is None:
     contestant_row = app_tables.contestants.get(ID=contestant)
     anvil.server.session[str(contestant)] = {
       'name': contestant_row['name'],
+      'picture': contestant_row['picture'],
+      'relationships': contestant_row['relationships'],
       
       'strength': contestant_row['strength'],
       'coord': contestant_row['coordination'],

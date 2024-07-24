@@ -19,8 +19,20 @@ class ContestantsPage(ContestantsPageTemplate):
     self.current_contestant = new_contestant
     self.load_contestant(new_contestant)
 
-  def load_contestant(self, new_contestant: int): 
-    anvil.server.call('get_contestant')
+  def load_contestant(self, new_contestant: int):
+    self.contestant = anvil.server.call('get_contestant', new_contestant)
+    self.contestant_name_label1.text = self.contestant['name']
+    self.relationships_label.text = self.contestant.get('relationships')
+    self.contestant_pic.source = self.contestant['picture']
+
+  def get_attributes_graph():
+    pass
+
+  def get_basic_skills_graph():
+    pass
+
+  def get_combat_skills_graph():
+    pass
   
   def ctab1_click(self, **event_args):
     """This method is called when the button is clicked"""

@@ -214,7 +214,7 @@ components:
         type: Label
         layout_properties: {grid_position: 'LMDWPQ,EUDIFX'}
       - name: label_1_copy_copy
-        properties: {text: 'These function the same as basic skills but they are more committed to preventing other people''s lives than just existing. '}
+        properties: {text: 'These function the same as basic skills but they are more committed to preventing other people from living. '}
         type: Label
         layout_properties: {grid_position: 'BGHMOJ,RJHZJU'}
       - name: combat_skills_plot

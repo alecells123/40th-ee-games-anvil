@@ -15,3 +15,35 @@ import anvil.server
 #   print("Hello, " + name + "!")
 #   return 42
 #
+
+def get_contestant(contestant: int):
+  if anvil.server.session[str(contestant)] is None:
+    contestant_row = app_tables.contestants.get(ID=contestant)
+    anvil.server.session[str(contestant)] = {
+      'name': contestant_row['name'],
+      
+      'strength': contestant_row['strength'],
+      'coord': contestant_row['coordination'],
+      'intellect': contestant_row['intellect'],
+      'social': contestant_row['social'],
+  
+      'convince': contestant_row['convince'],
+      'engineer': contestant_row['engineer'],
+      'know': contestant_row['know'],
+      'perceive': contestant_row['perceive'],
+      'utilize': contestant_row['utilize'],
+      'subskills': contestant_row['subskills'],
+      
+      'brawl': contestant_row['brawl'],
+      'shoot': contestant_row['shoot'],
+      'strike': contestant_row['strike'],
+      'throw': contestant_row['throw'],
+  
+      'drug': contestant_row['primary_drug'],
+      'ability': contestant_row['ability'],
+      'max_injuries': contestant_row['max_injuries'],
+      'max_sanity': contestant_row['sanity'],
+      'defense': contestant_row['defense'],
+      'initiative': contestant_row['initiative']
+      }
+  return (anvil.server.session[str(contestant)])

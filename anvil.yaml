@@ -178,11 +178,17 @@ db_schema:
       admin_ui: {order: -1, width: 52}
       type: number
     - name: subskills
-      admin_ui: {order: 13.5, width: 200}
+      admin_ui: {order: 17.5, width: 200}
       type: string
     - name: defense
       admin_ui: {order: 24.5, width: 80}
       type: number
+    - name: max_sanity
+      admin_ui: {order: 23.5, width: 97}
+      type: number
+    - name: picture
+      admin_ui: {width: 200, order: 3.5}
+      type: media
     title: Contestants
   files:
     client: none

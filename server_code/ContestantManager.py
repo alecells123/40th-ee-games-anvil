@@ -44,7 +44,7 @@ def get_contestant(contestant: int):
       'drug': contestant_row['primary_drug'],
       'ability': contestant_row['ability'],
       'max_injuries': contestant_row['max_injuries'],
-      'max_sanity': contestant_row['sanity'],
+      'max_sanity': contestant_row['max_sanity'],
       'defense': contestant_row['defense'],
       'initiative': contestant_row['initiative']
       }

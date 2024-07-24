@@ -32,20 +32,26 @@ class ContestantsPage(ContestantsPageTemplate):
     
     self.load_combat_skills_graph()
     
-    self.primary_drug_label.text = ""
+    self.primary_drug_label.text = "Primary Drug: " + self.contestant['drug'].capitalize()
+    self.ability_name_label.text = "Ability Name: " + self.contestant['ability'].capitalize()
+    self.max_injuries_label.text = "Max Injuries: " + str(self.contestant['max_injuries'])
+    self.max_sanity_label.text = "Max Sanity: " + str(self.contestant['max_sanity'])
+    self.defense_label.text = "Defense: " + str(self.contestant['defense'])
+    self.initiative_label.text = "Base Initiative: " + str(self.contestant['initiative'])
 
   def load_attributes_graph(self):
-    r_set = [
+    y_set = [
             self.contestant['strength'], 
-            self.contestant['coordination'], 
+            self.contestant['coord'], 
             self.contestant['intellect'],
             self.contestant['social']
             ]
     
-    self.attributes_plot.data = go.Barpolar(
+    self.attributes_plot.data = go.Bar(
       name = "Attributes Plot",
-      theta = ["Strength", "Coordination", "Intellect", "Social"],
-      r = r_set,
+      x = ["Strength", "Coordination", "Intellect", "Social"],
+      y = y_set,
+      height = 5,
       marker_color = ['#FF2222','#22FF22','#2222FF','#FFFF22'],
       marker_line_color = "#000000",
       marker_line_width = 1,
@@ -53,22 +59,35 @@ class ContestantsPage(ContestantsPageTemplate):
     )
 
   def load_basic_skills_graph(self):
-    self.basic_skills_plot.data = go.Barpolar(
+    y_set = [
+            self.contestant['convince'], 
+            self.contestant['engineer'], 
+            self.contestant['know'],
+            self.contestant['perceive'],
+            self.contestant['utilize']
+            ]
+    
+    self.basic_skills_plot.data = go.Bar(
       name = "Attributes Plot",
-      theta = ["Strength", "Coordination", "Intellect", "Social"],
-      r = [1, 2, 3, 4],
-      marker_color = ['#FF2222','#22FF22','#2222FF','#FFFF22'],
+      x = ["Convince", "Engineer", "Know", "Perceive", "Utilize"],
+      y = y_set,
       marker_line_color = "#000000",
       marker_line_width = 1,
       opacity = 0.8
     )
 
   def load_combat_skills_graph(self):
-    self.combat_skills_plot.data = go.Barpolar(
+    y_set = [
+            self.contestant['brawl'], 
+            self.contestant['shoot'], 
+            self.contestant['strike'],
+            self.contestant['throw']
+            ]
+    
+    self.combat_skills_plot.data = go.Bar(
       name = "Attributes Plot",
-      theta = ["Strength", "Coordination", "Intellect", "Social"],
-      r = [1, 2, 3, 4],
-      marker_color = ['#FF2222','#22FF22','#2222FF','#FFFF22'],
+      x = ["Brawl", "Shoot", "Strike", "Throw"],
+      y = y_set,
       marker_line_color = "#000000",
       marker_line_width = 1,
       opacity = 0.8

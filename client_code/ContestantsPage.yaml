@@ -228,30 +228,6 @@ components:
     properties: {role: card}
     type: ColumnPanel
     components:
-    - name: label_2
-      properties: {text: 'Primary Drug:'}
-      type: Label
-      layout_properties: {grid_position: 'IUFQRS,GXDYYT LQRVXQ,DRCMWD'}
-    - name: label_4
-      properties: {text: 'Ability Name:'}
-      type: Label
-      layout_properties: {grid_position: 'IUFQRS,GXDYYT PUZKRE,VRAEST'}
-    - name: label_5
-      properties: {text: 'Max Injuries:'}
-      type: Label
-      layout_properties: {grid_position: 'IUFQRS,GXDYYT SMWBQK,AUUTEW'}
-    - name: label_6
-      properties: {text: 'Max Sanity:'}
-      type: Label
-      layout_properties: {grid_position: 'IUFQRS,GXDYYT PRUMPW,BFOLQQ'}
-    - name: label_7
-      properties: {text: 'Defense:'}
-      type: Label
-      layout_properties: {grid_position: 'IUFQRS,GXDYYT BNGGTK,CXNVZR'}
-    - name: label_8
-      properties: {text: 'Base Initiative:'}
-      type: Label
-      layout_properties: {grid_position: 'IUFQRS,GXDYYT XOMUNW,FUQJVA'}
     - name: primary_drug_label
       properties: {}
       type: Label

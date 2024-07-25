@@ -1,35 +1,6 @@
 allow_embedding: false
 package_name: _40th_EE_Games
 db_schema:
-  players:
-    client: none
-    server: full
-    columns:
-    - name: given_name
-      admin_ui: {order: 0, width: 147}
-      type: string
-    - name: middle_name
-      admin_ui: {order: 1, width: 133}
-      type: string
-    - name: family_name
-      admin_ui: {order: 2, width: 131}
-      type: string
-    - name: picture
-      admin_ui: {order: 2.5, width: 297}
-      type: media
-    - name: character
-      admin_ui: {order: 4, width: 191}
-      type: link_single
-      target: characters
-    - name: affiliate
-      admin_ui: {order: 4.5, width: 215}
-      type: link_single
-      target: affiliates
-    - name: agendas
-      admin_ui: {width: 200, order: 5.5}
-      type: link_multiple
-      target: agendas
-    title: Players
   characters:
     client: none
     server: full
@@ -49,6 +20,62 @@ db_schema:
       type: link_single
       target: affiliates
     title: Characters
+  menu_survival:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 142}
+      type: string
+    - name: description
+      admin_ui: {order: 1, width: 687}
+      type: string
+    - name: cost
+      admin_ui: {width: 200, order: 2}
+      type: number
+    title: Menu_Survival
+  menu_information:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 172}
+      type: string
+    - name: description
+      admin_ui: {order: 1, width: 413}
+      type: string
+    - name: cost
+      admin_ui: {width: 200, order: 2}
+      type: number
+    title: Menu_Information
+  menu_drugs:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 101}
+      type: string
+    - name: description
+      admin_ui: {order: 1, width: 291}
+      type: string
+    - name: cost
+      admin_ui: {order: 2, width: 56}
+      type: number
+    title: Menu_Drugs
+  menu_advertising:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 160}
+      type: string
+    - name: price
+      admin_ui: {order: 1, width: 126}
+      type: number
+    - name: description
+      admin_ui: {order: 0.5, width: 251}
+      type: string
+    title: Menu_Advertising
   agendas:
     client: none
     server: full
@@ -204,6 +231,114 @@ db_schema:
       admin_ui: {order: 2, width: 200}
       type: string
     title: Files
+  menu_traversal:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: description
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: cost
+      admin_ui: {width: 200, order: 2}
+      type: number
+    - name: region
+      admin_ui: {width: 115, order: 0.5}
+      type: string
+    title: Menu_Traversal
+  menu_weapons:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: description
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: cost
+      admin_ui: {order: 2, width: 63}
+      type: number
+    - name: skill
+      admin_ui: {order: 0.5, width: 131}
+      type: string
+    title: Menu_Weapons
+  players:
+    client: none
+    server: full
+    columns:
+    - name: given_name
+      admin_ui: {order: 0, width: 147}
+      type: string
+    - name: middle_name
+      admin_ui: {order: 1, width: 133}
+      type: string
+    - name: family_name
+      admin_ui: {order: 2, width: 131}
+      type: string
+    - name: picture
+      admin_ui: {order: 2.5, width: 297}
+      type: media
+    - name: character
+      admin_ui: {order: 4, width: 191}
+      type: link_single
+      target: characters
+    - name: affiliate
+      admin_ui: {order: 4.5, width: 215}
+      type: link_single
+      target: affiliates
+    - name: agendas
+      admin_ui: {width: 200, order: 5.5}
+      type: link_multiple
+      target: agendas
+    title: Players
+  menu_nutritional:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 144}
+      type: string
+    - name: description
+      admin_ui: {order: 1, width: 505}
+      type: string
+    - name: cost
+      admin_ui: {order: 2, width: 56}
+      type: number
+    title: Menu_Nutritional
+  menu_medical:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {order: 0, width: 127}
+      type: string
+    - name: description
+      admin_ui: {order: 1, width: 318}
+      type: string
+    - name: cost
+      admin_ui: {width: 200, order: 2}
+      type: number
+    - name: brand
+      admin_ui: {order: 0.5, width: 211}
+      type: string
+    title: Menu_Medical
+  menu_dusty_boxes:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: listing
+      admin_ui: {order: 1, width: 468}
+      type: string
+    - name: cost
+      admin_ui: {width: 200, order: 2}
+      type: number
+    title: Menu_Dusty_Boxes
 exported_table_schema:
 - python_name: feedback
   client: none

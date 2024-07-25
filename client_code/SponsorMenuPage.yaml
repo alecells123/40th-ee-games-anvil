@@ -6,6 +6,11 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: grid_panel_1
+    properties: {}
+    type: GridPanel
+    layout_properties: {grid_position: 'HGJNDC,HGTDZL'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

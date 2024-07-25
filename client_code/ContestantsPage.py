@@ -14,6 +14,7 @@ class ContestantsPage(ContestantsPageTemplate):
 
     # Any code you write here will run when the form opens.
     self.current_contestant = 1
+    self.change_contestant(1)
 
   def change_contestant(self, new_contestant: int) -> None:
     self.current_contestant = new_contestant
@@ -101,6 +102,90 @@ class ContestantsPage(ContestantsPageTemplate):
     """This method is called when the button is clicked"""
     self.change_contestant(2)
 
-
+  def ctab3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(3)
   
- 
+  def ctab4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(4)
+
+  def ctab5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(5)
+  
+  def ctab6_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(6)
+
+  def ctab7_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(7)
+  
+  def ctab8_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(8)
+
+  def ctab9_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(9)
+  
+  def ctab10_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(10)
+
+  def ctab11_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(11)
+  
+  def ctab12_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(12)
+
+  def ctab13_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(13)
+  
+  def ctab14_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(14)
+
+  def ctab15_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(15)
+  
+  def ctab16_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(16)
+
+  def ctab17_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(17)
+  
+  def ctab18_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(18)
+
+  def ctab19_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(19)
+  
+  def ctab20_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(20)
+
+  def ctab21_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(21)
+  
+  def ctab22_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(22)
+
+  def ctab23_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(23)
+  
+  def ctab24_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.change_contestant(24)

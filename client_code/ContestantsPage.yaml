@@ -41,90 +41,112 @@ components:
       properties: {text: '3', role: secondary-color}
       type: Button
       layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 4}
+      event_bindings: {click: ctab3_click}
     - name: ctab4
       properties: {text: '4', role: secondary-color}
       type: Button
       layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 6}
+      event_bindings: {click: ctab4_click}
     - name: ctab5
       properties: {text: '5', role: secondary-color}
       type: Button
       layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 8}
+      event_bindings: {click: ctab5_click}
     - name: ctab6
       properties: {text: '6', role: secondary-color}
       type: Button
       layout_properties: {row: GFKLAH, width_xs: 2, col_xs: 10}
+      event_bindings: {click: ctab6_click}
     - name: ctab7
       properties: {text: '7', role: secondary-color}
       type: Button
       layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 0}
+      event_bindings: {click: ctab7_click}
     - name: ctab8
       properties: {text: '8', role: secondary-color}
       type: Button
       layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 2}
+      event_bindings: {click: ctab8_click}
     - name: ctab9
       properties: {text: '9', role: secondary-color}
       type: Button
       layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 4}
+      event_bindings: {click: ctab9_click}
     - name: ctab10
       properties: {text: '10', role: secondary-color}
       type: Button
       layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 6}
+      event_bindings: {click: ctab10_click}
     - name: ctab11
       properties: {text: '11', role: secondary-color}
       type: Button
       layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 8}
+      event_bindings: {click: ctab11_click}
     - name: ctab12
       properties: {text: '12', role: secondary-color}
       type: Button
       layout_properties: {row: BMBJGF, width_xs: 2, col_xs: 10}
+      event_bindings: {click: ctab12_click}
     - name: ctab13
       properties: {text: '13', role: secondary-color}
       type: Button
       layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 0}
+      event_bindings: {click: ctab13_click}
     - name: ctab14
       properties: {text: '14', role: secondary-color}
       type: Button
       layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 2}
+      event_bindings: {click: ctab14_click}
     - name: ctab15
       properties: {text: '15', role: secondary-color}
       type: Button
       layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 4}
+      event_bindings: {click: ctab15_click}
     - name: ctab16
       properties: {text: '16', role: secondary-color}
       type: Button
       layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 6}
+      event_bindings: {click: ctab16_click}
     - name: ctab17
       properties: {text: '17', role: secondary-color}
       type: Button
       layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 8}
+      event_bindings: {click: ctab17_click}
     - name: ctab18
       properties: {text: '18', role: secondary-color}
       type: Button
       layout_properties: {row: GRKHDG, width_xs: 2, col_xs: 10}
+      event_bindings: {click: ctab18_click}
     - name: ctab19
       properties: {text: '19', role: secondary-color}
       type: Button
       layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 0}
+      event_bindings: {click: ctab19_click}
     - name: ctab20
       properties: {text: '20', role: secondary-color}
       type: Button
       layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 2}
+      event_bindings: {click: ctab20_click}
     - name: ctab21
       properties: {text: '21', role: secondary-color}
       type: Button
       layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 4}
+      event_bindings: {click: ctab21_click}
     - name: ctab22
       properties: {text: '22', role: secondary-color}
       type: Button
       layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 6}
+      event_bindings: {click: ctab22_click}
     - name: ctab23
       properties: {text: '23', role: secondary-color}
       type: Button
       layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 8}
+      event_bindings: {click: ctab23_click}
     - name: ctab24
       properties: {text: '24', role: secondary-color}
       type: Button
       layout_properties: {row: IGTOXT, width_xs: 2, col_xs: 10}
+      event_bindings: {click: ctab24_click}
     layout_properties: {}
   - name: spacer_1
     properties: {height: 11.15521240234375}

@@ -1,0 +1,78 @@
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: left_column_panel
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ZRGNWD,BNBEJW'}
+    components:
+    - name: agendas_actions_card
+      properties: {role: card}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'LKALFI,SNBUOJ'}
+      components:
+      - name: grid_panel_2
+        properties: {}
+        type: GridPanel
+        layout_properties: {grid_position: 'VTJVPP,IYMMQG'}
+        components:
+        - name: check_box_1
+          properties: {text: EE}
+          type: CheckBox
+          layout_properties: {row: RXSTKO, width_xs: 2, col_xs: 0}
+        - name: check_box_2
+          properties: {text: Alpha}
+          type: CheckBox
+          layout_properties: {row: RXSTKO, width_xs: 3, col_xs: 3}
+        - name: check_box_5
+          properties: {text: Trax}
+          type: CheckBox
+          layout_properties: {row: RXSTKO, width_xs: 3, col_xs: 7}
+        - name: check_box_4
+          properties: {text: FR}
+          type: CheckBox
+          layout_properties: {row: RXSTKO, width_xs: 2, col_xs: 4}
+        - name: check_box_3
+          properties: {text: ITF}
+          type: CheckBox
+          layout_properties: {row: RXSTKO, width_xs: 2, col_xs: 4}
+    - name: agendas_repeating
+      properties: {item_template: ItemTemplate1}
+      type: RepeatingPanel
+      layout_properties: {grid_position: 'VUCULW,YJABGI'}
+  - name: right_column_panel
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'ZRGNWD,YJRAUN'}
+    components:
+    - name: players_action_card
+      properties: {role: card}
+      type: ColumnPanel
+      layout_properties: {grid_position: 'OYQPIJ,FXMBKG'}
+      components:
+      - name: button_1
+        properties: {text: hide players, role: raised}
+        type: Button
+        layout_properties: {grid_position: 'OEPSIJ,ZWMPMY'}
+    - name: players_repeating
+      properties: {item_template: ItemTemplate2}
+      type: RepeatingPanel
+      layout_properties: {grid_position: 'JSXJSI,OEWKHH'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- name: nav_menu_1
+  properties: {}
+  type: form:NavMenu
+  layout_properties: {slot: left-nav}
+- name: headline_1
+  properties: {role: headline, text: 'Manager Page: Agendas'}
+  type: Label
+  layout_properties: {slot: title}

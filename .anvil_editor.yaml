@@ -12,6 +12,7 @@ unique_ids:
     StartPage: RXKECMZN34MQAHDRK6EPIICDWR6S3KGX
   modules: {}
   server_modules:
+    AgendaManager: '1721845728634996333096031.2422'
     ContestantManager: '1721419926195546063336681.9547'
     CorporationManager: '1721768020093855485467846.411'
     PlayerManager: '1721236766013862777065487.689'

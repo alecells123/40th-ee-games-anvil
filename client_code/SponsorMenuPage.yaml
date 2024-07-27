@@ -14,33 +14,12 @@ components:
   properties: {}
   type: form:NavMenu
   layout_properties: {slot: left-nav}
-- name: linear_panel_1
+- name: grid_panel_1
   properties: {}
-  type: LinearPanel
+  type: GridPanel
   layout_properties: {slot: default}
   components:
-  - name: xy_panel_1
-    properties: {height: 100}
-    type: XYPanel
-    components:
-    - name: delivery_tab_button
-      properties: {text: delivery options, role: secondary-color}
-      type: Button
-      layout_properties: {x: 2.048607721924782, y: 44.062503814697266, width: 107.13542175292969}
-    - name: delivery_tab_button_copy
-      properties:
-        text: |+
-          medical
-
-        role: secondary-color
-        align: center
-      type: Button
-      layout_properties: {x: 429.2882317453623, y: 27.34376610815525, width: 97.65625762939453}
-    - name: delivery_tab_button_copy_2
-      properties:
-        text: |+
-          advertising
-
-        role: secondary-color
-      type: Button
-      layout_properties: {x: 116.61458672583103, y: 44.062503814697266, width: 124.4618148803711}
+  - name: button_1
+    properties: {text: button_1}
+    type: Button
+    layout_properties: {row: JZGYRH, width_xs: 3, col_xs: 1}

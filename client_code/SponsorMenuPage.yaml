@@ -50,11 +50,11 @@ components:
     properties: {text: survival, role: secondary-color}
     type: Button
     layout_properties: {}
-  - name: button_1_copy_7
+  - name: traversal_button
     properties: {text: traversal, role: secondary-color}
     type: Button
     layout_properties: {}
-  - name: button_1_copy_8
+  - name: weapon_button
     properties: {text: weapons, role: secondary-color}
     type: Button
     layout_properties: {}

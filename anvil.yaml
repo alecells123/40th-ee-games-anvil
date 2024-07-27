@@ -352,6 +352,9 @@ db_schema:
     - name: affiliation
       admin_ui: {width: 200, order: 1}
       type: string
+    - name: description
+      admin_ui: {width: 200, order: 2}
+      type: string
     title: Menu_Shipping
   menu_dusty_boxes:
     title: Menu_Dusty_Boxes

@@ -62,6 +62,7 @@ components:
       properties: {text: survival, role: secondary-color}
       type: Button
       layout_properties: {}
+      event_bindings: {click: survival_button_click}
     - name: traversal_button
       properties: {text: traversal, role: secondary-color}
       type: Button

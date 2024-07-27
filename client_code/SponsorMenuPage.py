@@ -13,47 +13,46 @@ class SponsorMenuPage(SponsorMenuPageTemplate):
 
     # Any code you write here will run when the form opens.
 
-
   def update_tab(self, menu):
     self.menu_items = anvil.server.call('get_menu', menu)
     self.refresh_data_bindings()
 
   def dusty_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('dusty')
 
   def delivery_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('delivery')
 
   def button_1_copy_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('information')
 
   def drugs_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('drugs')
 
   def information_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('information')
 
   def medical_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('medical')
 
   def nutritional_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('nutritional')
 
   def survival_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('survival')
 
   def traversal_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('traversal')
 
-  def weapon_button_click(self, **event_args):
+  def weapons_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    pass
+    self.update_tab('weapons')

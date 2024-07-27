@@ -61,3 +61,7 @@ components:
     properties: {text: weapons, role: secondary-color}
     type: Button
     layout_properties: {}
+- name: column_panel_2
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: default}

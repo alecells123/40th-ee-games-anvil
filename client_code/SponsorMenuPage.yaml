@@ -24,6 +24,10 @@ components:
     type: XYPanel
     components:
     - name: delivery_tab_button
-      properties: {text: button_1, role: secondary-color}
+      properties: {text: delivery options, role: secondary-color}
       type: Button
-      layout_properties: {x: 3.090294733643532, y: 8.715287104249, width: 117.31828515625}
+      layout_properties: {x: 2.048607721924782, y: 44.062503814697266, width: 107.13542175292969}
+    - name: delivery_tab_button_copy
+      properties: {text: medical, role: secondary-color}
+      type: Button
+      layout_properties: {x: 111.57984246313572, y: 64.01042175292969, width: 97.65625762939453}

@@ -23,3 +23,22 @@ components:
     properties: {text: delivery, role: secondary-color}
     type: Button
     layout_properties: {}
+  - name: button_1_copy
+    properties: {text: advertising, role: secondary-color}
+    type: Button
+    layout_properties: {}
+  - name: button_1_copy_2
+    properties: {text: delivery, role: secondary-color}
+    type: Button
+  - name: button_1_copy_3
+    properties: {text: delivery, role: secondary-color}
+    type: Button
+  - name: button_1_copy_4
+    properties: {text: delivery, role: secondary-color}
+    type: Button
+  - name: button_1_copy_5
+    properties: {text: delivery, role: secondary-color}
+    type: Button
+  - name: button_1_copy_6
+    properties: {text: delivery, role: secondary-color}
+    type: Button

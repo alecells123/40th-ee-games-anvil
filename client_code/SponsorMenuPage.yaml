@@ -19,10 +19,10 @@ components:
   type: FlowPanel
   layout_properties: {slot: default}
   components:
-  - name: button_1_copy_9
+  - name: dusty_button
     properties: {text: dusty boxes, role: primary-color}
     type: Button
-  - name: button_1
+  - name: delivery_button
     properties: {text: delivery, role: secondary-color}
     type: Button
     layout_properties: {}
@@ -30,19 +30,19 @@ components:
     properties: {text: advertising, role: secondary-color}
     type: Button
     layout_properties: {}
-  - name: button_1_copy_2
+  - name: drugs_button
     properties: {text: drugs, role: secondary-color}
     type: Button
     layout_properties: {}
-  - name: button_1_copy_3
+  - name: information_button
     properties: {text: information, role: secondary-color}
     type: Button
     layout_properties: {}
-  - name: button_1_copy_4
+  - name: medical_button
     properties: {text: medical, role: secondary-color}
     type: Button
     layout_properties: {}
-  - name: button_1_copy_5
+  - name: nutritional_button
     properties: {text: nutritional, role: secondary-color}
     type: Button
     layout_properties: {}

@@ -19,7 +19,19 @@ components:
   type: GridPanel
   layout_properties: {slot: default}
   components:
-  - name: button_1
-    properties: {text: button_1, role: secondary-color}
+  - name: button_1_copy_8
+    properties: {text: delivery, role: secondary-color}
     type: Button
-    layout_properties: {row: XHDKLR, width_xs: 2, col_xs: 1}
+    layout_properties: {row: NVLPOC, width_xs: 2, col_xs: 0}
+  - name: button_1_copy_7
+    properties: {text: delivery, role: secondary-color}
+    type: Button
+    layout_properties: {row: NVLPOC, width_xs: 2, col_xs: 2}
+  - name: button_1_copy_5
+    properties: {text: delivery, role: secondary-color}
+    type: Button
+    layout_properties: {row: NVLPOC, width_xs: 2, col_xs: 4}
+  - name: button_1_copy_4
+    properties: {text: delivery, role: secondary-color}
+    type: Button
+    layout_properties: {row: NVLPOC, width_xs: 2, col_xs: 6}

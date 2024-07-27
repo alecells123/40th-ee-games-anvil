@@ -23,7 +23,7 @@ components:
     properties: {height: 100}
     type: XYPanel
     components:
-    - name: button_1
-      properties: {text: button_1}
+    - name: delivery_tab_button
+      properties: {text: button_1, role: secondary-color}
       type: Button
       layout_properties: {x: 3.090294733643532, y: 8.715287104249, width: 117.31828515625}

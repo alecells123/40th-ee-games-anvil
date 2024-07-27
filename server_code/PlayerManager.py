@@ -65,7 +65,7 @@ def get_agendas():
     given_name=session_data['given_name'], 
     middle_name=session_data['middle_name'], 
     family_name=session_data['family_name'])
-  return player_info['agenda']
+  return player_info['agendas']
 
 @anvil.server.callable
 def get_players():
@@ -78,7 +78,7 @@ def add_agenda(name, affiliate, flavor, description, reward):
 @anvil.server.callable
 def assign_agenda(agenda):
   player_info = get_player_info()
-  player_info['agenda'] = agenda
+  player_info['agendas'] = agenda
   player_info.save()
 
 @anvil.server.callable

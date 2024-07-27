@@ -30,6 +30,9 @@ db_schema:
     - name: cost
       admin_ui: {width: 200}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.5}
+      type: string
   menu_information:
     title: Menu_Information
     client: none
@@ -44,6 +47,9 @@ db_schema:
     - name: cost
       admin_ui: {width: 200}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.5}
+      type: string
   menu_drugs:
     title: Menu_Drugs
     client: none
@@ -58,6 +64,9 @@ db_schema:
     - name: cost
       admin_ui: {width: 56}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.5}
+      type: string
   menu_advertising:
     title: Menu_Advertising
     client: none
@@ -72,6 +81,9 @@ db_schema:
     - name: price
       admin_ui: {width: 126}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.25}
+      type: string
   agendas:
     title: Agendas
     client: none
@@ -304,6 +316,9 @@ db_schema:
     - name: cost
       admin_ui: {width: 56}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.5}
+      type: string
   menu_medical:
     title: Menu_Medical
     client: none
@@ -312,8 +327,8 @@ db_schema:
     - name: name
       admin_ui: {width: 127}
       type: string
-    - name: brand
-      admin_ui: {width: 211}
+    - name: affiliate
+      admin_ui: {order: 0.5, width: 211}
       type: string
     - name: description
       admin_ui: {width: 318}
@@ -335,6 +350,12 @@ db_schema:
     - name: cost
       admin_ui: {width: 200}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.5}
+      type: string
+    - name: description
+      admin_ui: {width: 200, order: 0.75}
+      type: string
 exported_table_schema:
 - python_name: feedback
   client: none

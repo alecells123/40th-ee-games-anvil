@@ -342,6 +342,17 @@ db_schema:
     - name: cost
       admin_ui: {order: 2, width: 68}
       type: number
+  menu_shipping:
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: affiliation
+      admin_ui: {width: 200, order: 1}
+      type: string
+    title: Menu_Shipping
   menu_dusty_boxes:
     title: Menu_Dusty_Boxes
     client: none

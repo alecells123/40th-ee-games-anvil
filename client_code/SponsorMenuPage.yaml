@@ -20,6 +20,6 @@ components:
   layout_properties: {slot: default}
   components:
   - name: button_1
-    properties: {text: button_1}
+    properties: {text: button_1, role: secondary-color}
     type: Button
-    layout_properties: {row: JZGYRH, width_xs: 3, col_xs: 1}
+    layout_properties: {row: JUUKTF, width_xs: 2, col_xs: 0}

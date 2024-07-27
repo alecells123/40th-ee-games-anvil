@@ -2,343 +2,339 @@ allow_embedding: false
 package_name: _40th_EE_Games
 db_schema:
   characters:
+    title: Characters
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {width: 200}
       type: string
-    - name: agendas
-      admin_ui: {width: 200, order: 2}
-      type: link_multiple
-      target: agendas
-    - name: has_player
-      admin_ui: {order: 1.5, width: 145}
-      type: bool
     - name: affiliate
-      admin_ui: {order: 0.75, width: 262}
+      admin_ui: {width: 262}
       type: link_single
       target: affiliates
-    title: Characters
+    - name: has_player
+      admin_ui: {width: 145}
+      type: bool
   menu_survival:
-    client: none
-    server: full
-    columns:
-    - name: name
-      admin_ui: {order: 0, width: 142}
-      type: string
-    - name: description
-      admin_ui: {order: 1, width: 687}
-      type: string
-    - name: cost
-      admin_ui: {width: 200, order: 2}
-      type: number
     title: Menu_Survival
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 142}
+      type: string
+    - name: description
+      admin_ui: {width: 687}
+      type: string
+    - name: cost
+      admin_ui: {width: 200}
+      type: number
   menu_information:
-    client: none
-    server: full
-    columns:
-    - name: name
-      admin_ui: {order: 0, width: 172}
-      type: string
-    - name: description
-      admin_ui: {order: 1, width: 413}
-      type: string
-    - name: cost
-      admin_ui: {width: 200, order: 2}
-      type: number
     title: Menu_Information
-  menu_drugs:
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {order: 0, width: 101}
+      admin_ui: {width: 172}
       type: string
     - name: description
-      admin_ui: {order: 1, width: 291}
+      admin_ui: {width: 413}
       type: string
     - name: cost
-      admin_ui: {order: 2, width: 56}
+      admin_ui: {width: 200}
       type: number
+  menu_drugs:
     title: Menu_Drugs
-  menu_advertising:
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {order: 0, width: 160}
+      admin_ui: {width: 101}
+      type: string
+    - name: description
+      admin_ui: {width: 291}
+      type: string
+    - name: cost
+      admin_ui: {width: 56}
+      type: number
+  menu_advertising:
+    title: Menu_Advertising
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 160}
+      type: string
+    - name: description
+      admin_ui: {width: 251}
       type: string
     - name: price
-      admin_ui: {order: 1, width: 126}
+      admin_ui: {width: 126}
       type: number
-    - name: description
-      admin_ui: {order: 0.5, width: 251}
-      type: string
-    title: Menu_Advertising
   agendas:
+    title: Agendas
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {width: 200}
       type: string
-    - name: flavor
-      admin_ui: {order: 1, width: 403}
-      type: string
-    - name: description
-      admin_ui: {order: 2, width: 443}
-      type: string
-    - name: reward
-      admin_ui: {width: 200, order: 3}
-      type: string
-    - name: players
-      admin_ui: {order: 4, width: 200}
-      type: link_multiple
-      target: players
     - name: affiliate
-      admin_ui: {order: 0.5, width: 255}
+      admin_ui: {width: 255}
       type: link_single
       target: affiliates
-    title: Agendas
+    - name: flavor
+      admin_ui: {width: 403}
+      type: string
+    - name: description
+      admin_ui: {width: 443}
+      type: string
+    - name: reward
+      admin_ui: {width: 200}
+      type: string
+    - name: players
+      admin_ui: {width: 200}
+      type: link_multiple
+      target: players
   affiliates:
+    title: Affiliates
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {order: 0, width: 284}
+      admin_ui: {width: 284}
       type: string
+    - name: player_count
+      admin_ui: {width: 119}
+      type: number
     - name: agendas
-      admin_ui: {order: 1, width: 556}
+      admin_ui: {width: 556}
       type: link_multiple
       target: agendas
-    - name: player_count
-      admin_ui: {order: 0.5, width: 119}
-      type: number
-    title: Affiliates
   contestants:
+    title: Contestants
     client: none
     server: full
     columns:
+    - name: ID
+      admin_ui: {width: 52}
+      type: number
     - name: name
-      admin_ui: {order: 0, width: 172}
+      admin_ui: {width: 172}
       type: string
     - name: relationships
-      admin_ui: {order: 1, width: 165}
+      admin_ui: {width: 165}
       type: string
     - name: behaviours
-      admin_ui: {order: 2, width: 161}
+      admin_ui: {width: 161}
       type: string
     - name: goals
-      admin_ui: {order: 3, width: 169}
+      admin_ui: {width: 169}
       type: string
+    - name: picture
+      admin_ui: {width: 200}
+      type: media
     - name: strength
-      admin_ui: {order: 4, width: 71}
+      admin_ui: {width: 71}
       type: number
     - name: coordination
-      admin_ui: {order: 5, width: 99}
+      admin_ui: {width: 99}
       type: number
     - name: intellect
-      admin_ui: {order: 6, width: 71}
+      admin_ui: {width: 71}
       type: number
     - name: social
-      admin_ui: {order: 7, width: 56}
+      admin_ui: {width: 56}
       type: number
     - name: convince
-      admin_ui: {order: 8, width: 88}
+      admin_ui: {width: 88}
       type: number
     - name: engineer
-      admin_ui: {order: 10, width: 75}
+      admin_ui: {width: 75}
       type: number
     - name: know
-      admin_ui: {order: 11, width: 59}
+      admin_ui: {width: 59}
       type: number
     - name: perceive
-      admin_ui: {order: 12, width: 78}
+      admin_ui: {width: 78}
       type: number
     - name: utilize
-      admin_ui: {order: 13, width: 61}
+      admin_ui: {width: 61}
       type: number
     - name: brawl
-      admin_ui: {order: 14, width: 60}
+      admin_ui: {width: 60}
       type: number
     - name: shoot
-      admin_ui: {order: 15, width: 58}
+      admin_ui: {width: 58}
       type: number
     - name: strike
-      admin_ui: {order: 16, width: 58}
+      admin_ui: {width: 58}
       type: number
     - name: throw
-      admin_ui: {order: 17, width: 59}
-      type: number
-    - name: primary_drug
-      admin_ui: {order: 18, width: 120}
-      type: string
-    - name: ability
-      admin_ui: {order: 19, width: 205}
-      type: string
-    - name: max_injuries
-      admin_ui: {width: 200, order: 21}
-      type: number
-    - name: current_injuries
-      admin_ui: {order: 22, width: 131}
-      type: number
-    - name: wellbeing
-      admin_ui: {order: 23, width: 87}
-      type: number
-    - name: sanity
-      admin_ui: {order: 24, width: 64}
-      type: number
-    - name: energy
-      admin_ui: {width: 200, order: 25}
-      type: number
-    - name: initiative
-      admin_ui: {width: 200, order: 26}
-      type: number
-    - name: conditions
-      admin_ui: {order: 27, width: 170}
-      type: string
-    - name: inventory
-      admin_ui: {width: 200, order: 28}
-      type: string
-    - name: ID
-      admin_ui: {order: -1, width: 52}
+      admin_ui: {width: 59}
       type: number
     - name: subskills
-      admin_ui: {order: 17.5, width: 200}
+      admin_ui: {width: 200}
       type: string
-    - name: defense
-      admin_ui: {order: 24.5, width: 80}
+    - name: primary_drug
+      admin_ui: {width: 120}
+      type: string
+    - name: ability
+      admin_ui: {width: 205}
+      type: string
+    - name: max_injuries
+      admin_ui: {width: 200}
+      type: number
+    - name: current_injuries
+      admin_ui: {width: 131}
+      type: number
+    - name: wellbeing
+      admin_ui: {width: 87}
       type: number
     - name: max_sanity
-      admin_ui: {order: 23.5, width: 97}
+      admin_ui: {width: 97}
       type: number
-    - name: picture
-      admin_ui: {width: 200, order: 3.5}
-      type: media
-    title: Contestants
+    - name: sanity
+      admin_ui: {width: 64}
+      type: number
+    - name: defense
+      admin_ui: {width: 80}
+      type: number
+    - name: energy
+      admin_ui: {width: 200}
+      type: number
+    - name: initiative
+      admin_ui: {width: 200}
+      type: number
+    - name: conditions
+      admin_ui: {width: 170}
+      type: string
+    - name: inventory
+      admin_ui: {width: 200}
+      type: string
   files:
+    title: Files
     client: none
     server: full
     columns:
     - name: path
-      admin_ui: {order: 0, width: 200}
+      admin_ui: {width: 200}
       type: string
     - name: file
-      admin_ui: {order: 1, width: 200}
+      admin_ui: {width: 200}
       type: media
     - name: file_version
-      admin_ui: {order: 2, width: 200}
+      admin_ui: {width: 200}
       type: string
-    title: Files
   menu_traversal:
-    client: none
-    server: full
-    columns:
-    - name: name
-      admin_ui: {width: 200, order: 0}
-      type: string
-    - name: description
-      admin_ui: {width: 200, order: 1}
-      type: string
-    - name: cost
-      admin_ui: {width: 200, order: 2}
-      type: number
-    - name: region
-      admin_ui: {width: 115, order: 0.5}
-      type: string
     title: Menu_Traversal
-  menu_weapons:
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {width: 200, order: 0}
+      admin_ui: {width: 200}
+      type: string
+    - name: region
+      admin_ui: {width: 115}
       type: string
     - name: description
-      admin_ui: {width: 200, order: 1}
+      admin_ui: {width: 200}
       type: string
     - name: cost
-      admin_ui: {order: 2, width: 63}
+      admin_ui: {width: 200}
       type: number
-    - name: skill
-      admin_ui: {order: 0.5, width: 131}
-      type: string
+  menu_weapons:
     title: Menu_Weapons
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: skill
+      admin_ui: {width: 131}
+      type: string
+    - name: description
+      admin_ui: {width: 200}
+      type: string
+    - name: cost
+      admin_ui: {width: 63}
+      type: number
   players:
+    title: Players
     client: none
     server: full
     columns:
     - name: given_name
-      admin_ui: {order: 0, width: 147}
+      admin_ui: {width: 147}
       type: string
     - name: middle_name
-      admin_ui: {order: 1, width: 133}
+      admin_ui: {width: 133}
       type: string
     - name: family_name
-      admin_ui: {order: 2, width: 131}
+      admin_ui: {width: 131}
       type: string
     - name: picture
-      admin_ui: {order: 2.5, width: 297}
+      admin_ui: {width: 297}
       type: media
     - name: character
-      admin_ui: {order: 4, width: 191}
+      admin_ui: {width: 191}
       type: link_single
       target: characters
     - name: affiliate
-      admin_ui: {order: 4.5, width: 215}
+      admin_ui: {width: 215}
       type: link_single
       target: affiliates
     - name: agendas
-      admin_ui: {width: 200, order: 5.5}
+      admin_ui: {width: 200}
       type: link_multiple
       target: agendas
-    title: Players
   menu_nutritional:
-    client: none
-    server: full
-    columns:
-    - name: name
-      admin_ui: {order: 0, width: 144}
-      type: string
-    - name: description
-      admin_ui: {order: 1, width: 505}
-      type: string
-    - name: cost
-      admin_ui: {order: 2, width: 56}
-      type: number
     title: Menu_Nutritional
-  menu_medical:
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {order: 0, width: 127}
+      admin_ui: {width: 144}
       type: string
     - name: description
-      admin_ui: {order: 1, width: 318}
+      admin_ui: {width: 505}
       type: string
     - name: cost
-      admin_ui: {width: 200, order: 2}
+      admin_ui: {width: 56}
       type: number
-    - name: brand
-      admin_ui: {order: 0.5, width: 211}
-      type: string
+  menu_medical:
     title: Menu_Medical
-  menu_dusty_boxes:
     client: none
     server: full
     columns:
     - name: name
-      admin_ui: {width: 200, order: 0}
+      admin_ui: {width: 127}
+      type: string
+    - name: brand
+      admin_ui: {width: 211}
+      type: string
+    - name: description
+      admin_ui: {width: 318}
+      type: string
+    - name: cost
+      admin_ui: {width: 200}
+      type: number
+  menu_dusty_boxes:
+    title: Menu_Dusty_Boxes
+    client: none
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200}
       type: string
     - name: listing
-      admin_ui: {order: 1, width: 468}
+      admin_ui: {width: 468}
       type: string
     - name: cost
-      admin_ui: {width: 200, order: 2}
+      admin_ui: {width: 200}
       type: number
-    title: Menu_Dusty_Boxes
 exported_table_schema:
 - python_name: feedback
   client: none

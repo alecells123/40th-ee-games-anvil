@@ -46,7 +46,7 @@ components:
     properties: {text: nutritional, role: secondary-color}
     type: Button
     layout_properties: {}
-  - name: button_1_copy_6
+  - name: survival_button
     properties: {text: survival, role: secondary-color}
     type: Button
     layout_properties: {}

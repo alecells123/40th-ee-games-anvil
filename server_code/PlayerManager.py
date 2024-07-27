@@ -62,9 +62,9 @@ def get_agendas():
   # Get player from database
   session_data = get_player_info()
   player_info = app_tables.players.get(
-    given_name=session_data.first, 
-    middle_name=session_data.middle, 
-    family_name=session_data.last)
+    given_name=session_data['given_name'], 
+    middle_name=session_data['middle_name'], 
+    family_name=session_data['family_name'])
   return player_info['agenda']
 
 @anvil.server.callable

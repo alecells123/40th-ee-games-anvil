@@ -256,6 +256,9 @@ db_schema:
     - name: cost
       admin_ui: {width: 200}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.25}
+      type: string
   menu_weapons:
     title: Menu_Weapons
     client: none
@@ -273,6 +276,9 @@ db_schema:
     - name: cost
       admin_ui: {width: 63}
       type: number
+    - name: affiliate
+      admin_ui: {width: 200, order: 0.75}
+      type: string
   players:
     title: Players
     client: none

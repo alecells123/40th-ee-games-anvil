@@ -35,6 +35,6 @@ components:
     type: Label
     layout_properties: {grid_position: 'UUUYZQ,DTLVLF'}
 - name: spacer_2
-  properties: {height: 34.951171875}
+  properties: {height: 16.397552490234375}
   type: Spacer
   layout_properties: {grid_position: 'MOCYUL,MYSMHZ'}

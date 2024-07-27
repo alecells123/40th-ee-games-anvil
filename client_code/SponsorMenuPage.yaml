@@ -28,6 +28,15 @@ components:
       type: Button
       layout_properties: {x: 2.048607721924782, y: 44.062503814697266, width: 107.13542175292969}
     - name: delivery_tab_button_copy
-      properties: {text: medical, role: secondary-color}
+      properties:
+        text: |+
+          medical
+
+        role: secondary-color
+        align: center
       type: Button
-      layout_properties: {x: 111.57984246313572, y: 64.01042175292969, width: 97.65625762939453}
+      layout_properties: {x: 108.92362298071384, y: 43.107643976807594, width: 97.65625762939453}
+    - name: delivery_tab_button_copy_2
+      properties: {text: delivery options, role: secondary-color}
+      type: Button
+      layout_properties: {x: 245.78127373754978, y: 40.13888634741306, width: 110.1630859375}

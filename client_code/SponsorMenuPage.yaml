@@ -19,6 +19,9 @@ components:
   type: FlowPanel
   layout_properties: {slot: default}
   components:
+  - name: button_1_copy_9
+    properties: {text: dusty boxes, role: primary-color}
+    type: Button
   - name: button_1
     properties: {text: delivery, role: secondary-color}
     type: Button
@@ -53,9 +56,5 @@ components:
     layout_properties: {}
   - name: button_1_copy_8
     properties: {text: weapons, role: secondary-color}
-    type: Button
-    layout_properties: {}
-  - name: button_1_copy_9
-    properties: {text: dusty boxes, role: secondary-color}
     type: Button
     layout_properties: {}

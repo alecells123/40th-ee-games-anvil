@@ -27,7 +27,7 @@ components:
     type: Label
     layout_properties: {grid_position: 'RSVPOX,KUAXNK'}
   - name: spacer_3
-    properties: {height: 32}
+    properties: {height: 7.215789794921875}
     type: Spacer
     layout_properties: {grid_position: 'NGVTES,JHOWXB'}
   - name: agendar_reward_label

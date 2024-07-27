@@ -11,11 +11,11 @@ components:
     type: Label
     layout_properties: {grid_position: 'SPIZGX,ZVCIHY'}
   - name: manu_affiliate_label
-    properties: {}
+    properties: {align: center}
     type: Label
     layout_properties: {grid_position: 'SPIZGX,DJDWOZ'}
   - name: menu_cost_label
-    properties: {}
+    properties: {align: right}
     type: Label
     layout_properties: {grid_position: 'SPIZGX,GICQSK'}
   - name: menu_description_label

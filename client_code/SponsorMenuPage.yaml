@@ -19,9 +19,6 @@ components:
   type: FlowPanel
   layout_properties: {slot: top-left-btn}
   components:
-  - name: column_panel_1
-    properties: {}
-    type: ColumnPanel
   - name: dusty_button
     properties: {text: dusty boxes, role: primary-color}
     type: Button

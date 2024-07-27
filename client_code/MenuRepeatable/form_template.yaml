@@ -14,7 +14,11 @@ components:
     properties: {}
     type: Label
     layout_properties: {grid_position: 'SPIZGX,DJDWOZ'}
-  - name: label_1
+  - name: menu_cost_label
     properties: {}
     type: Label
     layout_properties: {grid_position: 'SPIZGX,GICQSK'}
+  - name: menu_description_label
+    properties: {}
+    type: Label
+    layout_properties: {grid_position: 'GVLRUB,FPNTQY'}

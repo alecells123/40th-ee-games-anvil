@@ -350,11 +350,14 @@ db_schema:
       admin_ui: {width: 200, order: 0}
       type: string
     - name: affiliation
-      admin_ui: {width: 200, order: 1}
+      admin_ui: {order: 1, width: 121}
       type: string
     - name: description
-      admin_ui: {width: 200, order: 2}
+      admin_ui: {order: 2, width: 236}
       type: string
+    - name: cost
+      admin_ui: {order: 3, width: 55}
+      type: number
     title: Menu_Shipping
   menu_dusty_boxes:
     title: Menu_Dusty_Boxes

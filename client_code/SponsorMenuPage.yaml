@@ -27,30 +27,37 @@ components:
     - name: dusty_button
       properties: {text: dusty boxes, role: primary-color}
       type: Button
+      event_bindings: {click: dusty_button_click}
     - name: delivery_button
       properties: {text: delivery, role: secondary-color}
       type: Button
       layout_properties: {}
+      event_bindings: {click: delivery_button_click}
     - name: button_1_copy
       properties: {text: advertising, role: secondary-color}
       type: Button
       layout_properties: {}
+      event_bindings: {click: button_1_copy_click}
     - name: drugs_button
       properties: {text: drugs, role: secondary-color}
       type: Button
       layout_properties: {}
+      event_bindings: {click: drugs_button_click}
     - name: information_button
       properties: {text: information, role: secondary-color}
       type: Button
       layout_properties: {}
+      event_bindings: {click: information_button_click}
     - name: medical_button
       properties: {text: medical, role: secondary-color}
       type: Button
       layout_properties: {}
+      event_bindings: {click: medical_button_click}
     - name: nutritional_button
       properties: {text: nutritional, role: secondary-color}
       type: Button
       layout_properties: {}
+      event_bindings: {click: nutritional_button_click}
     - name: survival_button
       properties: {text: survival, role: secondary-color}
       type: Button

@@ -340,7 +340,7 @@ db_schema:
       admin_ui: {width: 318}
       type: string
     - name: cost
-      admin_ui: {width: 200}
+      admin_ui: {order: 2, width: 68}
       type: number
   menu_dusty_boxes:
     title: Menu_Dusty_Boxes

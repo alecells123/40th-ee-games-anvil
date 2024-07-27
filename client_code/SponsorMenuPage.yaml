@@ -2,15 +2,6 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - name: grid_panel_1
-    properties: {}
-    type: GridPanel
-    layout_properties: {grid_position: 'HGJNDC,HGTDZL'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
@@ -23,3 +14,8 @@ components:
   properties: {}
   type: form:NavMenu
   layout_properties: {slot: left-nav}
+- name: linear_panel_1
+  properties: {}
+  type: LinearPanel
+  layout_properties: {slot: default}
+  components: []

@@ -14,28 +14,12 @@ components:
   properties: {}
   type: form:NavMenu
   layout_properties: {slot: left-nav}
-- name: grid_panel_1
+- name: flow_panel_1
   properties: {}
-  type: GridPanel
+  type: FlowPanel
   layout_properties: {slot: default}
   components:
-  - name: button_1_copy_7
+  - name: button_1
     properties: {text: delivery, role: secondary-color}
     type: Button
-    layout_properties: {row: NVLPOC, width_xs: 2, col_xs: 2}
-  - name: button_1_copy_5
-    properties: {text: delivery, role: secondary-color}
-    type: Button
-    layout_properties: {row: NVLPOC, width_xs: 2, col_xs: 4}
-  - name: button_1_copy_4
-    properties: {text: delivery, role: secondary-color}
-    type: Button
-    layout_properties: {row: NVLPOC, width_xs: 2, col_xs: 6}
-  - name: button_1_copy_8
-    properties: {text: delivery, role: secondary-color}
-    type: Button
-    layout_properties: {row: ZGLUGD, width_xs: 2, col_xs: 0}
-- name: column_panel_1
-  properties: {}
-  type: ColumnPanel
-  layout_properties: {slot: top-left-btn}
+    layout_properties: {}

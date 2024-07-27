@@ -14,5 +14,5 @@ class MenuRepeatable(MenuRepeatableTemplate):
     # Any code you write here will run before the form opens.
     self.menu_name_label.text = self.item['name']
     self.menu_affiliate_label.text = self.item['affiliate']
-    self.menu_cost_label.text = self.item['cost']
+    self.menu_cost_label.text = self.item['cost'] + "credits"
     self.menu_description_label.text = self.item['description']

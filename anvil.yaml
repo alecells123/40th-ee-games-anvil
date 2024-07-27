@@ -245,7 +245,7 @@ db_schema:
     server: full
     columns:
     - name: name
-      admin_ui: {width: 200}
+      admin_ui: {order: 0, width: 150}
       type: string
     - name: region
       admin_ui: {width: 115}

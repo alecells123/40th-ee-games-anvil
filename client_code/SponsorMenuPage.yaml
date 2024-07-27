@@ -35,8 +35,12 @@ components:
         role: secondary-color
         align: center
       type: Button
-      layout_properties: {x: 108.92362298071384, y: 43.107643976807594, width: 97.65625762939453}
+      layout_properties: {x: 429.2882317453623, y: 27.34376610815525, width: 97.65625762939453}
     - name: delivery_tab_button_copy_2
-      properties: {text: delivery options, role: secondary-color}
+      properties:
+        text: |+
+          advertising
+
+        role: secondary-color
       type: Button
-      layout_properties: {x: 245.78127373754978, y: 40.13888634741306, width: 110.1630859375}
+      layout_properties: {x: 116.61458672583103, y: 44.062503814697266, width: 124.4618148803711}

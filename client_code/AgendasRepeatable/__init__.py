@@ -12,3 +12,8 @@ class AgendasRepeatable(AgendasRepeatableTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    self.agenda_name_label.text = self.item['name']
+    self.agenda_affiliate_label.text = self.item['affiliate']
+    self.agenda_flavor_label.text = self.item['flavor']
+    self.agenda_description_label.text = self.item['description']
+    self.agenda_reward_label.text = self.item['reward']

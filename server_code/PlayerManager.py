@@ -59,12 +59,27 @@ def get_player_info():
 
 @anvil.server.callable
 def get_agendas():
-  player_info = get_player_info()
-  return
+  # Get player from database
+  session_data = get_player_info()
+  player_info = app_tables.players.get(
+    given_name=session_data.first, 
+    middle_name=session_data.middle, 
+    family_name=session_data.last)
+  return player_info['agenda']
 
 @anvil.server.callable
 def get_players():
   return app_tables.players.search()
+
+@anvil.server.callable
+def add_agenda(name, affiliate, flavor, description, reward):
+  app_tables.agendas.add_row(name=name, affiliate=affiliate, flavor=flavor, description=description, reward=reward)
+
+@anvil.server.callable
+def assign_agenda(agenda):
+  player_info = get_player_info()
+  player_info['agenda'] = agenda
+  player_info.save()
 
 @anvil.server.callable
 def attempt_login(first, middle, last):

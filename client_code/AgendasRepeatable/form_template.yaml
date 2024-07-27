@@ -5,3 +5,12 @@ components:
   properties: {role: card}
   type: ColumnPanel
   layout_properties: {grid_position: 'NTWBJB,UDFPPO'}
+  components:
+  - name: agenda_name_label
+    properties: {role: headline}
+    type: Label
+    layout_properties: {grid_position: 'QERRWW,XNQPOA'}
+  - name: agenda_affiliate_label
+    properties: {bold: true}
+    type: Label
+    layout_properties: {grid_position: 'LSDMVJ,TNMDMK'}

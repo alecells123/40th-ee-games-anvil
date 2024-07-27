@@ -17,8 +17,11 @@ components:
 - name: flow_panel_1
   properties: {}
   type: FlowPanel
-  layout_properties: {slot: default}
+  layout_properties: {slot: top-left-btn}
   components:
+  - name: column_panel_1
+    properties: {}
+    type: ColumnPanel
   - name: dusty_button
     properties: {text: dusty boxes, role: primary-color}
     type: Button

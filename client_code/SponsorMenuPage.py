@@ -13,8 +13,8 @@ class SponsorMenuPage(SponsorMenuPageTemplate):
 
     # Any code you write here will run when the form opens.
 
-  def update_tab(self, menu, type = ""):
-    if type == "" and :
+  def update_tab(self, menu, cols = ):
+    if menu != 'dusty':
       self.menu_repeating_panel.items = anvil.server.call('get_menu', menu)
     self.refresh_data_bindings()
 

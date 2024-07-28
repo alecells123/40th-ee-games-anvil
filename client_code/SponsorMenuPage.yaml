@@ -68,11 +68,11 @@ components:
       type: Button
       layout_properties: {}
       event_bindings: {click: traversal_button_click}
-    - name: weapon_button
+    - name: weapons_button
       properties: {text: weapons, role: secondary-color}
       type: Button
       layout_properties: {}
-      event_bindings: {click: weapon_button_click}
+      event_bindings: {click: weapons_button_click}
   - name: repeating_panel_1
     properties: {item_template: MenuRepeatable}
     type: RepeatingPanel

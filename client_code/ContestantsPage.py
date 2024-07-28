@@ -33,8 +33,8 @@ class ContestantsPage(ContestantsPageTemplate):
     
     self.load_combat_skills_graph()
     
-    self.primary_drug_label.text = "Primary Drug: " + self.contestant['drug'].capitalize()
-    self.ability_name_label.text = "Ability Name: " + self.contestant['ability'].capitalize()
+    self.primary_drug_label.text = "Primary Drug: " + str(self.contestant['drug']).capitalize()
+    self.ability_name_label.text = "Ability Name: " + str(self.contestant['ability']).capitalize()
     self.max_injuries_label.text = "Max Injuries: " + str(self.contestant['max_injuries'])
     self.max_sanity_label.text = "Max Sanity: " + str(self.contestant['max_sanity'])
     self.defense_label.text = "Defense: " + str(self.contestant['defense'])

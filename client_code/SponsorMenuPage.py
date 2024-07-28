@@ -14,7 +14,7 @@ class SponsorMenuPage(SponsorMenuPageTemplate):
     # Any code you write here will run when the form opens.
 
   def update_tab(self, menu, addcols = ""):
-      self.menu_repeating_panel.items = anvil.server.call('get_menu', menu)
+    self.menu_repeating_panel.items = anvil.server.call('get_menu', menu)
     self.refresh_data_bindings()
 
   def dusty_button_click(self, **event_args):

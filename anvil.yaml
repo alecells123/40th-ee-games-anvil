@@ -133,7 +133,7 @@ db_schema:
       admin_ui: {width: 52}
       type: number
     - name: name
-      admin_ui: {width: 172}
+      admin_ui: {order: 0, width: 192}
       type: string
     - name: relationships
       admin_ui: {width: 165}

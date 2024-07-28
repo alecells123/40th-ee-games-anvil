@@ -73,7 +73,7 @@ components:
       type: Button
       layout_properties: {}
       event_bindings: {click: weapons_button_click}
-  - name: repeating_panel_1
+  - name: menu_repeating_panel
     properties: {item_template: MenuRepeatable}
     type: RepeatingPanel
     layout_properties: {grid_position: 'OWWLFW,DEZOJZ'}

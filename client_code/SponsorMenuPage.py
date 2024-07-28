@@ -59,4 +59,4 @@ class SponsorMenuPage(SponsorMenuPageTemplate):
 
   def weapon_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    self.update_tab(weapo)
+    self.update_tab()

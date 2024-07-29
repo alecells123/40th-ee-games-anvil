@@ -106,9 +106,15 @@ db_schema:
       admin_ui: {width: 200}
       type: string
     - name: players
-      admin_ui: {width: 200}
+      admin_ui: {order: 4, width: 286}
       type: link_multiple
       target: players
+    - name: clear_code
+      admin_ui: {order: 5, width: 150}
+      type: string
+    - name: complete_code
+      admin_ui: {order: 6, width: 144}
+      type: string
   affiliates:
     title: Affiliates
     client: none

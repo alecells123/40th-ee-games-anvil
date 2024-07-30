@@ -1,6 +1,6 @@
 container: {type: ColumnPanel}
 components:
-- name: headline_1
+- name: contestant_name
   properties: {role: headline}
   type: Label
   layout_properties: {grid_position: 'ZYXAXX,ZIGQCR'}

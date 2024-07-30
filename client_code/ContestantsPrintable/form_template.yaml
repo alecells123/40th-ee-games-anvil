@@ -29,4 +29,28 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {x: 884.5660942941904, y: 154.98263157904148, width: 83.09027862548828}
+  - name: strength_L_copy
+    properties: {}
+    type: Label
+    layout_properties: {x: 9.114556208252907, y: 201.59722413122654, width: 200.00001525878906}
+  - name: strength_R_copy
+    properties: {align: left}
+    type: Label
+    layout_properties: {x: 770.0000457763672, y: 196.19790257513523, width: 200.00001525878906}
+  - name: strength_R_copy_2
+    properties: {align: left}
+    type: Label
+    layout_properties: {x: 770.0000457763672, y: 239.04515732824802, width: 200.00001525878906}
+  - name: strength_L_copy_2
+    properties: {}
+    type: Label
+    layout_properties: {x: 1.1284722238779068, y: 240.93751992285252, width: 200.00001525878906}
+  - name: strength_R_copy_3
+    properties: {align: left}
+    type: Label
+    layout_properties: {x: 760.6945122629404, y: 277.37848176062107, width: 200.00001525878906}
+  - name: strength_L_copy_3
+    properties: {}
+    type: Label
+    layout_properties: {x: 1.2152642160654068, y: 277.82986725866795, width: 200.00001525878906}
 is_package: true

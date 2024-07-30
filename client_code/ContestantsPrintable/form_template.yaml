@@ -9,20 +9,20 @@ components:
     properties: {role: headline}
     type: Label
     layout_properties: {x: 9.687554255127907, y: 1.8055571466684341, width: 200.00001525878906}
-  - name: label_2
-    properties: {}
-    type: Label
-    layout_properties: {x: 128.92364501953125, y: 207.7430601119995, width: 200}
-  - name: label_3
-    properties: {}
-    type: Label
-    layout_properties: {x: 217.2396240234375, y: 317.3611173629761, width: 200}
   - name: label_4
     properties: {}
     type: Label
     layout_properties: {x: 270.2257080078125, y: 420.9548673629761, width: 200}
-  - name: label_1
+  - name: goals_label
     properties: {}
     type: Label
-    layout_properties: {x: 7.829888239502907, y: 40.64236058294773, width: 417.0333251953125}
+    layout_properties: {x: 5.069512262940407, y: 96.68403233587742, width: 200.00001525878906}
+  - name: behavious_label
+    properties: {}
+    type: Label
+    layout_properties: {x: 1.1632012277841568, y: 68.73263920843601, width: 200.00001525878906}
+  - name: relationships_label
+    properties: {}
+    type: Label
+    layout_properties: {x: 0, y: 40.13889302313328, width: 417.0312805175781}
 is_package: true

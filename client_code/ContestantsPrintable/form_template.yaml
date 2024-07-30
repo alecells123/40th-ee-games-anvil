@@ -3,7 +3,7 @@ components:
 - name: xy_panel_1
   properties: {height: 791.8523559570312}
   type: XYPanel
-  layout_properties: {grid_position: 'WIUKBG,NROFIZ'}
+  layout_properties: {grid_position: 'WIUKBG,LOCSDC'}
   components:
   - name: headline_1
     properties: {role: headline}
@@ -24,5 +24,5 @@ components:
   - name: relationships_label
     properties: {}
     type: Label
-    layout_properties: {x: 0, y: 40.13889302313328, width: 417.0312805175781}
+    layout_properties: {x: 14.600640192627907, y: 37.9687575250864, width: 417.0312805175781}
 is_package: true

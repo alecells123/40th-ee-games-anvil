@@ -5,10 +5,6 @@ components:
   type: XYPanel
   layout_properties: {grid_position: 'WIUKBG,LOCSDC'}
   components:
-  - name: strength
-    properties: {}
-    type: Label
-    layout_properties: {x: 270.2257080078125, y: 420.9548673629761, width: 200}
   - name: relationships_label
     properties: {}
     type: Label
@@ -25,4 +21,12 @@ components:
     properties: {}
     type: Label
     layout_properties: {x: 13.680596247315407, y: 114.13193883001804, width: 369.72222900390625}
+  - name: strength
+    properties: {}
+    type: Label
+    layout_properties: {x: 0, y: 152.27430333197117, width: 88.38542175292969}
+  - name: strength_r
+    properties: {align: left}
+    type: Label
+    layout_properties: {x: 884.5660942941904, y: 154.98263157904148, width: 83.09027862548828}
 is_package: true

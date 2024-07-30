@@ -189,3 +189,7 @@ class ContestantsPage(ContestantsPageTemplate):
   def ctab24_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.change_contestant(24)
+
+  def print_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass

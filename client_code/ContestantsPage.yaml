@@ -270,6 +270,11 @@ components:
       properties: {}
       type: Label
       layout_properties: {grid_position: 'IUFQRS,KKQTMX OQIOVD,FSHQZC'}
+  - name: print_button
+    properties: {text: print, align: right}
+    type: Button
+    layout_properties: {}
+    event_bindings: {click: print_button_click}
 - name: column_panel_1
   properties: {}
   type: ColumnPanel

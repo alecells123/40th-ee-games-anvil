@@ -25,7 +25,7 @@ components:
     properties: {}
     type: Label
     layout_properties: {x: 0, y: 152.27430333197117, width: 88.38542175292969}
-  - name: strength_r
+  - name: strength_R
     properties: {align: left}
     type: Label
     layout_properties: {x: 884.5660942941904, y: 154.98263157904148, width: 83.09027862548828}

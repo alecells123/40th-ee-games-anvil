@@ -1,3 +1,7 @@
 container: {type: ColumnPanel}
-components: []
+components:
+- name: headline_1
+  properties: {role: headline}
+  type: Label
+  layout_properties: {grid_position: 'ZYXAXX,ZIGQCR'}
 is_package: true

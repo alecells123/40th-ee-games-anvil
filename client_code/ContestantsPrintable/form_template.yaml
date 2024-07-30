@@ -5,7 +5,7 @@ components:
   type: XYPanel
   layout_properties: {grid_position: 'WIUKBG,LOCSDC'}
   components:
-  - name: label_4
+  - name: strength
     properties: {}
     type: Label
     layout_properties: {x: 270.2257080078125, y: 420.9548673629761, width: 200}

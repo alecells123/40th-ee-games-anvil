@@ -37,7 +37,7 @@ components:
   - name: strength_L_copy_3
     properties: {}
     type: Label
-    layout_properties: {row: MLQOLJ, width_xs: 3, col_xs: 0}
+    layout_properties: {row: MLQOLJ, width_xs: 1, col_xs: 0}
   - name: strength_L_copy_2
     properties: {}
     type: Label

@@ -13,10 +13,6 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 6, col_xs: 3}
-  - name: strength_L_copy_3
-    properties: {align: right}
-    type: Label
-    layout_properties: {row: MLQOLJ, width_xs: 1, col_xs: 0}
   - name: strength_L
     properties: {align: right}
     type: Label
@@ -33,6 +29,10 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: PLGLDY, width_xs: 1, col_xs: 0}
+  - name: strength_L_copy_3
+    properties: {align: right}
+    type: Label
+    layout_properties: {row: TSNVFU, width_xs: 1, col_xs: 0}
   - name: strength_R_copy_3
     properties: {align: left}
     type: Label

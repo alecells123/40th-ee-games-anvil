@@ -19,3 +19,7 @@ import anvil.server
 @anvil.server.background_task
 def send_agendas():
   pass
+
+@anvil.server.callable
+def generate_agenda_codes():
+  pass

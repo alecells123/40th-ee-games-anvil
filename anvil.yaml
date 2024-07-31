@@ -102,9 +102,6 @@ db_schema:
     - name: description
       admin_ui: {width: 443}
       type: string
-    - name: reward
-      admin_ui: {width: 200}
-      type: string
     - name: players
       admin_ui: {order: 4, width: 193}
       type: link_multiple
@@ -115,6 +112,9 @@ db_schema:
     - name: act
       admin_ui: {order: 5, width: 110}
       type: number
+    - name: repeatable
+      admin_ui: {width: 200, order: 6}
+      type: bool
   affiliates:
     title: Affiliates
     client: none

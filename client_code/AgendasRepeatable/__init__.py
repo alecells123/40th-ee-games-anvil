@@ -16,4 +16,3 @@ class AgendasRepeatable(AgendasRepeatableTemplate):
     self.agenda_affiliate_label.text = self.item['affiliate']['name']
     self.agenda_flavor_label.text = self.item['flavor']
     self.agenda_description_label.text = self.item['description']
-    self.agenda_reward_label.text = self.item['reward']

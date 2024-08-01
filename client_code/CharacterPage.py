@@ -13,5 +13,8 @@ class CharacterPage(CharacterPageTemplate):
 
     # Any code you write here will run when the form opens.
     self.player_info = anvil.server.call('get_player_info')
-    self.character_headline_label.text = "Welcome, " + self.player_info['given_name'] + "!"
-    self.character_name_label1.text = self.player_info['character']['name']
+    if self.player_info is None:
+      open_form('StartPage')
+    else:
+      self.character_headline_label.text = "Welcome, " + self.player_info['given_name'] + "!"
+      self.character_name_label1.text = self.player_info['character']['name']

@@ -55,7 +55,10 @@ def submit(first, middle, family, picture, affiliate):
 
 @anvil.server.callable
 def get_player_info():
-  return anvil.server.session["player_info"]
+  if "player_info" in anvil.server.session:
+    return anvil.server.session["player_info"]
+  else:
+    return None
 
 @anvil.server.callable
 def get_agendas():

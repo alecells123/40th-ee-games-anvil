@@ -56,18 +56,32 @@ def submit(first, middle, family, picture, affiliate):
 @anvil.server.callable
 def get_player_info():
   if "player_info" in anvil.server.session:
-    return anvil.server.session["player_info"]
+    player_info = anvil.server.session["player_info"]
+    print(f"Player info found in session: {player_info}")
+    return player_info
   else:
+    print("No player info found in session.")
     return None
 
 @anvil.server.callable
 def get_agendas():
   # Get player from database
   session_data = get_player_info()
+  if session_data is None:
+    print("No session data available.")
+    return None
+
   player_info = app_tables.players.get(
     given_name=session_data['given_name'], 
     middle_name=session_data['middle_name'], 
-    family_name=session_data['family_name'])
+    family_name=session_data['family_name']
+  )
+  
+  if player_info is None:
+    print("No player info found in database.")
+    return None
+
+  print(f"Player info retrieved: {player_info}")
   return player_info['agendas']
 
 @anvil.server.callable

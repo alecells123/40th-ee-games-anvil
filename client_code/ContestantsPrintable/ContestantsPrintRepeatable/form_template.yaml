@@ -10,18 +10,18 @@ components:
     properties: {role: headline, bold: true}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 3, col_xs: 0}
-  - name: label_14
-    properties: {text: 'Ability:', bold: true}
-    type: Label
-    layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 4}
   - name: label_13
     properties: {text: 'Drug:', bold: true}
     type: Label
-    layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 4}
+    layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 8}
   - name: relationships_label
     properties: {}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 6, col_xs: 0}
+  - name: label_14
+    properties: {text: 'Ability:', bold: true}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 8}
   - name: behavious_label
     properties: {}
     type: Label

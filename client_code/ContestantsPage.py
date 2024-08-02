@@ -15,6 +15,7 @@ class ContestantsPage(ContestantsPageTemplate):
     # Any code you write here will run when the form opens.
     self.current_contestant = 1
     self.change_contestant(1)
+    if self.
 
   def change_contestant(self, new_contestant: int) -> None:
     self.current_contestant = new_contestant

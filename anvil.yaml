@@ -202,7 +202,7 @@ db_schema:
       admin_ui: {width: 205}
       type: string
     - name: max_injuries
-      admin_ui: {width: 200}
+      admin_ui: {order: 21, width: 107}
       type: number
     - name: wellbeing
       admin_ui: {width: 87}

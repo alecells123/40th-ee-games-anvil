@@ -16,7 +16,7 @@ components:
   - name: label_2
     properties: {text: Coordination}
     type: Label
-    layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 6}
+    layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 7}
   - name: relationships_label
     properties: {}
     type: Label

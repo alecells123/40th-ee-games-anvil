@@ -275,9 +275,6 @@ components:
     type: Button
     layout_properties: {}
     event_bindings: {click: print_button_click}
-  - name: button_1
-    properties: {text: button_1}
-    type: Button
 - name: column_panel_1
   properties: {}
   type: ColumnPanel

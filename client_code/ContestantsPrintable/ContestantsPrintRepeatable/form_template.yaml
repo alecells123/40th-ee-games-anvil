@@ -10,6 +10,10 @@ components:
     properties: {role: headline, bold: true}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 3, col_xs: 0}
+  - name: label_17
+    properties: {}
+    type: Label
+    layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 9}
   - name: relationships_label
     properties: {}
     type: Label
@@ -17,7 +21,7 @@ components:
   - name: label_13
     properties: {text: 'Drug:', bold: true}
     type: Label
-    layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 6}
+    layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 6}
   - name: label_15
     properties: {}
     type: Label
@@ -29,11 +33,11 @@ components:
   - name: label_14
     properties: {text: 'Ability:', bold: true}
     type: Label
-    layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 6}
+    layout_properties: {row: AVWFTM, width_xs: 1, col_xs: 6}
   - name: label_16
     properties: {}
     type: Label
-    layout_properties: {row: AVWFTM, width_xs: 3, col_xs: 8}
+    layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 8}
   - name: goals_label
     properties: {}
     type: Label

@@ -34,6 +34,10 @@ components:
     properties: {text: 'Max Sanity:', bold: true}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 9}
+  - name: label_16
+    properties: {}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 11}
   - name: behavious_label
     properties: {}
     type: Label
@@ -182,7 +186,3 @@ components:
     properties: {height: 19.78289794921875}
     type: Spacer
     layout_properties: {row: RCPCYP, width_xs: 12, col_xs: 0}
-  - name: label_16
-    properties: {}
-    type: Label
-    layout_properties: {row: LFBTYW, width_xs: 1, col_xs: 2}

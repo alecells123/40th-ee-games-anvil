@@ -14,10 +14,6 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 5, col_xs: 0}
-  - name: label_1
-    properties: {text: Strength, bold: true}
-    type: Label
-    layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 5}
   - name: strength_label
     properties: {align: left}
     type: Label
@@ -62,6 +58,10 @@ components:
     properties: {height: 19.78289794921875}
     type: Spacer
     layout_properties: {row: DHWAIP, width_xs: 3, col_xs: 5}
+  - name: label_1
+    properties: {text: Strength, bold: true}
+    type: Label
+    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 0}
   - name: label_7
     properties: {text: Utilize, bold: true}
     type: Label

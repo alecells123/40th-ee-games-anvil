@@ -38,8 +38,8 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 2}
-  - name: label_7
-    properties: {text: Utilize, bold: true}
+  - name: label_4_copy
+    properties: {text: Convince, bold: true}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 4}
   - name: strength_label_copy
@@ -62,11 +62,11 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 2}
-  - name: label_6
-    properties: {text: Perceive, bold: true}
+  - name: label_4_copy_copy
+    properties: {text: Engineer, bold: true}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 4}
-  - name: label_12
+  - name: perceive_label
     properties: {}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 6}
@@ -86,11 +86,11 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 2}
-  - name: label_5
-    properties: {text: Know, bold: true}
+  - name: label_6
+    properties: {text: Perceive, bold: true}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 4}
-  - name: label_13
+  - name: know_label
     properties: {}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 6}
@@ -110,11 +110,11 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 2}
-  - name: label_4_copy_copy
-    properties: {text: Engineer, bold: true}
+  - name: label_5
+    properties: {text: Know, bold: true}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 4}
-  - name: label_14
+  - name: engineer_label
     properties: {}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 6}
@@ -126,11 +126,11 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 10}
-  - name: label_4_copy
-    properties: {text: Convince, bold: true}
+  - name: label_7
+    properties: {text: Utilize, bold: true}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 4}
-  - name: label_15
+  - name: convince_label
     properties: {}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 6}

@@ -30,7 +30,7 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: VVWCXJ, width_xs: 1, col_xs: 11}
-  - name: behavious_label
+  - name: behaviours_label
     properties: {}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 5, col_xs: 0}

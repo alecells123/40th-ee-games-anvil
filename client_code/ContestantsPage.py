@@ -16,6 +16,12 @@ class ContestantsPage(ContestantsPageTemplate):
     self.current_contestant = 1
     self.change_contestant(1)
 
+    self.player_info = anvil.server.call('get_player_info')
+    if self.player_info['given_name'] == "Alec":
+      self.print_button.visible = True
+    else:
+      self.print_button.visible = False
+
   def change_contestant(self, new_contestant: int) -> None:
     self.current_contestant = new_contestant
     self.load_contestant(new_contestant)

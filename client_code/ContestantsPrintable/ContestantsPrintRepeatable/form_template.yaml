@@ -11,7 +11,7 @@ components:
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 3, col_xs: 0}
   - name: label_17
-    properties: {text: 'Max Injuries:'}
+    properties: {text: 'Max Injuries:', bold: true}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 9}
   - name: relationships_label
@@ -27,7 +27,7 @@ components:
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 7}
   - name: label_18
-    properties: {text: 'Max Sanity:'}
+    properties: {text: 'Max Sanity:', bold: true}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 9}
   - name: behavious_label

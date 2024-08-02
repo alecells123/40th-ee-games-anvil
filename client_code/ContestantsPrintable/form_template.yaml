@@ -9,26 +9,34 @@ components:
     properties: {role: headline}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 3, col_xs: 0}
-  - name: coordination_label
-    properties: {align: left}
-    type: Label
-    layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 4}
-  - name: intellect_label
-    properties: {align: left}
+  - name: label_1
+    properties: {text: Strength}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 5}
-  - name: social_label
-    properties: {align: left}
+  - name: label_2
+    properties: {text: Coordination}
     type: Label
-    layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 6}
-  - name: strength_label
-    properties: {align: left}
-    type: Label
-    layout_properties: {row: TCLEEO, width_xs: 1, col_xs: 3}
+    layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 6}
   - name: relationships_label
     properties: {}
     type: Label
-    layout_properties: {row: ZEUHVM, width_xs: 6, col_xs: 0}
+    layout_properties: {row: ZEUHVM, width_xs: 5, col_xs: 0}
+  - name: strength_label
+    properties: {align: left}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 5}
+  - name: coordination_label
+    properties: {align: left}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 6}
+  - name: intellect_label
+    properties: {align: left}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 7}
+  - name: social_label
+    properties: {align: left}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 8}
   - name: behavious_label
     properties: {}
     type: Label

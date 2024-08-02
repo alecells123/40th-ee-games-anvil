@@ -11,7 +11,7 @@ components:
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 3, col_xs: 0}
   - name: label_17
-    properties: {}
+    properties: {text: 'Max Injuries:'}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 9}
   - name: relationships_label
@@ -27,7 +27,7 @@ components:
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 7}
   - name: label_18
-    properties: {}
+    properties: {text: 'Max Sanity:'}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 9}
   - name: behavious_label
@@ -43,7 +43,7 @@ components:
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 7}
   - name: label_19
-    properties: {}
+    properties: {text: 'Defense:', bold: true}
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 9}
   - name: goals_label
@@ -51,7 +51,7 @@ components:
     type: Label
     layout_properties: {row: QELBQL, width_xs: 6, col_xs: 0}
   - name: label_20
-    properties: {}
+    properties: {text: 'Initiative:', bold: true}
     type: Label
     layout_properties: {row: QELBQL, width_xs: 2, col_xs: 9}
   - name: spacer_1_copy_2

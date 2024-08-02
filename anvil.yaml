@@ -204,33 +204,18 @@ db_schema:
     - name: max_injuries
       admin_ui: {width: 200}
       type: number
-    - name: current_injuries
-      admin_ui: {width: 131}
-      type: number
     - name: wellbeing
       admin_ui: {width: 87}
       type: number
     - name: max_sanity
       admin_ui: {width: 97}
       type: number
-    - name: sanity
-      admin_ui: {width: 64}
-      type: number
     - name: defense
       admin_ui: {width: 80}
-      type: number
-    - name: energy
-      admin_ui: {width: 200}
       type: number
     - name: initiative
       admin_ui: {width: 200}
       type: number
-    - name: conditions
-      admin_ui: {width: 170}
-      type: string
-    - name: inventory
-      admin_ui: {width: 200}
-      type: string
   files:
     title: Files
     client: none

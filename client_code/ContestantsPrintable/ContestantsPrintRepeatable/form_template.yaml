@@ -66,7 +66,7 @@ components:
     properties: {text: Engineer, bold: true}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 4}
-  - name: perceive_label
+  - name: engineer_label
     properties: {}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 6}
@@ -86,8 +86,8 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 2}
-  - name: label_6
-    properties: {text: Perceive, bold: true}
+  - name: label_5
+    properties: {text: Know, bold: true}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 4}
   - name: know_label
@@ -110,11 +110,11 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 2}
-  - name: label_5
-    properties: {text: Know, bold: true}
+  - name: label_6
+    properties: {text: Perceive, bold: true}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 4}
-  - name: engineer_label
+  - name: perceive_label
     properties: {}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 6}

@@ -1,0 +1,25 @@
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {slot: left-nav}
+  components:
+  - name: nav_menu_1
+    properties: {}
+    type: form:NavMenu
+    layout_properties: {grid_position: 'LCIFPC,HFVNYS'}
+- name: headline_1
+  properties: {role: headline, text: Agenda Manager}
+  type: Label
+  layout_properties: {slot: title}

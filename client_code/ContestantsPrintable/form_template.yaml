@@ -9,48 +9,32 @@ components:
     properties: {role: headline}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 3, col_xs: 0}
-  - name: strength_L
-    properties: {align: right}
-    type: Label
-    layout_properties: {row: AGCMGU, width_xs: 1, col_xs: 0}
-  - name: relationships_label
-    properties: {}
-    type: Label
-    layout_properties: {row: AGCMGU, width_xs: 6, col_xs: 3}
   - name: strength_R_copy_2
     properties: {align: left}
     type: Label
-    layout_properties: {row: AGCMGU, width_xs: 1, col_xs: 11}
-  - name: strength_L_copy
-    properties: {}
-    type: Label
-    layout_properties: {row: PLGLDY, width_xs: 1, col_xs: 0}
-  - name: behavious_label
-    properties: {}
-    type: Label
-    layout_properties: {row: PLGLDY, width_xs: 5, col_xs: 3}
+    layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 5}
   - name: strength_R_copy_3
     properties: {align: left}
     type: Label
-    layout_properties: {row: PLGLDY, width_xs: 1, col_xs: 11}
-  - name: strength_L_copy_3
-    properties: {align: right}
-    type: Label
-    layout_properties: {row: TSNVFU, width_xs: 1, col_xs: 0}
-  - name: goals_label
-    properties: {}
-    type: Label
-    layout_properties: {row: TSNVFU, width_xs: 5, col_xs: 3}
+    layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 6}
   - name: strength_R
     properties: {align: left}
     type: Label
-    layout_properties: {row: TSNVFU, width_xs: 1, col_xs: 11}
-  - name: strength_L_copy_2
-    properties: {}
-    type: Label
-    layout_properties: {row: UUOGYY, width_xs: 1, col_xs: 0}
+    layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 7}
   - name: strength_R_copy
     properties: {align: left}
     type: Label
-    layout_properties: {row: UUOGYY, width_xs: 1, col_xs: 11}
+    layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 8}
+  - name: relationships_label
+    properties: {}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 6, col_xs: 0}
+  - name: behavious_label
+    properties: {}
+    type: Label
+    layout_properties: {row: AVWFTM, width_xs: 5, col_xs: 0}
+  - name: goals_label
+    properties: {}
+    type: Label
+    layout_properties: {row: QELBQL, width_xs: 5, col_xs: 0}
 is_package: true

@@ -41,6 +41,8 @@ def get_player_count_data():
 @anvil.server.callable
 def submit(first, middle, family, picture, affiliate): 
   affiliate_row = app_tables.affiliates.get(name=affiliate)
+  affiliate_row.update(player_count=)
+  
   character_results = app_tables.characters.search(q.all_of(affiliate=affiliate_row, has_player=False))
   character_row = character_results[0]
   character_row['has_player'] = True

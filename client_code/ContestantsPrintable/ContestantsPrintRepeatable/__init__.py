@@ -14,21 +14,17 @@ class ContestantsPrintRepeatable(ContestantsPrintRepeatableTemplate):
     # Any code you write here will run before the form opens.
     self.name_label.text = self.item.get('name', '')
     self.relationships_label.text = self.item.get('relationships', '')
+    self.behaviours_label.text = self.item.get('behaviours', '')
     self.goals_label.text = self.item.get('goals', '')
 
-    self.primary_drug_label.text = self.item.get('primary_drug', '')
-    self.ability_name_label.text = self.item.get('ability_name', '')
+    self.drug_label.text = self.item.get('primary_drug', '')
+    self.ability_label.text = self.item.get('ability_name', '')
 
-    self.max_injuries_label.text = self.item.get('max_injuries', '')
-    self.max_sanity_label.text = self.item.get('max_sanity', '')
-    
-    # Additional fields from the YAML file
-    self.injuries_label.text = self.item.get('injuries', '')
-    self.drug_label.text = self.item.get('drug', '')
-    self.sanity_label.text = self.item.get('sanity', '')
-    self.behavious_label.text = self.item.get('behavious', '')
+    self.injuries_label.text = self.item.get('max_injuries', '')
+    self.sanity_label.text = self.item.get('max_sanity', '')
     self.defense_label.text = self.item.get('defense', '')
     self.initiative_label.text = self.item.get('initiative', '')
+    
     self.strength_label.text = self.item.get('strength', '')
     self.convince_label.text = self.item.get('convince', '')
     self.brawl_label.text = self.item.get('brawl', '')

@@ -73,4 +73,5 @@ components:
     properties: {text: agenda admin, visible: false}
     type: Button
     layout_properties: {grid_position: 'JVGXSB,GMNLOV'}
+    event_bindings: {click: agenda_admin_button_click}
 container: {type: ColumnPanel}

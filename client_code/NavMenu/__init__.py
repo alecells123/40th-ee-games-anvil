@@ -11,7 +11,10 @@ class NavMenu(NavMenuTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.player_info = anvil.server.call('get_player_info')
-    if self.player_info['given_name'] 
+    if self.player_info['middle_name'] == "Cheesy Butts":
+      self.agenda_admin_button.visible = True
+    else:
+      self.agenda_admin_button.visible = False
 
   def character_tab_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -36,3 +39,7 @@ class NavMenu(NavMenuTemplate):
   def sponsor_menu_tab_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('SponsorMenuPage')
+
+  def agenda_admin_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('Agen')

@@ -62,3 +62,7 @@ components:
     properties: {text: Convince, bold: true}
     type: Label
     layout_properties: {row: WWTRYA, width_xs: 2, col_xs: 5}
+  - name: label_4_copy_copy
+    properties: {text: Convince, bold: true}
+    type: Label
+    layout_properties: {row: SFOOKK, width_xs: 2, col_xs: 5}

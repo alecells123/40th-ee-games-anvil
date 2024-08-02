@@ -18,7 +18,7 @@ class ContestantsPrintRepeatable(ContestantsPrintRepeatableTemplate):
     self.goals_label.text = self.item.get('goals', '')
 
     self.drug_label.text = self.item.get('primary_drug', '')
-    self.ability_label.text = self.item.get('ability_name', '')
+    self.ability_label.text = self.item.get('ability', '')
 
     self.injuries_label.text = self.item.get('max_injuries', '')
     self.sanity_label.text = self.item.get('max_sanity', '')

@@ -30,6 +30,10 @@ components:
     properties: {text: 'Ability:', bold: true}
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 6}
+  - name: label_16
+    properties: {}
+    type: Label
+    layout_properties: {row: AVWFTM, width_xs: 3, col_xs: 8}
   - name: goals_label
     properties: {}
     type: Label

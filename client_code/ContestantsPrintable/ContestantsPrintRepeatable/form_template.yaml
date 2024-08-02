@@ -123,7 +123,7 @@ components:
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 10}
   - name: label_3
-    properties: {text: Intellect, bold: true}
+    properties: {text: Intellect, bold: true, align: right}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 0}
   - name: intellect_label
@@ -147,7 +147,7 @@ components:
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 10}
   - name: label_4
-    properties: {text: Social, bold: true}
+    properties: {text: Social, bold: true, align: right}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 0}
   - name: social_label

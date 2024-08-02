@@ -20,6 +20,6 @@ components:
     type: form:NavMenu
     layout_properties: {grid_position: 'LCIFPC,HFVNYS'}
 - name: headline_1
-  properties: {role: headline, text: Agenda Manager}
+  properties: {role: headline, text: Agenda Admin}
   type: Label
   layout_properties: {slot: title}

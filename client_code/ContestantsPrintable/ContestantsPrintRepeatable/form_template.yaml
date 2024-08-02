@@ -78,14 +78,6 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 10}
-  - name: label_16_copy_2
-    properties: {}
-    type: Label
-    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 10}
-  - name: label_16_copy
-    properties: {}
-    type: Label
-    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 10}
   - name: label_3
     properties: {text: Intellect, bold: true}
     type: Label
@@ -106,6 +98,10 @@ components:
     properties: {text: Strike, bold: true}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 8}
+  - name: label_17
+    properties: {}
+    type: Label
+    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 10}
   - name: label_4
     properties: {text: Social, bold: true}
     type: Label
@@ -126,6 +122,10 @@ components:
     properties: {text: Throw, bold: true}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 8}
+  - name: label_17_copy
+    properties: {}
+    type: Label
+    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 10}
   - name: label_4_copy
     properties: {text: Convince, bold: true}
     type: Label

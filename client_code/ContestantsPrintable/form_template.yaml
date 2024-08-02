@@ -1,7 +1,7 @@
 container: {type: ColumnPanel}
 components:
 - name: repeating_panel_1
-  properties: {item_template: ContestantsPrintable.ItemTemplate1}
+  properties: {item_template: ContestantsPrintable.ContestantsPrintRepeatable}
   type: RepeatingPanel
   layout_properties: {grid_position: 'PBCMIM,VONAGK'}
 is_package: true

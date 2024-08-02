@@ -49,3 +49,7 @@ def get_contestant(contestant: int):
       'initiative': contestant_row['initiative']
       }
   return (anvil.server.session[str(contestant)])
+
+@anvil.server.callable
+def get_contestants():
+  return app_tables.contestants.search()

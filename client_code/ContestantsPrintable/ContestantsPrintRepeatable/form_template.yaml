@@ -9,7 +9,7 @@ components:
   - name: name_label
     properties: {role: headline, bold: true}
     type: Label
-    layout_properties: {row: IBCHMG, width_xs: 4, col_xs: 0}
+    layout_properties: {row: IBCHMG, width_xs: 10, col_xs: 0}
   - name: relationships_label
     properties: {}
     type: Label

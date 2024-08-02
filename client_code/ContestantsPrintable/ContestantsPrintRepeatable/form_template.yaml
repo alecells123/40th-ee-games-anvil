@@ -122,7 +122,7 @@ components:
     properties: {text: Throw, bold: true}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 8}
-  - name: label_17_copy
+  - name: throw_label
     properties: {}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 10}

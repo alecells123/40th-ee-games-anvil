@@ -54,14 +54,14 @@ components:
     properties: {align: left}
     type: Label
     layout_properties: {row: SUDBHY, width_xs: 1, col_xs: 7}
+  - name: spacer_1_copy_2
+    properties: {height: 19.78289794921875}
+    type: Spacer
+    layout_properties: {row: DHWAIP, width_xs: 3, col_xs: 0}
   - name: spacer_1
     properties: {height: 19.78289794921875}
     type: Spacer
     layout_properties: {row: DHWAIP, width_xs: 3, col_xs: 5}
-  - name: spacer_1_copy
-    properties: {height: 19.78289794921875}
-    type: Spacer
-    layout_properties: {row: KVOAVN, width_xs: 3, col_xs: 0}
   - name: label_7
     properties: {text: Utilize, bold: true}
     type: Label
@@ -82,3 +82,7 @@ components:
     properties: {text: Convince, bold: true}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 0}
+  - name: spacer_1_copy
+    properties: {height: 19.78289794921875}
+    type: Spacer
+    layout_properties: {row: RCPCYP, width_xs: 3, col_xs: 0}

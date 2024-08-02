@@ -42,7 +42,7 @@ components:
     properties: {text: Convince, bold: true}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 4}
-  - name: strength_label_copy
+  - name: asdf
     properties: {align: left}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 6}

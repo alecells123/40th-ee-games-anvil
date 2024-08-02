@@ -25,7 +25,7 @@ components:
   - name: label_15
     properties: {}
     type: Label
-    layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 8}
+    layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 7}
   - name: behavious_label
     properties: {}
     type: Label
@@ -37,7 +37,7 @@ components:
   - name: label_16
     properties: {}
     type: Label
-    layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 8}
+    layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 7}
   - name: goals_label
     properties: {}
     type: Label

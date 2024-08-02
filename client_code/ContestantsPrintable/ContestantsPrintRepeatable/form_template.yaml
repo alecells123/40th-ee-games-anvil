@@ -6,12 +6,12 @@ components:
   type: GridPanel
   layout_properties: {grid_position: 'MUNQTH,CVPFAL'}
   components:
-  - name: headline_1
+  - name: name_label
     properties: {role: headline, bold: true}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 3, col_xs: 0}
   - name: label_17
-    properties: {text: 'Max Injuries:', bold: true}
+    properties: {text: 'Max Injuries:', bold: true, align: right}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 9}
   - name: injuries_label
@@ -21,9 +21,9 @@ components:
   - name: relationships_label
     properties: {}
     type: Label
-    layout_properties: {row: ZEUHVM, width_xs: 6, col_xs: 0}
+    layout_properties: {row: ZEUHVM, width_xs: 5, col_xs: 0}
   - name: label_13
-    properties: {text: 'Drug:', bold: true}
+    properties: {text: 'Drug:', bold: true, align: right}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 6}
   - name: drug_label
@@ -31,7 +31,7 @@ components:
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 7}
   - name: label_18
-    properties: {text: 'Max Sanity:', bold: true}
+    properties: {text: 'Max Sanity:', bold: true, align: right}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 9}
   - name: sanity_label
@@ -43,7 +43,7 @@ components:
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 6, col_xs: 0}
   - name: label_14
-    properties: {text: 'Ability:', bold: true}
+    properties: {text: 'Ability:', bold: true, align: right}
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 1, col_xs: 6}
   - name: ability_label
@@ -51,7 +51,7 @@ components:
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 7}
   - name: label_19
-    properties: {text: 'Defense:', bold: true}
+    properties: {text: 'Defense:', bold: true, align: right}
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 9}
   - name: defense_label
@@ -63,7 +63,7 @@ components:
     type: Label
     layout_properties: {row: QELBQL, width_xs: 6, col_xs: 0}
   - name: label_20
-    properties: {text: 'Initiative:', bold: true}
+    properties: {text: 'Initiative:', bold: true, align: right}
     type: Label
     layout_properties: {row: QELBQL, width_xs: 2, col_xs: 9}
   - name: initiative_label
@@ -83,7 +83,7 @@ components:
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 2}
   - name: label_4_copy
-    properties: {text: Convince, bold: true}
+    properties: {text: Convince, bold: true, align: right}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 4}
   - name: convince_label
@@ -91,7 +91,7 @@ components:
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 6}
   - name: label_8
-    properties: {text: Brawl, bold: true}
+    properties: {text: Brawl, bold: true, align: right}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 8}
   - name: brawl_label
@@ -107,7 +107,7 @@ components:
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 2}
   - name: label_4_copy_copy
-    properties: {text: Engineer, bold: true}
+    properties: {text: Engineer, bold: true, align: right}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 4}
   - name: engineer_label
@@ -115,7 +115,7 @@ components:
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 6}
   - name: label_9
-    properties: {text: Shoot, bold: true}
+    properties: {text: Shoot, bold: true, align: right}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 8}
   - name: shoot_label
@@ -131,7 +131,7 @@ components:
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 2}
   - name: label_5
-    properties: {text: Know, bold: true}
+    properties: {text: Know, bold: true, align: right}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 4}
   - name: know_label
@@ -139,7 +139,7 @@ components:
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 6}
   - name: label_10
-    properties: {text: Strike, bold: true}
+    properties: {text: Strike, bold: true, align: right}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 8}
   - name: strike_label
@@ -155,7 +155,7 @@ components:
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 2}
   - name: label_6
-    properties: {text: Perceive, bold: true}
+    properties: {text: Perceive, bold: true, align: right}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 4}
   - name: perceive_label
@@ -163,7 +163,7 @@ components:
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 6}
   - name: label_11
-    properties: {text: Throw, bold: true}
+    properties: {text: Throw, bold: true, align: right}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 8}
   - name: throw_label
@@ -171,7 +171,7 @@ components:
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 10}
   - name: label_7
-    properties: {text: Utilize, bold: true}
+    properties: {text: Utilize, bold: true, align: right}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 4}
   - name: utilize_label
@@ -183,14 +183,10 @@ components:
     type: Spacer
     layout_properties: {row: WPUQXM, width_xs: 3, col_xs: 0}
   - name: label_12
-    properties: {bold: true, text: 'Subskills:'}
+    properties: {bold: true, text: Subskills, align: right}
     type: Label
     layout_properties: {row: YZXVCF, width_xs: 2, col_xs: 0}
   - name: subskills_label
     properties: {}
     type: Label
     layout_properties: {row: YZXVCF, width_xs: 5, col_xs: 2}
-  - name: spacer_1_copy
-    properties: {height: 19.78289794921875}
-    type: Spacer
-    layout_properties: {row: RCPCYP, width_xs: 12, col_xs: 0}

@@ -45,7 +45,7 @@ components:
   - name: label_8
     properties: {text: Brawl, bold: true}
     type: Label
-    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 6}
+    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 8}
   - name: label_2
     properties: {text: Coordination, bold: true}
     type: Label

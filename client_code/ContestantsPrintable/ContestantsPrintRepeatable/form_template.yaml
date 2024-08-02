@@ -14,6 +14,14 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: VVWCXJ, width_xs: 5, col_xs: 0}
+  - name: label_13
+    properties: {text: 'Drug:', bold: true, align: right}
+    type: Label
+    layout_properties: {row: VVWCXJ, width_xs: 1, col_xs: 6}
+  - name: drug_label
+    properties: {}
+    type: Label
+    layout_properties: {row: VVWCXJ, width_xs: 2, col_xs: 7}
   - name: label_17
     properties: {text: 'Max Injuries:', bold: true, align: right}
     type: Label
@@ -26,11 +34,11 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 5, col_xs: 0}
-  - name: label_13
-    properties: {text: 'Drug:', bold: true, align: right}
+  - name: label_14
+    properties: {text: 'Ability:', bold: true, align: right}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 6}
-  - name: drug_label
+  - name: ability_label
     properties: {}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 7}
@@ -46,14 +54,6 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 5, col_xs: 0}
-  - name: label_14
-    properties: {text: 'Ability:', bold: true, align: right}
-    type: Label
-    layout_properties: {row: AVWFTM, width_xs: 1, col_xs: 6}
-  - name: ability_label
-    properties: {}
-    type: Label
-    layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 7}
   - name: label_19
     properties: {text: 'Defense:', bold: true, align: right}
     type: Label

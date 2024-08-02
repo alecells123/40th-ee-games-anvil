@@ -37,11 +37,15 @@ components:
   - name: strength_label
     properties: {align: left}
     type: Label
-    layout_properties: {row: XVYVEL, width_xs: 1, col_xs: 2}
+    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 2}
   - name: label_7
     properties: {text: Utilize, bold: true}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 4}
+  - name: strength_label_copy
+    properties: {align: left}
+    type: Label
+    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 6}
   - name: label_8
     properties: {text: Brawl, bold: true}
     type: Label
@@ -53,15 +57,19 @@ components:
   - name: coordination_label
     properties: {align: left}
     type: Label
-    layout_properties: {row: OISOGH, width_xs: 1, col_xs: 2}
+    layout_properties: {row: OISOGH, width_xs: 2, col_xs: 2}
   - name: label_6
     properties: {text: Perceive, bold: true}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 4}
+  - name: label_12
+    properties: {}
+    type: Label
+    layout_properties: {row: OISOGH, width_xs: 2, col_xs: 6}
   - name: label_9
     properties: {text: Shoot, bold: true}
     type: Label
-    layout_properties: {row: OISOGH, width_xs: 2, col_xs: 6}
+    layout_properties: {row: OISOGH, width_xs: 2, col_xs: 8}
   - name: label_3
     properties: {text: Intellect, bold: true}
     type: Label
@@ -69,15 +77,19 @@ components:
   - name: intellect_label
     properties: {align: left}
     type: Label
-    layout_properties: {row: OUQKUA, width_xs: 1, col_xs: 2}
+    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 2}
   - name: label_5
     properties: {text: Know, bold: true}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 4}
+  - name: label_13
+    properties: {}
+    type: Label
+    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 6}
   - name: label_10
     properties: {text: Strike, bold: true}
     type: Label
-    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 6}
+    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 8}
   - name: label_4
     properties: {text: Social, bold: true}
     type: Label
@@ -85,19 +97,27 @@ components:
   - name: social_label
     properties: {align: left}
     type: Label
-    layout_properties: {row: YJRQTD, width_xs: 1, col_xs: 2}
+    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 2}
   - name: label_4_copy_copy
     properties: {text: Engineer, bold: true}
     type: Label
     layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 4}
+  - name: label_14
+    properties: {}
+    type: Label
+    layout_properties: {row: YJRQTD, width_xs: 3, col_xs: 6}
   - name: label_11
     properties: {text: Throw, bold: true}
     type: Label
-    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 6}
+    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 8}
   - name: label_4_copy
     properties: {text: Convince, bold: true}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 4}
+  - name: label_15
+    properties: {}
+    type: Label
+    layout_properties: {row: XODDYA, width_xs: 2, col_xs: 6}
   - name: spacer_1_copy
     properties: {height: 19.78289794921875}
     type: Spacer

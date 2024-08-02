@@ -42,7 +42,7 @@ components:
     properties: {text: Convince, bold: true}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 4}
-  - name: asdf
+  - name: convince_label
     properties: {align: left}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 6}
@@ -50,7 +50,7 @@ components:
     properties: {text: Brawl, bold: true}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 8}
-  - name: label_16
+  - name: brawl_label
     properties: {}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 10}
@@ -74,7 +74,7 @@ components:
     properties: {text: Shoot, bold: true}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 8}
-  - name: label_16_copy_3
+  - name: shoot_label
     properties: {}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 10}
@@ -98,7 +98,7 @@ components:
     properties: {text: Strike, bold: true}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 8}
-  - name: label_17
+  - name: strike_label
     properties: {}
     type: Label
     layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 10}
@@ -130,7 +130,7 @@ components:
     properties: {text: Utilize, bold: true}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 4}
-  - name: convince_label
+  - name: utilize_label
     properties: {}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 6}

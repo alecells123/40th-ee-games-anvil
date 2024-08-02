@@ -50,6 +50,10 @@ components:
     properties: {text: Brawl, bold: true}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 8}
+  - name: label_16
+    properties: {}
+    type: Label
+    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 10}
   - name: label_2
     properties: {text: Coordination, bold: true}
     type: Label
@@ -70,6 +74,18 @@ components:
     properties: {text: Shoot, bold: true}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 8}
+  - name: label_16_copy_3
+    properties: {}
+    type: Label
+    layout_properties: {row: OISOGH, width_xs: 2, col_xs: 10}
+  - name: label_16_copy_2
+    properties: {}
+    type: Label
+    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 10}
+  - name: label_16_copy
+    properties: {}
+    type: Label
+    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 10}
   - name: label_3
     properties: {text: Intellect, bold: true}
     type: Label

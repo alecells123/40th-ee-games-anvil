@@ -12,3 +12,5 @@ class ContestantsPrintRepeatable(ContestantsPrintRepeatableTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    self.name_label.text = self.item['name']
+

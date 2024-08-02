@@ -42,4 +42,4 @@ class NavMenu(NavMenuTemplate):
 
   def agenda_admin_button_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('Agen')
+    open_form('AgendaAdmin')

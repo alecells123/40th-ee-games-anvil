@@ -14,7 +14,7 @@ components:
     properties: {text: 'Max Injuries:', bold: true}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 2, col_xs: 9}
-  - name: label_15
+  - name: injuries_label
     properties: {}
     type: Label
     layout_properties: {row: IBCHMG, width_xs: 1, col_xs: 11}
@@ -34,7 +34,7 @@ components:
     properties: {text: 'Max Sanity:', bold: true}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 9}
-  - name: label_16
+  - name: sanity_label
     properties: {}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 1, col_xs: 11}
@@ -54,6 +54,10 @@ components:
     properties: {text: 'Defense:', bold: true}
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 9}
+  - name: defense_label
+    properties: {}
+    type: Label
+    layout_properties: {row: AVWFTM, width_xs: 1, col_xs: 11}
   - name: goals_label
     properties: {}
     type: Label
@@ -62,12 +66,16 @@ components:
     properties: {text: 'Initiative:', bold: true}
     type: Label
     layout_properties: {row: QELBQL, width_xs: 2, col_xs: 9}
+  - name: initiative_label
+    properties: {}
+    type: Label
+    layout_properties: {row: QELBQL, width_xs: 1, col_xs: 11}
   - name: spacer_1_copy_2
     properties: {height: 19.78289794921875}
     type: Spacer
     layout_properties: {row: DHWAIP, width_xs: 12, col_xs: 0}
   - name: label_1
-    properties: {text: Strength, bold: true}
+    properties: {text: Strength, bold: true, align: right}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 0}
   - name: strength_label
@@ -91,7 +99,7 @@ components:
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 10}
   - name: label_2
-    properties: {text: Coordination, bold: true}
+    properties: {text: Coordination, bold: true, align: right}
     type: Label
     layout_properties: {row: OISOGH, width_xs: 2, col_xs: 0}
   - name: coordination_label

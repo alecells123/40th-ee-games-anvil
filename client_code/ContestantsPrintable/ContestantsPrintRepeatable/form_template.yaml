@@ -66,6 +66,10 @@ components:
     properties: {text: Utilize, bold: true}
     type: Label
     layout_properties: {row: XVYVEL, width_xs: 3, col_xs: 0}
+  - name: label_8
+    properties: {}
+    type: Label
+    layout_properties: {row: XVYVEL, width_xs: 3, col_xs: 5}
   - name: label_6
     properties: {text: Perceive, bold: true}
     type: Label

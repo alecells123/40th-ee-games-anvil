@@ -105,7 +105,7 @@ components:
   - name: label_14
     properties: {}
     type: Label
-    layout_properties: {row: YJRQTD, width_xs: 3, col_xs: 6}
+    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 6}
   - name: label_11
     properties: {text: Throw, bold: true}
     type: Label

@@ -50,7 +50,7 @@ def submit(first, middle, family, picture, affiliate):
   middle = middle.strip(" ,./!@#$%^&*()-_=+{}[];")
   family = family.strip(" ,./!@#$%^&*()-_=+{}[];")
 
-  app_tables.p
+  app_tables.affiliates.get(nameaffiliate)
   
   # Add the data row and add it to the session
   anvil.server.session["player_info"] = app_tables.players.add_row(given_name=first, middle_name=middle, family_name=family, picture=picture, affiliate=affiliate_row, character=character_row)

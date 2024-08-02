@@ -10,7 +10,8 @@ class NavMenu(NavMenuTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    if n
+    self.player_info = anvil.server.call('get_player_info')
+    if self.player_info['given_name'] == "Alec" or self.player_info['given_']
 
   def character_tab_click(self, **event_args):
     """This method is called when the button is clicked"""

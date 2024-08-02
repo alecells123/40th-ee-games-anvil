@@ -41,7 +41,7 @@ components:
   - name: behavious_label
     properties: {}
     type: Label
-    layout_properties: {row: AVWFTM, width_xs: 6, col_xs: 0}
+    layout_properties: {row: AVWFTM, width_xs: 5, col_xs: 0}
   - name: label_14
     properties: {text: 'Ability:', bold: true, align: right}
     type: Label

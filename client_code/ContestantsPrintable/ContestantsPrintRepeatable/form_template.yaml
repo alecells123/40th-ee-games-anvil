@@ -65,7 +65,7 @@ components:
   - name: label_7
     properties: {text: Utilize, bold: true}
     type: Label
-    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 0}
+    layout_properties: {row: XVYVEL, width_xs: 2, col_xs: 2}
   - name: label_8
     properties: {text: Brawl, bold: true}
     type: Label
@@ -73,7 +73,7 @@ components:
   - name: label_6
     properties: {text: Perceive, bold: true}
     type: Label
-    layout_properties: {row: OISOGH, width_xs: 2, col_xs: 0}
+    layout_properties: {row: OISOGH, width_xs: 2, col_xs: 2}
   - name: label_9
     properties: {text: Shoot, bold: true}
     type: Label
@@ -81,7 +81,7 @@ components:
   - name: label_5
     properties: {text: Know, bold: true}
     type: Label
-    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 0}
+    layout_properties: {row: OUQKUA, width_xs: 2, col_xs: 2}
   - name: label_10
     properties: {text: Strike, bold: true}
     type: Label
@@ -89,7 +89,7 @@ components:
   - name: label_4_copy_copy
     properties: {text: Engineer, bold: true}
     type: Label
-    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 0}
+    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 2}
   - name: label_11
     properties: {text: Throw, bold: true}
     type: Label
@@ -97,7 +97,7 @@ components:
   - name: label_4_copy
     properties: {text: Convince, bold: true}
     type: Label
-    layout_properties: {row: XODDYA, width_xs: 2, col_xs: 0}
+    layout_properties: {row: XODDYA, width_xs: 2, col_xs: 2}
   - name: spacer_1_copy
     properties: {height: 19.78289794921875}
     type: Spacer

@@ -26,6 +26,10 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 7}
+  - name: label_18
+    properties: {}
+    type: Label
+    layout_properties: {row: ZEUHVM, width_xs: 2, col_xs: 9}
   - name: behavious_label
     properties: {}
     type: Label
@@ -38,10 +42,18 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 7}
+  - name: label_19
+    properties: {}
+    type: Label
+    layout_properties: {row: AVWFTM, width_xs: 2, col_xs: 9}
   - name: goals_label
     properties: {}
     type: Label
     layout_properties: {row: QELBQL, width_xs: 6, col_xs: 0}
+  - name: label_20
+    properties: {}
+    type: Label
+    layout_properties: {row: QELBQL, width_xs: 2, col_xs: 9}
   - name: spacer_1_copy_2
     properties: {height: 19.78289794921875}
     type: Spacer

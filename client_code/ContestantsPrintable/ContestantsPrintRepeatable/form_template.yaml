@@ -58,11 +58,27 @@ components:
     properties: {height: 19.78289794921875}
     type: Spacer
     layout_properties: {row: DHWAIP, width_xs: 3, col_xs: 5}
+  - name: spacer_1_copy
+    properties: {height: 19.78289794921875}
+    type: Spacer
+    layout_properties: {row: KVOAVN, width_xs: 3, col_xs: 0}
+  - name: label_7
+    properties: {text: Utilize, bold: true}
+    type: Label
+    layout_properties: {row: XVYVEL, width_xs: 3, col_xs: 0}
+  - name: label_6
+    properties: {text: Perceive, bold: true}
+    type: Label
+    layout_properties: {row: OISOGH, width_xs: 3, col_xs: 0}
+  - name: label_5
+    properties: {text: Know, bold: true}
+    type: Label
+    layout_properties: {row: OUQKUA, width_xs: 3, col_xs: 0}
+  - name: label_4_copy_copy
+    properties: {text: Engineer, bold: true}
+    type: Label
+    layout_properties: {row: YJRQTD, width_xs: 2, col_xs: 0}
   - name: label_4_copy
     properties: {text: Convince, bold: true}
     type: Label
-    layout_properties: {row: WWTRYA, width_xs: 2, col_xs: 5}
-  - name: label_4_copy_copy
-    properties: {text: Convince, bold: true}
-    type: Label
-    layout_properties: {row: SFOOKK, width_xs: 2, col_xs: 5}
+    layout_properties: {row: XODDYA, width_xs: 2, col_xs: 0}

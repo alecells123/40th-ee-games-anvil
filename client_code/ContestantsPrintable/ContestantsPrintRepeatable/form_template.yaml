@@ -130,6 +130,18 @@ components:
     properties: {}
     type: Label
     layout_properties: {row: XODDYA, width_xs: 2, col_xs: 6}
+  - name: spacer_1
+    properties: {height: 4.2235107421875}
+    type: Spacer
+    layout_properties: {row: WPUQXM, width_xs: 3, col_xs: 0}
+  - name: label_12
+    properties: {bold: true, text: 'Subskills:'}
+    type: Label
+    layout_properties: {row: YZXVCF, width_xs: 2, col_xs: 0}
+  - name: subskills_label
+    properties: {}
+    type: Label
+    layout_properties: {row: YZXVCF, width_xs: 5, col_xs: 2}
   - name: spacer_1_copy
     properties: {height: 19.78289794921875}
     type: Spacer

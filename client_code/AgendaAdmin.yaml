@@ -13,17 +13,21 @@ components:
     layout_properties: {grid_position: 'FQBEWT,SYUDGM'}
     components:
     - name: act1_button
-      properties: {text: act i}
+      properties: {text: act i, role: secondary-color}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,BPBOKY'}
     - name: act2_button
-      properties: {text: act ii}
+      properties: {text: act ii, role: secondary-color}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,CBVQDK'}
     - name: act3_button
-      properties: {text: act iii}
+      properties: {text: act iii, role: secondary-color}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,ODWXOV'}
+    - name: spacer_1
+      properties: {height: 32.0565185546875}
+      type: Spacer
+      layout_properties: {grid_position: 'ANNBBM,IELPQS'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

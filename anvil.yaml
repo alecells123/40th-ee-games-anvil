@@ -97,7 +97,7 @@ db_schema:
       type: link_single
       target: affiliates
     - name: flavor
-      admin_ui: {width: 403}
+      admin_ui: {order: 1, width: 657}
       type: string
     - name: description
       admin_ui: {width: 443}

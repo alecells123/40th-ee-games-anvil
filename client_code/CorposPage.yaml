@@ -35,19 +35,12 @@ components:
       layout_properties: {grid_position: 'PSXVED,IIXDDN'}
     - name: label_2
       properties:
-        text: "Ever want to experience something you could never stand doing to your own body? Now you don't have to! We have thousands of bodies for you to choose from to take and do with whatever strikes your fancy! \n\nWe designed the games for global entertainment and to show just how philanthropic we are. Would you let your employee retire with a fortune before they were done being useful? Of course not! We just go that much above and beyond. \n"
+        text: |
+          "They may think you can do better than human but you simply cannot."
+
+          EE Body Rentals is not only the host of the Games, they're also the biggest body rental corporation in the world. Undercity citizens who can't afford to live every hour of their life rents out their consciousness to EE clients so they can have a great time and the citizen can afford to eat. Everyone wins!
       type: Label
       layout_properties: {grid_position: 'UKVUHV,WJYIGV'}
-    - name: card_3
-      properties: {role: card}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'MXPOIT,SSFSOJ'}
-      components:
-      - name: label_3
-        properties:
-          text: "Corporate relationships: \n\nAlpha Computing and Data: EE is wary of them; Increasing competitive tensions in their technological developments. \n\nIn The Feels Designer Drugs: Long time business partners; EE thinks highly of them and their drugs as it's one of the top requests for body renters to try them. \n\nFor Reals Nature Synthetics: EE is wary of them; Possible conflicts in technological developments in the near future. \n\nTrax's Terraforming: EE loves Trax; They terraformed the entire arena for free and is the reason they shattered every arena record they had set this year. \n"
-        type: Label
-        layout_properties: {grid_position: 'QRZABP,ZRWLKJ'}
   - name: spacer_2
     properties: {height: 32}
     type: Spacer
@@ -66,16 +59,6 @@ components:
         text: "Ever want to experience something you could never stand doing to your own body? Now you don't have to! We have thousands of bodies for you to choose from to take and do with whatever strikes your fancy! \n\nWe designed the games for global entertainment and to show just how philanthropic we are. Would you let your employee retire with a fortune before they were done being useful? Of course not! We just go that much above and beyond. \n"
       type: Label
       layout_properties: {grid_position: 'UKVUHV,WJYIGV'}
-    - name: card_3_copy
-      properties: {role: card}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'MXPOIT,SSFSOJ'}
-      components:
-      - name: label_3_copy
-        properties:
-          text: "Corporate relationships: \n\nAlpha Computing and Data: EE is wary of them; Increasing competitive tensions in their technological developments. \n\nIn The Feels Designer Drugs: Long time business partners; EE thinks highly of them and their drugs as it's one of the top requests for body renters to try them. \n\nFor Reals Nature Synthetics: EE is wary of them; Possible conflicts in technological developments in the near future. \n\nTrax's Terraforming: EE loves Trax; They terraformed the entire arena for free and is the reason they shattered every arena record they had set this year. \n"
-        type: Label
-        layout_properties: {grid_position: 'QRZABP,ZRWLKJ'}
   - name: spacer_2_copy
     properties: {height: 32}
     type: Spacer
@@ -94,16 +77,6 @@ components:
         text: "Ever want to experience something you could never stand doing to your own body? Now you don't have to! We have thousands of bodies for you to choose from to take and do with whatever strikes your fancy! \n\nWe designed the games for global entertainment and to show just how philanthropic we are. Would you let your employee retire with a fortune before they were done being useful? Of course not! We just go that much above and beyond. \n"
       type: Label
       layout_properties: {grid_position: 'UKVUHV,WJYIGV'}
-    - name: card_3_copy_copy
-      properties: {role: card}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'MXPOIT,SSFSOJ'}
-      components:
-      - name: label_3_copy_copy
-        properties:
-          text: "Corporate relationships: \n\nAlpha Computing and Data: EE is wary of them; Increasing competitive tensions in their technological developments. \n\nIn The Feels Designer Drugs: Long time business partners; EE thinks highly of them and their drugs as it's one of the top requests for body renters to try them. \n\nFor Reals Nature Synthetics: EE is wary of them; Possible conflicts in technological developments in the near future. \n\nTrax's Terraforming: EE loves Trax; They terraformed the entire arena for free and is the reason they shattered every arena record they had set this year. \n"
-        type: Label
-        layout_properties: {grid_position: 'QRZABP,ZRWLKJ'}
   - name: spacer_2_copy_copy
     properties: {height: 32}
     type: Spacer
@@ -122,16 +95,6 @@ components:
         text: "Ever want to experience something you could never stand doing to your own body? Now you don't have to! We have thousands of bodies for you to choose from to take and do with whatever strikes your fancy! \n\nWe designed the games for global entertainment and to show just how philanthropic we are. Would you let your employee retire with a fortune before they were done being useful? Of course not! We just go that much above and beyond. \n"
       type: Label
       layout_properties: {grid_position: 'UKVUHV,WJYIGV'}
-    - name: card_3_copy_copy_copy
-      properties: {role: card}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'MXPOIT,SSFSOJ'}
-      components:
-      - name: label_3_copy_copy_copy
-        properties:
-          text: "Corporate relationships: \n\nAlpha Computing and Data: EE is wary of them; Increasing competitive tensions in their technological developments. \n\nIn The Feels Designer Drugs: Long time business partners; EE thinks highly of them and their drugs as it's one of the top requests for body renters to try them. \n\nFor Reals Nature Synthetics: EE is wary of them; Possible conflicts in technological developments in the near future. \n\nTrax's Terraforming: EE loves Trax; They terraformed the entire arena for free and is the reason they shattered every arena record they had set this year. \n"
-        type: Label
-        layout_properties: {grid_position: 'QRZABP,ZRWLKJ'}
   - name: spacer_2_copy_copy_2
     properties: {height: 32}
     type: Spacer
@@ -150,16 +113,6 @@ components:
         text: "Ever want to experience something you could never stand doing to your own body? Now you don't have to! We have thousands of bodies for you to choose from to take and do with whatever strikes your fancy! \n\nWe designed the games for global entertainment and to show just how philanthropic we are. Would you let your employee retire with a fortune before they were done being useful? Of course not! We just go that much above and beyond. \n"
       type: Label
       layout_properties: {grid_position: 'UKVUHV,WJYIGV'}
-    - name: card_3_copy_copy_copy_2
-      properties: {role: card}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'MXPOIT,SSFSOJ'}
-      components:
-      - name: label_3_copy_copy_copy_2
-        properties:
-          text: "Corporate relationships: \n\nAlpha Computing and Data: EE is wary of them; Increasing competitive tensions in their technological developments. \n\nIn The Feels Designer Drugs: Long time business partners; EE thinks highly of them and their drugs as it's one of the top requests for body renters to try them. \n\nFor Reals Nature Synthetics: EE is wary of them; Possible conflicts in technological developments in the near future. \n\nTrax's Terraforming: EE loves Trax; They terraformed the entire arena for free and is the reason they shattered every arena record they had set this year. \n"
-        type: Label
-        layout_properties: {grid_position: 'QRZABP,ZRWLKJ'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

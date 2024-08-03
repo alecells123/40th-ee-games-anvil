@@ -145,10 +145,10 @@ db_schema:
       admin_ui: {order: 1, width: 246}
       type: string
     - name: behaviours
-      admin_ui: {order: 2, width: 282}
+      admin_ui: {order: 2, width: 96}
       type: string
     - name: goals
-      admin_ui: {order: 3, width: 311}
+      admin_ui: {order: 3, width: 59}
       type: string
     - name: picture
       admin_ui: {width: 200}

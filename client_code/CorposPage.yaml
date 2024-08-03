@@ -51,12 +51,12 @@ components:
     layout_properties: {grid_position: 'YMDUGG,KMDQYE'}
     components:
     - name: headline_3_copy
-      properties: {role: headline, text: Experience Everything Body Rentals}
+      properties: {role: headline, text: Alpha Computing and Data}
       type: Label
       layout_properties: {grid_position: 'PSXVED,IIXDDN'}
     - name: label_2_copy
       properties:
-        text: "Ever want to experience something you could never stand doing to your own body? Now you don't have to! We have thousands of bodies for you to choose from to take and do with whatever strikes your fancy! \n\nWe designed the games for global entertainment and to show just how philanthropic we are. Would you let your employee retire with a fortune before they were done being useful? Of course not! We just go that much above and beyond. \n"
+        text: "\"Progress should not be prohibited by advocates for what works.\"\n\nLeading technology corporation in data processing, which nowadays is primarily managing and transferring human consciousness. \n"
       type: Label
       layout_properties: {grid_position: 'UKVUHV,WJYIGV'}
   - name: spacer_2_copy
@@ -74,7 +74,7 @@ components:
       layout_properties: {grid_position: 'PSXVED,IIXDDN'}
     - name: label_2_copy_copy
       properties:
-        text: "Ever want to experience something you could never stand doing to your own body? Now you don't have to! We have thousands of bodies for you to choose from to take and do with whatever strikes your fancy! \n\nWe designed the games for global entertainment and to show just how philanthropic we are. Would you let your employee retire with a fortune before they were done being useful? Of course not! We just go that much above and beyond. \n"
+        text: "\"The flesh is weak without progress\"\n\nIn The Feels Designer Drugs believes that while the mind and body are weak, using chemicals can cause the soul to leak into your being, making you truly whole. They are revolutionary scientists and the leading producer of the Primaries, the drugs referred to as Red, Green, and Blue. \n"
       type: Label
       layout_properties: {grid_position: 'UKVUHV,WJYIGV'}
   - name: spacer_2_copy_copy

@@ -25,9 +25,10 @@ components:
     layout_properties: {grid_position: 'ZPIGSN,HEFMJV'}
     components:
     - name: dusty_button
-      properties: {text: dusty boxes, role: primary-color}
+      properties: {text: dusty boxes, role: primary-color, visible: false}
       type: Button
       event_bindings: {click: dusty_button_click}
+      layout_properties: {}
     - name: delivery_button
       properties: {text: delivery, role: secondary-color}
       type: Button

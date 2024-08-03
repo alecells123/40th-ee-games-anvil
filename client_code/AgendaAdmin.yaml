@@ -16,26 +16,30 @@ components:
       properties: {text: act i, role: secondary-color, align: center}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,BPBOKY'}
+      event_bindings: {click: act1_button_click}
     - name: act2_button
       properties: {text: act ii, role: secondary-color}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,CBVQDK'}
+      event_bindings: {click: act2_button_click}
     - name: act3_button
       properties: {text: act iii, role: secondary-color, align: center}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,ODWXOV'}
+      event_bindings: {click: act3_button_click}
     - name: spacer_1
       properties: {height: 32.0565185546875}
       type: Spacer
       layout_properties: {grid_position: 'ANNBBM,IELPQS'}
-    - name: text_box_1
+    - name: complete_code
       properties: {align: center}
       type: TextBox
       layout_properties: {grid_position: 'JYVATL,ZLWHMZ'}
-    - name: button_1
-      properties: {text: button_1, align: left}
+    - name: submit_button
+      properties: {text: submit, align: left}
       type: Button
       layout_properties: {grid_position: 'JYVATL,XZJOON'}
+      event_bindings: {click: submit_button_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

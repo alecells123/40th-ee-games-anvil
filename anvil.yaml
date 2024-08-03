@@ -107,7 +107,7 @@ db_schema:
       type: link_multiple
       target: players
     - name: code
-      admin_ui: {order: 0.25, width: 144}
+      admin_ui: {order: 0.25, width: 119}
       type: string
     - name: act
       admin_ui: {order: 5, width: 110}

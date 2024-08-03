@@ -6,6 +6,16 @@ components:
   properties: {}
   name: content_panel
   layout_properties: {slot: default}
+  components:
+  - name: card_1
+    properties: {role: card}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'FQBEWT,SYUDGM'}
+    components:
+    - name: button_1
+      properties: {text: button_1}
+      type: Button
+      layout_properties: {grid_position: 'QTCGWF,BPBOKY'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

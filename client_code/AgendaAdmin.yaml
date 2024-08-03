@@ -12,14 +12,18 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'FQBEWT,SYUDGM'}
     components:
-    - name: button_1
-      properties: {text: button_1}
+    - name: act1_button
+      properties: {text: act i}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,BPBOKY'}
-    - name: button_2
-      properties: {text: button_2}
+    - name: act2_button
+      properties: {text: act ii}
       type: Button
       layout_properties: {grid_position: 'QTCGWF,CBVQDK'}
+    - name: act3_button
+      properties: {text: act iii}
+      type: Button
+      layout_properties: {grid_position: 'QTCGWF,ODWXOV'}
 - type: FlowPanel
   properties: {}
   name: navbar_links

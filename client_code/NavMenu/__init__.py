@@ -10,11 +10,6 @@ class NavMenu(NavMenuTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.player_info = anvil.server.call('get_player_info')
-    if self.player_info['middle_name'] == "Cheesy Butts":
-      self.agenda_admin_button.visible = True
-    else:
-      self.agenda_admin_button.visible = False
 
   def character_tab_click(self, **event_args):
     """This method is called when the button is clicked"""

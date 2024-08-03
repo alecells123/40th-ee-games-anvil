@@ -61,11 +61,7 @@ components:
   properties: {}
   type: ColumnPanel
   layout_properties: {slot: left-nav}
-  components:
-  - name: nav_menu_1
-    properties: {}
-    type: form:NavMenu
-    layout_properties: {grid_position: 'LCIFPC,HFVNYS'}
+  components: []
 - name: headline_1
   properties: {role: headline, text: Agenda Admin}
   type: Label
